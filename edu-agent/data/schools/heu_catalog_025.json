@@ -1,0 +1,186 @@
+{
+  "school_id": "heu",
+  "school_name": "哈尔滨工程大学",
+  "applicable_year": 2027,
+  "college_code": "025",
+  "college_name": "025 物理与光电工程学院",
+  "source": {
+    "title": "哈尔滨工程大学2027年硕士招生专业目录",
+    "page_url": "https://yzb.hrbeu.edu.cn/2026/0929/c3279a352656/page.htm",
+    "attachment_download": "https://yzb.hrbeu.edu.cn/_upload/article/files/55/1a/06c933ef4ac9b8aa1372c53501a5/a26798bf-5848-4aae-a3e4-8804c8a8b2b1.pdf",
+    "attachment_path": "data/raw/_probe/pdf/heu_2027_catalog.pdf",
+    "attachment_note": "官方附件直链以 .pdf 结尾（非博达 download.jsp 形式）；本地存档件与官方页附件为同一文件（256955 B）",
+    "pdf_pages": 32,
+    "source_level": "official",
+    "fetched_at": "2026-10-16T21:18:24+08:00"
+  },
+  "extracted": {
+    "college_pages": [
+      31,
+      32
+    ],
+    "college_total_2027": 166,
+    "college_total_raw": "预计接收推免生85人；预计招收全日制统考81人（根据国家下达实际计划和推免生接收情况动态调整），非全日制2人。",
+    "college_total_note": {
+      "recommend": 85,
+      "exam": 81,
+      "part_time": 2,
+      "raw": "预计接收推免生85人；预计招收全日制统考81人（根据国家下达实际计划和推免生接收情况动态调整），非全日制2人"
+    },
+    "contact": null,
+    "policy_notes": [],
+    "degree_blocks": [
+      {
+        "degree_type": "全日制学术学位",
+        "duration_years": 3,
+        "declared_scale": 0
+      },
+      {
+        "degree_type": "全日制专业学位",
+        "duration_years": 3,
+        "declared_scale": 33
+      }
+    ],
+    "programs": [
+      {
+        "program_code": "085400",
+        "program_name": "电子信息",
+        "admission_scale": 33,
+        "degree_type": "全日制专业学位",
+        "duration_years": 3,
+        "exam_subjects": [
+          "①101思想政治理论",
+          "②201英语（一）、202俄语、203日语(选一)",
+          "③301数学（一）",
+          "④830普通物理"
+        ],
+        "re_exam_subjects": "光学激光原理，",
+        "notes": "含以下方向：智能光电传感技术、光电材料与器件",
+        "admission_scale_raw": "11+22/0",
+        "admission_scale_basis": "官方目录『预计招生人数(推免+统考/非全日制)』列基础计划一行；admission_scale 取「推免+统考」之和（该口径即招生计划总数）",
+        "admission_scale_parts": {
+          "recommend": 11,
+          "exam": 22,
+          "part_time": 0
+        },
+        "direction_label": "基础计划（研究方向见备注）",
+        "study_mode": "全日制",
+        "additional_exam_subjects": "大学物理实 验",
+        "directions_count": 5,
+        "other_directions": [
+          {
+            "direction_code": "02",
+            "label": "青岛创新发展基地专项（不区分",
+            "study_mode": "全日制",
+            "plan_raw": "14+14/0",
+            "recommend": 14,
+            "exam": 14,
+            "part_time": 0,
+            "exam_subjects": [
+              "1101思想政治理论",
+              "2201英语（一）",
+              "3301数学（一）",
+              "4830普通物理"
+            ],
+            "page": 31
+          },
+          {
+            "direction_code": "03",
+            "label": "长三角研究院（南通）专项（不",
+            "study_mode": "全日制",
+            "plan_raw": "2+2/0",
+            "recommend": 2,
+            "exam": 2,
+            "part_time": 0,
+            "exam_subjects": [
+              "1101思想政治理论",
+              "2201英语（一）、202俄语、203日语(选一)",
+              "3301数学（一）",
+              "4830普通物理"
+            ],
+            "page": 31
+          },
+          {
+            "direction_code": "04",
+            "label": "龙江工程师学院专项（光电系",
+            "study_mode": "全日制",
+            "plan_raw": "6+14/0",
+            "recommend": 6,
+            "exam": 14,
+            "part_time": 0,
+            "exam_subjects": [
+              "1101思想政治理论",
+              "2201英语（一）、202俄语、203日语(选一)",
+              "3301数学（一）",
+              "4830普通物理"
+            ],
+            "page": 31
+          },
+          {
+            "direction_code": "F1",
+            "label": "基础计划（研究方向见备注）",
+            "study_mode": "非全日制",
+            "plan_raw": "0+0/2",
+            "recommend": 0,
+            "exam": 0,
+            "part_time": 2,
+            "exam_subjects": [
+              "1101思想政治理论",
+              "2201英语（一）、202俄语、203日语(选一)",
+              "3301数学（一）",
+              "4830普通物理"
+            ],
+            "page": 31
+          }
+        ],
+        "source_page": 31,
+        "tuition": {
+          "label": "专业学位硕士[全日制MBA除外]",
+          "per_year_wan": 0.9,
+          "raw": "专业学位硕士[全日制MBA除外]0.9万元/生·年",
+          "unit": "万元/生·年",
+          "year": 2027
+        }
+      }
+    ],
+    "reference_books": {
+      "by_exam_code": {},
+      "titles": [],
+      "count": 0,
+      "note": "哈工程公布的是《硕士研究生招生考试考试大纲（初试科目）》（考试范围说明），不列参考书目，故参考书数量为 0"
+    },
+    "duration_source": {
+      "title": "哈尔滨工程大学2027年硕士研究生招生简章",
+      "page_url": "https://yzb.hrbeu.edu.cn/2026/0929/c3279a352656/page.htm",
+      "attachment_path": "data/raw/heu/3f4fb6b050c6.html",
+      "raw": "我校硕士研究生学制一般为3年"
+    },
+    "tuition_rows_2027": [
+      {
+        "label": "学术学位硕士",
+        "per_year_wan": 0.8,
+        "raw": "学术学位硕士0.8万元/生·年",
+        "unit": "万元/生·年",
+        "year": 2027
+      },
+      {
+        "label": "专业学位硕士[全日制MBA除外]",
+        "per_year_wan": 0.9,
+        "raw": "专业学位硕士[全日制MBA除外]0.9万元/生·年",
+        "unit": "万元/生·年",
+        "year": 2027
+      }
+    ],
+    "parse_method": "按 PDF 文字坐标 (x, y) 重建表格：左栏(学院/专业/方向) / 预计招生人数 / 初试科目 / 复试笔试科目 / 同等学力加试科目 / 备注；列边界实测 x=16.1 / 179.5 / 226.7 / 377.9 / 440.9 / 484.1",
+    "enrollment_scale_2027": {
+      "full_time": 4265,
+      "part_time": 544,
+      "raw": "全日制硕士研究生 4265 人，非全日制硕士研究生 544 名",
+      "data_year": 2027,
+      "source_title": "哈尔滨工程大学2027年硕士研究生招生简章",
+      "source_url": "https://yzb.hrbeu.edu.cn/2026/0929/c3279a352656/page.htm",
+      "scope_note": "全校口径，非本学院口径；本学院口径见 college_total_2027"
+    },
+    "exam_subject_format_note": "初试科目圈号按 2027 专业目录原文的 (1)(2)(3)(4) 规范化为 ①-④；本次修正了 pypdf 段落合并造成的重复数字前缀（如 '4408...' → '⑤08...'）。"
+  }
+}

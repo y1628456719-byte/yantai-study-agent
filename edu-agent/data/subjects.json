@@ -1,0 +1,495 @@
+{
+  "version": "v1-draft-2026-10-16b",
+  "frozen": false,
+  "purpose": "N31 标准科目表：全流程公共词典。用于 (a) 院校 exam_subjects 归一化 (b) 盲点实验室 ability_profile[].topic 归一化 (c) 两者 JOIN 支撑创新点 1。",
+  "consumer_contract": {
+    "backend": "院校数据的 exam_subjects 与 re_exam_subjects 必须使用本表 subject_code；同时保留 exam_codes 里的院校自命题代码用于溯源展示。",
+    "lab_side": "队友 C 的 ability_profile[].topic 必须使用本表 subject_code，否则 ability_flags 会与 exam_subjects 静默失配（SPEC §9.3 警告的最隐蔽失败模式）。",
+    "join_key": "subject_code（不要用 name 或别名 JOIN）"
+  },
+  "source": {
+    "spec": "SPEC.md §9.3 覆盖范围（第一版）",
+    "verified_against": "吉林大学 2027 年全日制硕士研究生招生专业目录（附件1，80 页，wbfileid=18205630）第 45 页 502 通信工程学院",
+    "verified_evidence": "081000 信息与通信工程 33 人 / 085402 通信工程 57 人，初试均为 ③数学+④806 模拟与数字电子技术，复试科目为 电路与数字信号处理",
+    "fetched_at": "2026-10-16T20:50:00+08:00"
+  },
+  "revision_notes": [
+    "SPEC §9.3 原清单没有『模拟与数字电子技术』这一门（院校按 806 一整门考），若只保留 ANALOG_CIRCUIT/DIGITAL_CIRCUIT 两个细分码，院校侧 806 将无法一对一命中 → 新增 ANALOG_DIGITAL_ELEC 并用 prerequisites 指向模电+数电，使细分诊断仍可回填。",
+    "新增考试科目类：DSP、CIRCUIT_ANALYSIS、AUTO_CTRL、ELECTROMAGNETICS、MATH_COMPLEX 归一。",
+    "新增 exam_codes 字段：院校自命题代码（如 \"806\"），用于前端展示『806 模拟与数字电子技术』原文与溯源。",
+    "实测 501 电子科学与工程学院用 848 电路原理与模拟电子技术、503 计算机用统考 408，说明『院校自命题 = 2 门课组合』是常态（806/848），故新增 composed_of[] 表示组合关系；prerequisites[] 仍按 SPEC §9.3 保留（复习依赖顺序）。",
+    "501 的初试外语含『201 英语（一）或 202 俄语或 203 日语』，故补充 FORLANG_RU / FORLANG_JP。",
+    "增补 COMM_BASIC_841（东北大学 841 通信专业基础，composed_of=SIG_SYS+COMM_THEORY）：实测该校 841 不在表内会导致 exam_subject_codes 漏匹配。"
+  ],
+  "categories": {
+    "public": "全国统考公共课",
+    "math": "数学细分（诊断粒度）",
+    "major_base": "专业基础课（通信/电子方向）",
+    "general": "可扩展通用课",
+    "re_exam": "复试科目"
+  },
+  "subjects": [
+    {
+      "subject_code": "POLITICS",
+      "name": "思想政治理论",
+      "aliases": [
+        "政治",
+        "101思想政治理论",
+        "思想政治"
+      ],
+      "prerequisites": [],
+      "category": "public",
+      "exam_codes": [
+        "101"
+      ],
+      "is_national_exam": true
+    },
+    {
+      "subject_code": "ENG1",
+      "name": "英语（一）",
+      "aliases": [
+        "英语一",
+        "201英语一",
+        "考研英语一"
+      ],
+      "prerequisites": [],
+      "category": "public",
+      "exam_codes": [
+        "201"
+      ],
+      "is_national_exam": true
+    },
+    {
+      "subject_code": "ENG2",
+      "name": "英语（二）",
+      "aliases": [
+        "英语二",
+        "204英语二"
+      ],
+      "prerequisites": [],
+      "category": "public",
+      "exam_codes": [
+        "204"
+      ],
+      "is_national_exam": true
+    },
+    {
+      "subject_code": "MATH1",
+      "name": "数学（一）",
+      "aliases": [
+        "数学一",
+        "301数学一"
+      ],
+      "prerequisites": [
+        "MATH_CALC",
+        "MATH_LINALG",
+        "MATH_PROB"
+      ],
+      "category": "public",
+      "exam_codes": [
+        "301"
+      ],
+      "is_national_exam": true
+    },
+    {
+      "subject_code": "MATH2",
+      "name": "数学（二）",
+      "aliases": [
+        "数学二",
+        "302数学二"
+      ],
+      "prerequisites": [
+        "MATH_CALC",
+        "MATH_LINALG"
+      ],
+      "category": "public",
+      "exam_codes": [
+        "302"
+      ],
+      "is_national_exam": true
+    },
+    {
+      "subject_code": "MATH3",
+      "name": "数学（三）",
+      "aliases": [
+        "数学三",
+        "303数学三"
+      ],
+      "prerequisites": [
+        "MATH_CALC",
+        "MATH_LINALG",
+        "MATH_PROB"
+      ],
+      "category": "public",
+      "exam_codes": [
+        "303"
+      ],
+      "is_national_exam": true
+    },
+    {
+      "subject_code": "MATH_CALC",
+      "name": "高等数学",
+      "aliases": [
+        "高数",
+        "微积分",
+        "calculus"
+      ],
+      "prerequisites": [],
+      "category": "math",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "MATH_LINALG",
+      "name": "线性代数",
+      "aliases": [
+        "线代",
+        "linear algebra"
+      ],
+      "prerequisites": [],
+      "category": "math",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "MATH_PROB",
+      "name": "概率论与数理统计",
+      "aliases": [
+        "概率",
+        "概率论",
+        "probability"
+      ],
+      "prerequisites": [],
+      "category": "math",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "MATH_FOUNDATION",
+      "name": "数学基础（自评先验项）",
+      "aliases": [
+        "数学基础",
+        "数学基本功",
+        "数学运算基础"
+      ],
+      "prerequisites": [],
+      "category": "math",
+      "exam_codes": [],
+      "note": "SPEC §7.8 无资料诊断示例使用的 topic；它不是一个考试科目，而是自评先验项（basis=self_reported），因此不进院校 exam_subjects 匹配。"
+    },
+    {
+      "subject_code": "MATH_COMPLEX",
+      "name": "复变函数与积分变换",
+      "aliases": [
+        "复变",
+        "复变函数",
+        "积分变换",
+        "拉普拉斯变换"
+      ],
+      "prerequisites": [
+        "MATH_CALC"
+      ],
+      "category": "math",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "CIRCUIT_ANALYSIS",
+      "name": "电路（电路分析基础）",
+      "aliases": [
+        "电路",
+        "电路分析",
+        "电路基础"
+      ],
+      "prerequisites": [
+        "MATH_CALC"
+      ],
+      "category": "major_base",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "ANALOG_CIRCUIT",
+      "name": "模拟电子技术",
+      "aliases": [
+        "模电",
+        "模拟电路",
+        "模拟电子技术基础"
+      ],
+      "prerequisites": [
+        "CIRCUIT_ANALYSIS"
+      ],
+      "category": "major_base",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "DIGITAL_CIRCUIT",
+      "name": "数字电子技术",
+      "aliases": [
+        "数电",
+        "数字电路",
+        "数字电子技术基础",
+        "数字电路与逻辑设计"
+      ],
+      "prerequisites": [],
+      "category": "major_base",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "ANALOG_DIGITAL_ELEC",
+      "name": "模拟与数字电子技术",
+      "aliases": [
+        "模拟与数字电子技术",
+        "806模拟与数字电子技术",
+        "电子技术基础",
+        "模电数电"
+      ],
+      "prerequisites": [
+        "ANALOG_CIRCUIT",
+        "DIGITAL_CIRCUIT"
+      ],
+      "composed_of": [
+        "ANALOG_CIRCUIT",
+        "DIGITAL_CIRCUIT"
+      ],
+      "category": "major_base",
+      "exam_codes": [
+        "806"
+      ],
+      "note": "吉大通信工程学院 081000/081100/085402/085406 初试专业课（自命题 806）。院校按一整门考，故单独建码；细分诊断结果可由 composed_of 折算到模电/数电两个 topic。"
+    },
+    {
+      "subject_code": "COMM_BASIC_841",
+      "name": "通信专业基础（841）",
+      "aliases": [
+        "841通信专业基础",
+        "通信专业基础",
+        "841"
+      ],
+      "prerequisites": [
+        "SIG_SYS",
+        "COMM_THEORY"
+      ],
+      "composed_of": [
+        "SIG_SYS",
+        "COMM_THEORY"
+      ],
+      "category": "major_base",
+      "exam_codes": [
+        "841"
+      ],
+      "note": "东北大学 081000 信息与通信工程等专业的初试专业课（841 通信专业基础），内容覆盖信号与系统与通信原理，故用 composed_of 把能力画像落到细分 topic。"
+    },
+    {
+      "subject_code": "CIRCUIT_ANALOG_ELEC",
+      "name": "电路原理与模拟电子技术",
+      "aliases": [
+        "848电路原理与模拟电子技术",
+        "电路原理与模拟电子技术"
+      ],
+      "prerequisites": [
+        "CIRCUIT_ANALYSIS",
+        "ANALOG_CIRCUIT"
+      ],
+      "composed_of": [
+        "CIRCUIT_ANALYSIS",
+        "ANALOG_CIRCUIT"
+      ],
+      "category": "major_base",
+      "exam_codes": [
+        "848"
+      ],
+      "note": "吉大 501 电子科学与工程学院（080900/083100/085401/085403）初试专业课，复试为数字电子技术。"
+    },
+    {
+      "subject_code": "CS_FOUNDATION_408",
+      "name": "计算机学科专业基础（408 统考）",
+      "aliases": [
+        "408",
+        "计算机学科专业基础",
+        "408计算机学科专业基础",
+        "计算机统考"
+      ],
+      "prerequisites": [
+        "DATA_STRUCT",
+        "COMPUTER_ORG",
+        "OPERATING_SYSTEM",
+        "COMPUTER_NETWORK"
+      ],
+      "composed_of": [
+        "DATA_STRUCT",
+        "COMPUTER_ORG",
+        "OPERATING_SYSTEM",
+        "COMPUTER_NETWORK"
+      ],
+      "category": "major_base",
+      "exam_codes": [
+        "408"
+      ],
+      "is_national_exam": true,
+      "note": "吉大 503 计算机科学与技术学院（081200/085404）初试专业课。"
+    },
+    {
+      "subject_code": "FORLANG_RU",
+      "name": "俄语",
+      "aliases": [
+        "202俄语",
+        "俄语"
+      ],
+      "prerequisites": [],
+      "category": "public",
+      "exam_codes": [
+        "202"
+      ],
+      "is_national_exam": true
+    },
+    {
+      "subject_code": "FORLANG_JP",
+      "name": "日语",
+      "aliases": [
+        "203日语",
+        "日语"
+      ],
+      "prerequisites": [],
+      "category": "public",
+      "exam_codes": [
+        "203"
+      ],
+      "is_national_exam": true
+    },
+    {
+      "subject_code": "SIG_SYS",
+      "name": "信号与系统",
+      "aliases": [
+        "信号与系统",
+        "signals and systems"
+      ],
+      "prerequisites": [
+        "MATH_CALC",
+        "MATH_COMPLEX"
+      ],
+      "category": "major_base",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "DSP",
+      "name": "数字信号处理",
+      "aliases": [
+        "数字信号处理",
+        "DSP",
+        "digitial signal processing"
+      ],
+      "prerequisites": [
+        "SIG_SYS"
+      ],
+      "category": "re_exam",
+      "exam_codes": [],
+      "note": "吉大 502 复试科目『电路与数字信号处理』的一半；同时是多数院校初试/复试常见科目。"
+    },
+    {
+      "subject_code": "COMM_THEORY",
+      "name": "通信原理",
+      "aliases": [
+        "通信原理",
+        "communication theory",
+        "通信原理与技术"
+      ],
+      "prerequisites": [
+        "SIG_SYS",
+        "MATH_PROB"
+      ],
+      "category": "major_base",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "AUTO_CTRL",
+      "name": "自动控制原理",
+      "aliases": [
+        "自动控制原理",
+        "自控",
+        "控制理论"
+      ],
+      "prerequisites": [
+        "MATH_CALC",
+        "MATH_COMPLEX"
+      ],
+      "category": "re_exam",
+      "exam_codes": [],
+      "note": "吉大 502 控制科学与工程(081100)/控制工程(085406) 复试科目。"
+    },
+    {
+      "subject_code": "ELECTROMAGNETICS",
+      "name": "电磁场与电磁波",
+      "aliases": [
+        "电磁场",
+        "电磁场与电磁波",
+        "电磁场理论"
+      ],
+      "prerequisites": [
+        "MATH_CALC",
+        "MATH_COMPLEX"
+      ],
+      "category": "major_base",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "PROG_BASIC",
+      "name": "程序设计基础",
+      "aliases": [
+        "程序设计",
+        "C语言",
+        "程序设计基础",
+        "编程基础"
+      ],
+      "prerequisites": [],
+      "category": "general",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "DATA_STRUCT",
+      "name": "数据结构",
+      "aliases": [
+        "数据结构",
+        "data structure"
+      ],
+      "prerequisites": [
+        "PROG_BASIC"
+      ],
+      "category": "general",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "COMPUTER_ORG",
+      "name": "计算机组成原理",
+      "aliases": [
+        "计算机组成原理",
+        "组成原理",
+        "计组"
+      ],
+      "prerequisites": [
+        "DIGITAL_CIRCUIT"
+      ],
+      "category": "general",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "OPERATING_SYSTEM",
+      "name": "操作系统",
+      "aliases": [
+        "操作系统",
+        "OS"
+      ],
+      "prerequisites": [
+        "DATA_STRUCT"
+      ],
+      "category": "general",
+      "exam_codes": []
+    },
+    {
+      "subject_code": "COMPUTER_NETWORK",
+      "name": "计算机网络",
+      "aliases": [
+        "计算机网络",
+        "计网"
+      ],
+      "prerequisites": [],
+      "category": "general",
+      "exam_codes": []
+    }
+  ]
+}

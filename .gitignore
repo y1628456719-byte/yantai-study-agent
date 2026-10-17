@@ -1,0 +1,21 @@
+# Local credentials and generated state must stay local.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+*.dpapi
+.venv/
+venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*

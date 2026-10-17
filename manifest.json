@@ -1,0 +1,1538 @@
+{
+  "files": [
+    {
+      "path": "edu-agent/.env.example",
+      "bytes": 199,
+      "sha256": "35200813d0b97400ebe207e88cb46dc4ec6972dabdd83e47d5666e671c2eba72"
+    },
+    {
+      "path": "edu-agent/.gitignore",
+      "bytes": 620,
+      "sha256": "183e0adcbd674d279302ae737c666c767a6b34afe2acc6e8a97e3a405c0e55e5"
+    },
+    {
+      "path": "edu-agent/backend/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "edu-agent/backend/agent.py",
+      "bytes": 24532,
+      "sha256": "1095469ffa2ed6e52cbfc51032cc6c6d592063dc3138fe5a48832206f424b86a"
+    },
+    {
+      "path": "edu-agent/backend/api/__init__.py",
+      "bytes": 549,
+      "sha256": "127a46b8885966bc425c7426a3e0153baab613777c7c15f163714413282d67f9"
+    },
+    {
+      "path": "edu-agent/backend/api/_deps.py",
+      "bytes": 328,
+      "sha256": "3e18dd397dde70114d52010a5cfbde40ee0f4b3b35ee535b282a5b478a403eac"
+    },
+    {
+      "path": "edu-agent/backend/api/agent.py",
+      "bytes": 1760,
+      "sha256": "4101f1298293d6f4867e1650d3faafced95f68a992454fc2da39205775b61b10"
+    },
+    {
+      "path": "edu-agent/backend/api/frontend.py",
+      "bytes": 9286,
+      "sha256": "a5ffe562ff5c841e3acf2592097cffe65ca929077fdede94b41f6a60058fc1af"
+    },
+    {
+      "path": "edu-agent/backend/api/lab.py",
+      "bytes": 2446,
+      "sha256": "e552a353d23791438a0a118926532b6b2913a44db2d3c1195f50a62293128f97"
+    },
+    {
+      "path": "edu-agent/backend/api/materials.py",
+      "bytes": 2787,
+      "sha256": "b5429287c68d80309faed48648388cd77b5b375eab41d2ba80a749a686ef4fe6"
+    },
+    {
+      "path": "edu-agent/backend/api/meta.py",
+      "bytes": 2863,
+      "sha256": "4b042b8e6652b27e36c14a8841d67deba82a879d355e5c1a7eaf0df88ff6cfb5"
+    },
+    {
+      "path": "edu-agent/backend/api/plan.py",
+      "bytes": 3296,
+      "sha256": "02b1a6a590eeb7e82991ce40e55026f6ba7ce83ffcbadf872726d56345c54349"
+    },
+    {
+      "path": "edu-agent/backend/api/sessions.py",
+      "bytes": 4734,
+      "sha256": "10c98e86f849a8327da22bc8cb20faf2f252195f77153da6d7585d877d277e49"
+    },
+    {
+      "path": "edu-agent/backend/config.py",
+      "bytes": 2735,
+      "sha256": "3c65a41fbbae6011c0d5b71e8d8a0e1fcc0b33eb299b9344750babc5a5e61f47"
+    },
+    {
+      "path": "edu-agent/backend/core/dimensions.py",
+      "bytes": 8312,
+      "sha256": "8a3570baef6df709d935cc93fc07052fe51e95ee3015fa798900df47b8f945dc"
+    },
+    {
+      "path": "edu-agent/backend/core/errors.py",
+      "bytes": 2645,
+      "sha256": "074e88cf096717a3af20121af7710aabc678d2c8b1e1f1addaef2ecc97fd340e"
+    },
+    {
+      "path": "edu-agent/backend/core/response.py",
+      "bytes": 2976,
+      "sha256": "2455921653163f596b5fee70a3f5fecddf353ba7db2aadd09a17960b62cebf6e"
+    },
+    {
+      "path": "edu-agent/backend/core/schemas.py",
+      "bytes": 4690,
+      "sha256": "e0a4235c569a4bf328eca2a3cb627a0b02f6cf9ea6ffbf82955ad85bb0073a6e"
+    },
+    {
+      "path": "edu-agent/backend/core/subjects.py",
+      "bytes": 8477,
+      "sha256": "4f0739486a7d8555557ad653cb8fa77785c9162cc724da01c5843551fc3ad5c1"
+    },
+    {
+      "path": "edu-agent/backend/lab_adapter/__init__.py",
+      "bytes": 4415,
+      "sha256": "bad6373ffb740aea2cd8b0c0ffd1e3f8e8711e547ffc8d2089371b4fbe5828ea"
+    },
+    {
+      "path": "edu-agent/backend/lab_adapter/base.py",
+      "bytes": 5509,
+      "sha256": "c8efee89e80c2e92f37cbd7ee4f5f45b19ed9adb30024c69bddb7e31950b3488"
+    },
+    {
+      "path": "edu-agent/backend/lab_adapter/blindspot.py",
+      "bytes": 17854,
+      "sha256": "b0c831273fbc5e2bda26d09694b0cca368b4a13ab025d59630a91a79d6804ab4"
+    },
+    {
+      "path": "edu-agent/backend/lab_adapter/mock.py",
+      "bytes": 28731,
+      "sha256": "ecde5d32f11cfbbbbe3fc8198ae11e620454d4b2530eae173eb878630b3d1130"
+    },
+    {
+      "path": "edu-agent/backend/lab_adapter/teammate.py",
+      "bytes": 2539,
+      "sha256": "1fb4b6e0c01b7c06a10861b76b7f748bb546cd12a7d4f22a7a141a8da8ea7801"
+    },
+    {
+      "path": "edu-agent/backend/llm.py",
+      "bytes": 12382,
+      "sha256": "45e7ca359171614eb59b74677876b52243e3274feace4767a6aa85e834d878dc"
+    },
+    {
+      "path": "edu-agent/backend/main.py",
+      "bytes": 5619,
+      "sha256": "6068c748a617e56ac4ef92c7d626d8b1b1c812e1bd73ab112476877db0b6f3ef"
+    },
+    {
+      "path": "edu-agent/backend/prompts.py",
+      "bytes": 3809,
+      "sha256": "b4296f8f75eac9ea2ebd986f885a051db121883335e4433eb18fc77bf521320a"
+    },
+    {
+      "path": "edu-agent/backend/services/journey.py",
+      "bytes": 34356,
+      "sha256": "bfdfe8a1a82f2e28693a2a4c7bf65de5db08f1d2bb00a8919cfc0092e5b6eee6"
+    },
+    {
+      "path": "edu-agent/backend/services/lab_service.py",
+      "bytes": 11091,
+      "sha256": "cb7bbb03d26e4be6289d0cd7b660b6c3c0cbe248e094b2692f2fd5e8c85dea62"
+    },
+    {
+      "path": "edu-agent/backend/services/modelsvc.py",
+      "bytes": 15642,
+      "sha256": "6dce5b4e86d29700a623b11fd460e0c491060dbb9a95759f434995fd38757f0b"
+    },
+    {
+      "path": "edu-agent/backend/services/onboarding.py",
+      "bytes": 3193,
+      "sha256": "3b4462d62da290e7a3069fe1ae1bc1d2caa532b8b439551e7a4ff1712e34d062"
+    },
+    {
+      "path": "edu-agent/backend/services/phase_detector.py",
+      "bytes": 8017,
+      "sha256": "bba8c14f335e134b3a0988946d6c85dbaa3df650dce40792aa67632af79bca30"
+    },
+    {
+      "path": "edu-agent/backend/services/planner.py",
+      "bytes": 7885,
+      "sha256": "c80c75b63e7cbf925f80750e71e8b3d088409f7d4dab11f160ca8af6736d5ba2"
+    },
+    {
+      "path": "edu-agent/backend/services/recommender.py",
+      "bytes": 24009,
+      "sha256": "95d82d04a809660736ecce1fe4ac4e2969b1c0bb2af0b53e8f5d7b52e069fe5d"
+    },
+    {
+      "path": "edu-agent/backend/services/school_data.py",
+      "bytes": 46008,
+      "sha256": "152a9e46d39ccc00c7fc180d6bd7691d16ff4424d275e9038eeaa7d7c100f141"
+    },
+    {
+      "path": "edu-agent/backend/services/session_store.py",
+      "bytes": 31814,
+      "sha256": "acdefcd14f00de16cd7aa7fffcf59d8bac5b130e065cd17df8e15400533fe1ab"
+    },
+    {
+      "path": "edu-agent/backend/store.py",
+      "bytes": 12923,
+      "sha256": "1a99e00959f5e32a76449fad66e61fa44471ab455093db51a8fe5facf426f6d0"
+    },
+    {
+      "path": "edu-agent/backend/tools.py",
+      "bytes": 15977,
+      "sha256": "190baa6ce53b855b747ac6b64d0df526a199a92398429f57bd7e4547bc534f9a"
+    },
+    {
+      "path": "edu-agent/crawler/__init__.py",
+      "bytes": 22,
+      "sha256": "76b64bae4275cdb4507da4847d9b632bd9fb54c71c7dbaaaa7712ffb5480b79f"
+    },
+    {
+      "path": "edu-agent/crawler/extract.py",
+      "bytes": 4708,
+      "sha256": "a5ba9541509b107917a1e58d6be3db72e75e9c95d3032223deeb0fe1cca8e361"
+    },
+    {
+      "path": "edu-agent/crawler/http.py",
+      "bytes": 3191,
+      "sha256": "48e119f0b25fe48c87db8cfcc383dd3e82695ffe9204c9047e6c4f40a073dca6"
+    },
+    {
+      "path": "edu-agent/crawler/runner.py",
+      "bytes": 2956,
+      "sha256": "ab461904d4a71b9a360569fceca7b7c030d2357395441967674e62350508808d"
+    },
+    {
+      "path": "edu-agent/crawler/sources/__init__.py",
+      "bytes": 256,
+      "sha256": "47f90b40084cce70da08084716af43274fd45794a3307cde073069f85f6b7118"
+    },
+    {
+      "path": "edu-agent/crawler/sources/base.py",
+      "bytes": 8480,
+      "sha256": "2f20fd00d8d523a7200033b2476f14b32b96d32acd231410e4201bcfb6b23260"
+    },
+    {
+      "path": "edu-agent/crawler/sources/heu.py",
+      "bytes": 9379,
+      "sha256": "c8799e5f19322e3a0d98bfd0648be1fb3b87027758e7ca118a107a09332229d7"
+    },
+    {
+      "path": "edu-agent/crawler/sources/jlu.py",
+      "bytes": 1101,
+      "sha256": "244b94ffebab68f03be87ce94a8335cbf3f37308e9096fadeb77655d6eadcda3"
+    },
+    {
+      "path": "edu-agent/crawler/sources/neu.py",
+      "bytes": 6644,
+      "sha256": "2b532110285c56f94194b3d0892347204e6fd53605b81f14a9cbb50620fb0c51"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/06fb636e53b0.html",
+      "bytes": 32788,
+      "sha256": "e290c900754df715a8f4eb555a81bd3a57e87fe6a5cbffa5526552b2704c635a"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/09a3347a7908.html",
+      "bytes": 835,
+      "sha256": "c5c676d7797f3c5045c8f5993d9d741ef7adcae1024615eb87fc6601dad37972"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/15fb9910b078.html",
+      "bytes": 835,
+      "sha256": "513c6b7aca778bb0bae1c98eb6def9881f6c51c2749b2d2d07d206990021ae2e"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/182463a84bd3.html",
+      "bytes": 835,
+      "sha256": "f1f7693357e8489b0a04279419d52ae92a4b8d5310bfa59dcdac8aff12f2ee74"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/1d5e41cc94ca.html",
+      "bytes": 835,
+      "sha256": "ae7ac1229a8f9eb5f9b6be1a917a78e1d60deec11538827c511e89869abaf224"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/2fbcfb843df9.html",
+      "bytes": 835,
+      "sha256": "d419d210b73c11f2973f438435242353a8a63135ef51786aafea22011a81e670"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/34abba759288.html",
+      "bytes": 33124,
+      "sha256": "ad44f330998c8bc94c059ac646937046ffff39d0c7e83d8871ba51ee601a27b4"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/3f4fb6b050c6.html",
+      "bytes": 103187,
+      "sha256": "fafe5db5a7499c3c3a256067bdf08bb44db39ba5c5e76010bb828b232fb27222"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/45a90edb0df6.html",
+      "bytes": 835,
+      "sha256": "60472b6aeece97becd240e504195dd905cd042556c8befda558cb9558cc72bb5"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/5aad11599423.html",
+      "bytes": 101981,
+      "sha256": "96d37db2c363dbbde15533e6d31d4438f261865ad711251dfdb3ad154bab80e0"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/67be8c2aa5eb.html",
+      "bytes": 835,
+      "sha256": "ffa9e4415feb7785f5c86ec1388e09b792099bc4c002c04d9038c66d69fa9774"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/740ff5138e35.html",
+      "bytes": 835,
+      "sha256": "b69ccfe0061b3174583644d7a6bc788764d6369b7683505c4cfca08f1a7b761a"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/79e76d7757a4.html",
+      "bytes": 835,
+      "sha256": "356131a7152c9f54b90b09d10e9947d00b7f33449f20b8d38a5f31d2abfe1d90"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/7a83c3c693c6.html",
+      "bytes": 26894,
+      "sha256": "7bf70a59b576a01eb71e2d0c5b29292742a1e6101a8036a23dc595468749833f"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/7e1adc2bb04f.html",
+      "bytes": 26777,
+      "sha256": "98df1e21bb443c12f00df886bb427dea386543c2b34f03a8abc4034c3dd899d3"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/8bf8eff5208f.html",
+      "bytes": 29299,
+      "sha256": "c7c71b57f0455070eaf800f24c2357ef189aaaebf59015584dd05b8b82f13083"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/b87f3c6bd488.html",
+      "bytes": 15643,
+      "sha256": "ddf1c882ed31b4e4256b7ae6c1eba40a22e10ad499120a5ae015c2586dc38be4"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/c3a1f9587ffc.html",
+      "bytes": 59509,
+      "sha256": "0eda4328ca754bf1f5a5aabeb67b4371436b78123467845bb638da4cec54887f"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/dcbe4e1a0f10.html",
+      "bytes": 32886,
+      "sha256": "4e97a4050e81e7b9c918d4a62d318a9a5bfc8339e9636587eb6dcb5401dcc578"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/e34d25772944.html",
+      "bytes": 89960,
+      "sha256": "2879b33b16b73bfc41566823779adaa8f89fcd26be85219cad1f9662c1158c69"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/f36953291d69.html",
+      "bytes": 26978,
+      "sha256": "623be2854a0f184d5cf4210db9d38176139973ab7a2a323909e6a1d2574f90cd"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/icec/3a269b5d-6df1-4aed-87ff-c621348ee134.pdf",
+      "bytes": 528096,
+      "sha256": "291e49447deec3ed18bd8d5d5291f1e88af2df42218a604baf1336cf4141ca89"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/icec/3a269b5d-6df1-4aed-87ff-c621348ee134.pdf.txt",
+      "bytes": 10863,
+      "sha256": "57807fb5635f68cce3ff4aa4e45e5034c5d2730351b9564fb0417000440d3c28"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/icec/c4658a335838.html",
+      "bytes": 101981,
+      "sha256": "96d37db2c363dbbde15533e6d31d4438f261865ad711251dfdb3ad154bab80e0"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/icec/c4658a341721.html",
+      "bytes": 26894,
+      "sha256": "7bf70a59b576a01eb71e2d0c5b29292742a1e6101a8036a23dc595468749833f"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/icec/c4658a346971.html",
+      "bytes": 33124,
+      "sha256": "ad44f330998c8bc94c059ac646937046ffff39d0c7e83d8871ba51ee601a27b4"
+    },
+    {
+      "path": "edu-agent/data/raw/heu/icec/c4658a352763.html",
+      "bytes": 26777,
+      "sha256": "98df1e21bb443c12f00df886bb427dea386543c2b34f03a8abc4034c3dd899d3"
+    },
+    {
+      "path": "edu-agent/data/raw/jlu/26df254bc1c4.html",
+      "bytes": 145767,
+      "sha256": "ec9599ca182933d406427dde9db06d114ef948633531233acb45ee020d083577"
+    },
+    {
+      "path": "edu-agent/data/raw/jlu/4d301eea310e.html",
+      "bytes": 18786,
+      "sha256": "006ff5bc277ff919b30798f6521a2317b8e722a171d9d607776c678f35c4757e"
+    },
+    {
+      "path": "edu-agent/data/raw/jlu/5ccb2307a481.html",
+      "bytes": 18468,
+      "sha256": "a6852b35be34a2d171ef191fdde49ffb0f261c6f7ec7c277f2e455bea482077b"
+    },
+    {
+      "path": "edu-agent/data/raw/jlu/672a0d85f854.html",
+      "bytes": 18335,
+      "sha256": "fa903b56ef6ebc3638833cae4262df6493a9a43a1a513e9cc09f71b1be37a9d3"
+    },
+    {
+      "path": "edu-agent/data/raw/jlu/a65072b19508.html",
+      "bytes": 128322,
+      "sha256": "549d533ee57774b79027597c82b901abe7a8db49356d6bf31e9b46cb720dd3cd"
+    },
+    {
+      "path": "edu-agent/data/raw/jlu/cb3d26f5e71c.html",
+      "bytes": 116862,
+      "sha256": "4f1fcf24afe419bf8bb87325118b05780edf2b5b73750fb1920a957f6edd7685"
+    },
+    {
+      "path": "edu-agent/data/raw/jlu/d10f4914b017.html",
+      "bytes": 108334,
+      "sha256": "8435d136fb390ef014a77213b1b14b3e95d6e9eb47c8d0792fc56b1fe2dc1c53"
+    },
+    {
+      "path": "edu-agent/data/raw/jlu/df22bac45445.html",
+      "bytes": 85000,
+      "sha256": "84589c678d8df6b598f20933796758fb12c2549bdb6ada65a0f3924a16d455ad"
+    },
+    {
+      "path": "edu-agent/data/raw/jlu/f291511fba84.html",
+      "bytes": 85761,
+      "sha256": "ada3cb7d02bd8f07fe1782321ae2db6b7d8d2ff312227cd8d9473a0feadb8dfe"
+    },
+    {
+      "path": "edu-agent/data/raw/jlu/pdf/jlu_18205630.pdf",
+      "bytes": 542829,
+      "sha256": "670f10e7484e655d73be201a36d1e235f951a2ae2d115146216b87359544daef"
+    },
+    {
+      "path": "edu-agent/data/raw/jlu/pdf/jlu_18205631.pdf",
+      "bytes": 90912,
+      "sha256": "8a28f7da5752bfeff5838f5266aec87583b6b97fc54a21c74829c1ddc50e4650"
+    },
+    {
+      "path": "edu-agent/data/raw/jlu/pdf/jlu_18205632.pdf",
+      "bytes": 172519,
+      "sha256": "0ac5a8a1807d168076694693c347f5a9af3686597b9d80a808f39014a40f2938"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/30cab2bc3d1f.html",
+      "bytes": 34030,
+      "sha256": "d736491549eb3609dbbc23366cc4eb6622d7b6dea2d4e446cb7d0aa0c218fd26"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/3196caaa3eb1.html",
+      "bytes": 234993,
+      "sha256": "0b3b90b00016619cddd39f5f355c4bbf549bc1fc01d0a26b2649febad6ce4e4e"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/349e7f0fd799.html",
+      "bytes": 70328,
+      "sha256": "43d18acf862ac838f8a3b850e59bc441bdb27e5b223a3be63377b7be4efa5efe"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/36e45532d57c.html",
+      "bytes": 90539,
+      "sha256": "19f330bd25af9ba3f962780590ad893c86df15cdb58ba73ffe35ff2354386497"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/5e17652c66b7.html",
+      "bytes": 124870,
+      "sha256": "01097054354dd70b5a58f86feacff7a4593c30087fb367d9b670fd24a08befb0"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/6d093bb4c23d.html",
+      "bytes": 194769,
+      "sha256": "aa1c24fdaff33056c9883d4f78fa425c730a629108420d1d4c5184b906fa26a5"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/819cae486fbe.html",
+      "bytes": 16537,
+      "sha256": "c29204a3cbf351cb3526305a4699b21b53bd310e8abf60ea33bcb1d1d0844f4f"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/_list_5931_list.htm",
+      "bytes": 2425,
+      "sha256": "048fd3fdf5642f99d28330991f49f3c79e7fa862425b1f2cf60b791ff4f02898"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/_list_5931_list2.htm",
+      "bytes": 2425,
+      "sha256": "048fd3fdf5642f99d28330991f49f3c79e7fa862425b1f2cf60b791ff4f02898"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/_list_5932_list.htm",
+      "bytes": 26107,
+      "sha256": "e4a5fe42150e595ae50b71324d2b8e2c8e922cb2caa3102bf8b13845002608fc"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/_list_5932_list2.htm",
+      "bytes": 26205,
+      "sha256": "dc5eba7e5b28ff0e4d70321e9500ae92c10eb7a8deb66e4ad6d60a8ff64fb95f"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/_list_5933_list.htm",
+      "bytes": 25889,
+      "sha256": "9bb8a323a52075fbabe17e91a9c8a583c53ccfe935bd7abf1d5689aa135256b3"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/_list_5933_list2.htm",
+      "bytes": 25935,
+      "sha256": "849896a4352758262ac732804cf8a1fc8f33413ded7126108f0e7b6680ff3dc8"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/_list_5934_list.htm",
+      "bytes": 2425,
+      "sha256": "4175c6abb3c133d07c89db9af452a11fa37301acf6aca87726ae1896ba9aca6f"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/_list_5934_list2.htm",
+      "bytes": 2425,
+      "sha256": "4175c6abb3c133d07c89db9af452a11fa37301acf6aca87726ae1896ba9aca6f"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/_list_5935_list.htm",
+      "bytes": 2425,
+      "sha256": "1eac1be9f93c21de9d431244c51f87c5de075bb08d5b40c5f07f934467ac2bf1"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/_list_5935_list2.htm",
+      "bytes": 2425,
+      "sha256": "1eac1be9f93c21de9d431244c51f87c5de075bb08d5b40c5f07f934467ac2bf1"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/ac7094f53a68.html",
+      "bytes": 16661,
+      "sha256": "e148a3e607ed86a14cc567b8e259f0a42c2e3fbbe6ebb900da427a1346df9259"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/b163f47244b6.html",
+      "bytes": 35016,
+      "sha256": "30799d28e0e26129dd45ca2ab495f627df3e7ec4f09be0889e8b2dc3d34f3d69"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/d1d9d417930e.html",
+      "bytes": 341834,
+      "sha256": "e11c2828445d35bc7d6ee9137ee644d73a8572c63c6b5fc7e3b1d6257f5ab911"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/ecf8d630648b.html",
+      "bytes": 16054,
+      "sha256": "fa3be593e5e879eb0d3af28567550a1204a684a242111e57b1bb8b76c92197a2"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/f3aa954405b1.html",
+      "bytes": 16306,
+      "sha256": "b0099d0279e444f7c2ca49bdacf588b79d85e9a0bace03007d9753ade4a45910"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/f83b344029ad.html",
+      "bytes": 16422,
+      "sha256": "d45eb0f1424050189c49c95bf51d31068489bd46ff63b5beef5804416dfe3de6"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/img/neu2024_0.jpg",
+      "bytes": 94178,
+      "sha256": "d34b5ea7d2e7dbba20e2df9298a7a66d9cdf1abc2dd58933aff6e63ffdb455de"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/img/neu2024_1.jpg",
+      "bytes": 88195,
+      "sha256": "d1d0443f047ef66edfe6d213b65e386310634372dd0f9bf9417c433c4be37f85"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/img/neu2024_2.jpg",
+      "bytes": 152670,
+      "sha256": "cc61ee6b32cc000568c025dfa61e82aba6a2fe69d8df74380c8c243106245765"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/img/neu2024_3.jpg",
+      "bytes": 142497,
+      "sha256": "957c2b9c84e12625f9135490ae06ad63fb1470d98eba61c94faadc2f7d943a4b"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/img/neu2025_0.jpg",
+      "bytes": 1124537,
+      "sha256": "15354d995288fecbef488e3abdccc8cb81c769093e6611f29eaade00e57c557c"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/img/neu2025_1.jpg",
+      "bytes": 1102587,
+      "sha256": "bb7e88d9bb945c2d34aac4b967717521638e503c5a98934aa51d647d32e9315b"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/img/neu2025_2.jpg",
+      "bytes": 1224412,
+      "sha256": "f49fcb6a2d66a55ccce9746cb4d3ed2d20658355d3fdaaf3f7bec7d1ed5c3ec4"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/img/neu2025_3.jpg",
+      "bytes": 1574915,
+      "sha256": "d17dde0b5a2dfbd444cfeaca200bfaf5840c5226c2610c721eb8ab0c3918e543"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/img/neu2025_4.jpg",
+      "bytes": 1333210,
+      "sha256": "2fef20adc6fb5c6a4e4e742e12d669f7645080fc311d935dc3e14960b30b0e53"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/img/neu2026_0.jpg",
+      "bytes": 86582,
+      "sha256": "01123e70f66a166b9e50456fc16c12295a9e0d57447503a27e0bfb1cf33ebdcf"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/img/neu2026_1.jpg",
+      "bytes": 79884,
+      "sha256": "658fcd683ada4b07fe5dfc81324f84e93e2cbf78b3dd46a4a504e33762d3b852"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/img/neu2026_2.jpg",
+      "bytes": 122929,
+      "sha256": "c7fe2e7df4d3e5171f209dff2021ae84c1e31cff2b347c7f1209cd1bfc7f0f13"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/img/neu2026_3.jpg",
+      "bytes": 140965,
+      "sha256": "c74a200cb9cbad3a2c09518384c9a7c5ecd8e2e54d59291f4fdaead80737ce2e"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/pdf/neu_2026_re_exam_005.pdf",
+      "bytes": 85662,
+      "sha256": "6bf27117d84f6dc8ad2c5245a6883125dcb3debbe954c05c100437e129cc7907"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/pdf/neu_2026_re_exam_017.pdf",
+      "bytes": 86900,
+      "sha256": "76944ad3a6c54f06707e3f0b11cb6f9aacbc33bf49e082ec8ffbc22385861da4"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/pdf/neu_2026_scale.pdf",
+      "bytes": 175384,
+      "sha256": "ead2118437856f4e3eadbb0d36072d77d720be1243e573cd34b2b51ddcbf6eb2"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/pdf/neu_2026_xuefei_alt.pdf",
+      "bytes": 72603,
+      "sha256": "5411555dd9e50411b69629a70c27356f9e4bd6c96a39c0e1ffffdbee0776a85f"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/pdf/neu_2026_xuezhi_alt.pdf",
+      "bytes": 62405,
+      "sha256": "db96de1783cdb67c2084a7c248cfa6b18c5b08f9ae50cad762b0d12351e0f3d8"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/pdf/neu_2027_xuefei.pdf",
+      "bytes": 88639,
+      "sha256": "ac1386dac88d027f7faa214b8b3dfa07bfa53b541e6216dde4df1f698b032304"
+    },
+    {
+      "path": "edu-agent/data/raw/neu/pdf/neu_2027_xuezhi.pdf",
+      "bytes": 66210,
+      "sha256": "e6eda276be3d6f5651131baa4a98352572fac17ee68292d5ae07c24a5d4bf4c8"
+    },
+    {
+      "path": "edu-agent/data/schools/heu.json",
+      "bytes": 65494,
+      "sha256": "06cea50d43dda1a37958edc9df2b866ef27795858e459b7a95c8f3e179f7d34f"
+    },
+    {
+      "path": "edu-agent/data/schools/heu_catalog.json",
+      "bytes": 139022,
+      "sha256": "f8a6192fbf8bf00d14631425526835a89a55d3a978692986bbbb04890ac30b2c"
+    },
+    {
+      "path": "edu-agent/data/schools/heu_catalog_004.json",
+      "bytes": 13729,
+      "sha256": "08cd636e909a6ce8cf8d9cf63e34155c81ec967bfd67e07168cf5c2346a3d35e"
+    },
+    {
+      "path": "edu-agent/data/schools/heu_catalog_005.json",
+      "bytes": 12332,
+      "sha256": "db91d57cc37971009c8decb122009c9d8fc7c8b61211d532ddc6c833eaf5b404"
+    },
+    {
+      "path": "edu-agent/data/schools/heu_catalog_006.json",
+      "bytes": 7517,
+      "sha256": "5dbe6707d8f50e3156608bd707fe446f89de1e17aa6d7cdaa86184f606997edc"
+    },
+    {
+      "path": "edu-agent/data/schools/heu_catalog_008.json",
+      "bytes": 11976,
+      "sha256": "f897bf36e54bb5dbb4d7b9bf9469eb5378e6d8ec0e3a70688c4be5f8f0b3573b"
+    },
+    {
+      "path": "edu-agent/data/schools/heu_catalog_025.json",
+      "bytes": 7370,
+      "sha256": "d0a99abc7b3714c305854d92c1279bbf677b81182e3f26e23645095677a8e8b6"
+    },
+    {
+      "path": "edu-agent/data/schools/heu_catalog_051.json",
+      "bytes": 6695,
+      "sha256": "b3af91c87171fd60747a5172d7ba9c135e72c1b280346d96a9bbe7a1ba7b1dae"
+    },
+    {
+      "path": "edu-agent/data/schools/heu_retest_2026.json",
+      "bytes": 6407,
+      "sha256": "a94e2adaa69b51929987bbbeed7130c9928fe484fc88dad30e20a066d3b3ec19"
+    },
+    {
+      "path": "edu-agent/data/schools/jlu.json",
+      "bytes": 115331,
+      "sha256": "426989e832bc72026d2460f24602de78b9f04f39aecec228d803f8172a462586"
+    },
+    {
+      "path": "edu-agent/data/schools/jlu_catalog_502.json",
+      "bytes": 3534,
+      "sha256": "7b554fd6e62975350c17df5101cd8a4e27cfacd682b05d7dd2b2e00b4ccf4d9b"
+    },
+    {
+      "path": "edu-agent/data/schools/neu.json",
+      "bytes": 290154,
+      "sha256": "22daaff23d46df6e770e378fc52abe58e4ffbab66270e4402161c861bf48f32f"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog.json",
+      "bytes": 51365,
+      "sha256": "03b07ef9ad1b24fe4d4d86d2a05da02975dac5e88dd96d557bd234dcbcd2b8c1"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_001.json",
+      "bytes": 5162,
+      "sha256": "cb8ee235f5df00cf36024d3820d3e0c646a040fa1d97fd37a9e76dba22e72bee"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_002.json",
+      "bytes": 11947,
+      "sha256": "e618a7ee1b60ef4c101ab0cb26034bda506986bf6734e0e1169bf66fec0cbeb6"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_003.json",
+      "bytes": 11318,
+      "sha256": "e135be060723e9586745e6744a46f279517899b289e5f84d2bd22d44ec81cfd4"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_004.json",
+      "bytes": 6983,
+      "sha256": "c09d1189f75a74d8fea4c239108c420cf0c8d18baf7b85b69f186265506a23db"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_005.json",
+      "bytes": 18443,
+      "sha256": "f7e73441494c3b194630d58ba6d7c43e07a22aa1e252fba23aead3480f86c7f9"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_006.json",
+      "bytes": 22108,
+      "sha256": "25cfd8f488661ae64cae85a165ac2a653b37caba77cde1fa829fc00f418ef7cb"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_007.json",
+      "bytes": 15399,
+      "sha256": "2198085e0125512298ad436d8c23a35f7f116f4a8434fd9554782237b7bcf4b8"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_008.json",
+      "bytes": 5486,
+      "sha256": "a5521a8fa5f2c335676d37db7b2797ca1c81aa2205c43f43ae13750375e22232"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_009.json",
+      "bytes": 6988,
+      "sha256": "36045bc9b615d4be82134f388e47b3bfe0c0ab413e0927ac65c30cbbf00c2612"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_010.json",
+      "bytes": 5400,
+      "sha256": "a2b924fd1de83af1d8cb861360ba64238d55e3c78213a2371d406424133b4b18"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_011.json",
+      "bytes": 12185,
+      "sha256": "7d06a9c8e794f85088534e25e5b545ea83cf764f162fc30a0bbf0b4734be13b4"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_012.json",
+      "bytes": 7741,
+      "sha256": "0a1ac25d2ae1775fafec0a879221da2622edd181f92b618a36ac8f1dd8000bbf"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_013.json",
+      "bytes": 3813,
+      "sha256": "16422979eb14fd0abacf1ad8fecbe3fe1fedd9ffa1564c89811d9cfda663e97e"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_014.json",
+      "bytes": 6521,
+      "sha256": "d7dd597aa3a504751e6ad8c408828c314977f0a298a2499deb578974ca616642"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_015.json",
+      "bytes": 5407,
+      "sha256": "845dc4fd01154ee700535a2fbc2fbc420e2619179b8d9eff48b27ea01482926f"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_016.json",
+      "bytes": 12704,
+      "sha256": "8b9388abbf19f2d87f9551006c941e0490b1b895039b86d724467e68b650b422"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_017.json",
+      "bytes": 64022,
+      "sha256": "2ce62427d4bb6fdfc3747916a4cf781af199240e109ae44db1c1516c4656d585"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_018.json",
+      "bytes": 6591,
+      "sha256": "ad017424d43b4ed5d7196e9abda442cf23844d40660d4530780b47fb391da9ad"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_catalog_019.json",
+      "bytes": 5685,
+      "sha256": "f27a5dc04ad08e07852928566b23f7471b6b88d3641c14256bf5f96bf439f860"
+    },
+    {
+      "path": "edu-agent/data/schools/neu_score_line.json",
+      "bytes": 4333,
+      "sha256": "4cb007eec71d5be3b1fed0964f8c947f678201463e7e1e1863bcb8ff0c0ce31d"
+    },
+    {
+      "path": "edu-agent/data/schools/school_meta.json",
+      "bytes": 795,
+      "sha256": "a3c277fdd3c15e320c6562a5027df6bc4a260998139f37a27671ef5b17e52ba0"
+    },
+    {
+      "path": "edu-agent/data/subjects.json",
+      "bytes": 13964,
+      "sha256": "653f008ee131950924e3c8183161bcba86392058a6b2b87204864a0a7f2bcdbd"
+    },
+    {
+      "path": "edu-agent/docs/AGENT_ALIGNMENT.md",
+      "bytes": 19056,
+      "sha256": "7a1eb3f2da70df38ce1ec08f65e20f9a3a53506451547bee152e1031aa961fee"
+    },
+    {
+      "path": "edu-agent/docs/API.md",
+      "bytes": 27206,
+      "sha256": "7aa8dd31d6a4577d55e93be3ffefd96cd8bd93af189e0e3b21be5dda080e9562"
+    },
+    {
+      "path": "edu-agent/docs/DATA_SOURCES.md",
+      "bytes": 45352,
+      "sha256": "1357dda2fa757651abaae7e00583482872fb13a56788b47ff5373ecf13002848"
+    },
+    {
+      "path": "edu-agent/docs/DEMO_SCRIPT.md",
+      "bytes": 20343,
+      "sha256": "027ed4858daec324aa8f933094d5f79c91fa6b5e532d8967d0157556b96516d3"
+    },
+    {
+      "path": "edu-agent/docs/evidence/acceptance_summary.txt",
+      "bytes": 2163,
+      "sha256": "88e3cd85822f7aa4ce26692f74ca97403c93d096434c17a0558b50bc6e39d2c0"
+    },
+    {
+      "path": "edu-agent/docs/evidence/agent_model_e2e.txt",
+      "bytes": 4898,
+      "sha256": "174bd35ec4613ae39cc22778d3060b61010588320f70a04087795b0d9d6b426a"
+    },
+    {
+      "path": "edu-agent/docs/evidence/ask_model_e2e.txt",
+      "bytes": 1123,
+      "sha256": "b51275bc7de056b7900a8c43a0339c288f3f4485d4130e671defef1ab31fd17c"
+    },
+    {
+      "path": "edu-agent/docs/evidence/real_model_e2e.txt",
+      "bytes": 2584,
+      "sha256": "29a54ae9336b37e82908c2d20f4eff8dfc421993fc25f3326b0474466c821a26"
+    },
+    {
+      "path": "edu-agent/docs/FOR_TEAMMATE_B_AGENT_PANEL.md",
+      "bytes": 7191,
+      "sha256": "ef956a71cb5721a76be92a637eb7314ac3048b2e8b439a88589b845dc407d1d5"
+    },
+    {
+      "path": "edu-agent/docs/FOR_TEAMMATE_C.md",
+      "bytes": 10836,
+      "sha256": "9f676e8449be3966dab2ac60c6db661f93d1371772a106723abc927bac1ca9ba"
+    },
+    {
+      "path": "edu-agent/docs/INTEGRATION_API.md",
+      "bytes": 7746,
+      "sha256": "452b863732f454375f4901039edbb5ebca8d6cedf4bc4de289ebb50c52bd8621"
+    },
+    {
+      "path": "edu-agent/docs/openapi.json",
+      "bytes": 39697,
+      "sha256": "bea605aed5de29ec030d28eea2c213d8d7330b8b09af9fcf107f43dbb981f198"
+    },
+    {
+      "path": "edu-agent/docs/REVIEW.md",
+      "bytes": 15052,
+      "sha256": "d86cebe5d47551af4f5d5f60c6eacb90f555afc07d614992b06238daeef23461"
+    },
+    {
+      "path": "edu-agent/frontend/api.js",
+      "bytes": 10325,
+      "sha256": "646ca90ea1928a23498fc3386ea6996eeedf53bb8263fd9a0ce5eabb415d1df0"
+    },
+    {
+      "path": "edu-agent/frontend/app.js",
+      "bytes": 13843,
+      "sha256": "388fc972070670b49274228a41ed28ac2315bfab4113396f1820365a2397a7e1"
+    },
+    {
+      "path": "edu-agent/frontend/assets/scholar-ink-landscape-v1.png",
+      "bytes": 2160720,
+      "sha256": "f4bbb70cd1b4c0f3670263c3f0a442c65ff002a05708f05c9c7ce7b596f1bb2c"
+    },
+    {
+      "path": "edu-agent/frontend/assets/yanyan.png",
+      "bytes": 1042620,
+      "sha256": "d8b6183e789816af63ccaa0c1fcac4cc083a8c8ff4421ff3fb64f00140a53c6a"
+    },
+    {
+      "path": "edu-agent/frontend/components.js",
+      "bytes": 25547,
+      "sha256": "8f076424071e2b2ff072705807488c4d0b05a95933cc61fd11eea5c63191d01d"
+    },
+    {
+      "path": "edu-agent/frontend/demo.css",
+      "bytes": 19493,
+      "sha256": "ed2daaf772eccd2eb60fe65251908745b64a2cca60bdd624a5d9354e5f9273ea"
+    },
+    {
+      "path": "edu-agent/frontend/enhancements.css",
+      "bytes": 836,
+      "sha256": "a096167aa5b9b8f35d5124ce158e6df154f14ad8152c62d71d04eb3ddaeb6ba1"
+    },
+    {
+      "path": "edu-agent/frontend/enhancements.js",
+      "bytes": 381692,
+      "sha256": "6e803fd7bdb00a4f6036f1524a51363084df66d899e7d4d04b57973683dad034"
+    },
+    {
+      "path": "edu-agent/frontend/index.html",
+      "bytes": 8664,
+      "sha256": "2edca4438b5fc5bc9059ab1d68e032a1c34b3dc487049c93bb64093788f6d717"
+    },
+    {
+      "path": "edu-agent/frontend/journey.css",
+      "bytes": 7531,
+      "sha256": "d4f809cdfcfb2c25f55a58bb8a2525099932ce967986bb89c32c3f556330bf8e"
+    },
+    {
+      "path": "edu-agent/frontend/journey.js",
+      "bytes": 21536,
+      "sha256": "5175248cfa4043d5138a35f7f7b301125d3a069fb1fe2d91ab3a579550622c0f"
+    },
+    {
+      "path": "edu-agent/frontend/platform.css",
+      "bytes": 11628,
+      "sha256": "7467b43c370165a29c925f391f795e7bd8e0f9a6a68b7ad09a385dc7ecd4c13c"
+    },
+    {
+      "path": "edu-agent/frontend/platform.js",
+      "bytes": 43580,
+      "sha256": "f40d74e645c09800b080afb350403674b8f6361fa832ecb137eeb0f7cd8c102e"
+    },
+    {
+      "path": "edu-agent/frontend/styles.css",
+      "bytes": 19067,
+      "sha256": "0272a7d15b956bb5ba56cdcf7c611ec6bdc7c19c1b4027596fac47fd9e93784f"
+    },
+    {
+      "path": "edu-agent/frontend/workspace.css",
+      "bytes": 5244,
+      "sha256": "b5646b7450b63efb59f9ce6e10d418dc73718a686ad283d123d5f6de4166247c"
+    },
+    {
+      "path": "edu-agent/lab/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "edu-agent/lab/example_impl.py",
+      "bytes": 7654,
+      "sha256": "5bb29d06df484e76cef24b739df5d39c0c5e90448d8d7ba312d595b5b8ca7406"
+    },
+    {
+      "path": "edu-agent/README.md",
+      "bytes": 270,
+      "sha256": "d5e96a911e7c8a0d899eca499fc5f7bc0ab4aac4c3b0174bc51eac5302320563"
+    },
+    {
+      "path": "edu-agent/requirements-lock.txt",
+      "bytes": 620,
+      "sha256": "17272f5144da44b2d2d813e522e2dcc8692901b1e005ca033e5136f10481ad52"
+    },
+    {
+      "path": "edu-agent/requirements.txt",
+      "bytes": 389,
+      "sha256": "46c115324d7820fe09404619a3c4d36063c28cb6efea078f0960ed8d1aa34779"
+    },
+    {
+      "path": "edu-agent/run.py",
+      "bytes": 1808,
+      "sha256": "be1c8dc05e2d389ade43146e4bcb289b133c14c0e2ba2356b1e8d43d836c6a6e"
+    },
+    {
+      "path": "edu-agent/scripts/acceptance.py",
+      "bytes": 20042,
+      "sha256": "a3f3ffa75b7161a76117e52219804dd94c42c455c254c5540187966e1f95ed71"
+    },
+    {
+      "path": "edu-agent/scripts/agent_model_check.py",
+      "bytes": 7019,
+      "sha256": "1bed07b4b328b87c3d192a3bbfef55ddc1c9067c5a19af4e7b5908596da72cf8"
+    },
+    {
+      "path": "edu-agent/scripts/ask_model_check.py",
+      "bytes": 3593,
+      "sha256": "5af559cfdf6e159606432e492c4f8091dfbb95517c37b523b787622ba7739025"
+    },
+    {
+      "path": "edu-agent/scripts/dump_openapi.py",
+      "bytes": 983,
+      "sha256": "cfdd36588d1a3966b8fd5b866678dec64b6e1dc385218662bda34e25db9484f0"
+    },
+    {
+      "path": "edu-agent/scripts/frontend_check.py",
+      "bytes": 4850,
+      "sha256": "95394b04f462b72adc1a259adc38007447390c67dd6c2fe4a86b65e517b0dbdb"
+    },
+    {
+      "path": "edu-agent/scripts/lab_blindspot_check.py",
+      "bytes": 7133,
+      "sha256": "5aa60f1ed0fdbd8fc851dedc0f29278a4fd69adea4395a24d2ddd1cf10da6f43"
+    },
+    {
+      "path": "edu-agent/scripts/lab_teammate_check.py",
+      "bytes": 11593,
+      "sha256": "39ca6fb46200135d7421e81ea1959f2e8dcafe174d4a59e55ff45072ff07f2b2"
+    },
+    {
+      "path": "edu-agent/scripts/merge_neu_dataset.py",
+      "bytes": 27702,
+      "sha256": "51ea768a19a5e43e31521f47d735729748fc119564fe78e0575afbcd10ac53dc"
+    },
+    {
+      "path": "edu-agent/scripts/prepare_heu_catalog.py",
+      "bytes": 37823,
+      "sha256": "78f5e7df5a493bc5993d50b4607d7817048f5a98af7fca18647af5d456150755"
+    },
+    {
+      "path": "edu-agent/scripts/prepare_jlu_catalog.py",
+      "bytes": 11059,
+      "sha256": "52a3229b9579b9abec6e4099fe7029c1bf4dc7273fbfc8c966124da7b7a35eff"
+    },
+    {
+      "path": "edu-agent/scripts/prepare_neu_catalog.py",
+      "bytes": 32632,
+      "sha256": "c20f309a3ae7083e16bdd067a491f69d99a6e34bf72022c4b00e3eaab656527b"
+    },
+    {
+      "path": "edu-agent/scripts/real_model_check.py",
+      "bytes": 5710,
+      "sha256": "ba1d1c1540d0af57f2900286a8140606a97523a5845ff8035b88de4401fa392c"
+    },
+    {
+      "path": "edu-agent/scripts/smoke_e2e.py",
+      "bytes": 7686,
+      "sha256": "c79c02d63ee90d0d8c4d4c1d8467574da86965d76337171196316e9fb7bbbe3d"
+    },
+    {
+      "path": "edu-agent/Setup.ps1",
+      "bytes": 559,
+      "sha256": "bf4947b771a504e1752edd8acaeeef6f4d446f8c8d9e0889a7d1a5f4294a7d24"
+    },
+    {
+      "path": "edu-agent/Start.ps1",
+      "bytes": 356,
+      "sha256": "7a507c033cf87939d3479c9d29e9953cc3bdf5f69d62a55f6023c7ffeef1057a"
+    },
+    {
+      "path": "edu-agent/tests/conftest.py",
+      "bytes": 924,
+      "sha256": "f5874700de66081c8f880068cccdbfa9a0e52fcc83c218444181b6bfbe9c1ac8"
+    },
+    {
+      "path": "edu-agent/tests/test_agent.py",
+      "bytes": 7072,
+      "sha256": "0043c6628698767e17444a437ff52c08b7e94f9fcc79e7904146ac085b2032bb"
+    },
+    {
+      "path": "edu-agent/tests/test_api.py",
+      "bytes": 13648,
+      "sha256": "41187d12f07767dfa32f962bc6955ae0118936c947020b061bcaf50bb4e00ab0"
+    },
+    {
+      "path": "edu-agent/tests/test_demo_reset.py",
+      "bytes": 6002,
+      "sha256": "6d6e91fd007d34ac30f638aa97ab96b7570fb78cf57380b91951450f57983910"
+    },
+    {
+      "path": "edu-agent/tests/test_dynamic_questions.py",
+      "bytes": 12430,
+      "sha256": "faf2e6c4fdd87dd56a1393b368e150b82830f692627edc8e50ffbf0723ebab2b"
+    },
+    {
+      "path": "edu-agent/tests/test_integration.py",
+      "bytes": 31984,
+      "sha256": "d60cbbeb006bdc822e446f17f01bc67a8bf52588f7f3fec00d422fc8a178ffcb"
+    },
+    {
+      "path": "edu-agent/tests/test_journey.py",
+      "bytes": 25633,
+      "sha256": "a3611710835e8084687bbbedb07ef0f9eff7dc08537ea3b7943bb0be94c7c17b"
+    },
+    {
+      "path": "edu-agent/tests/test_lab_inflight.py",
+      "bytes": 8701,
+      "sha256": "6faf3f7cc09d327f0a4cb0b912e1dbd7015a880890016dadd15c2b23f976a578"
+    },
+    {
+      "path": "edu-agent/tests/test_onboarding_ask.py",
+      "bytes": 5152,
+      "sha256": "b0d7a4ddfeb2e808c89011e34b1d6a2adc3d34123885c6e3d7142df4d6642bf2"
+    },
+    {
+      "path": "edu-agent/tests/test_program_matching.py",
+      "bytes": 1739,
+      "sha256": "15858debc149def8bf0e5dcc09d35150fbf402493b0236f77b32f34c0b30d713"
+    },
+    {
+      "path": "edu-agent/ui/build.mjs",
+      "bytes": 437,
+      "sha256": "6b1413f75956c45f963a536fe5d8e552eba55461024cd2cd213ecbc4374b239c"
+    },
+    {
+      "path": "edu-agent/ui/components/BorderBeam.tsx",
+      "bytes": 2334,
+      "sha256": "ce558f7a7718b7330676d904cfd27973ccd1545b9e5cd1a0c0f1c51b4327f0be"
+    },
+    {
+      "path": "edu-agent/ui/components/collapsible.tsx",
+      "bytes": 127,
+      "sha256": "e5d3a6edb95167408680df7129ccd239991acd663d1552ad9e8d9de3936450e1"
+    },
+    {
+      "path": "edu-agent/ui/components/InlineCitation.tsx",
+      "bytes": 1247,
+      "sha256": "b75d9daa54329e2ed5cbadea06b0a6a7b2695ca9b3b0378b80b856c9365d27ce"
+    },
+    {
+      "path": "edu-agent/ui/components/SpotlightCard.css",
+      "bytes": 980,
+      "sha256": "b646b7da4bb46f0a4d819d0af275804c49a845a5c2dc848700aaf9282db13a92"
+    },
+    {
+      "path": "edu-agent/ui/components/SpotlightCard.tsx",
+      "bytes": 11528,
+      "sha256": "581d8859b8b780a61f3710b5d39b9e37a365742626cf30858a5fdbfbfb4d8807"
+    },
+    {
+      "path": "edu-agent/ui/components/Task.tsx",
+      "bytes": 2488,
+      "sha256": "72c0919765c887bc2e8c150e41674bec8693f191bb1a2e220c8c78b6f6e01c96"
+    },
+    {
+      "path": "edu-agent/ui/components/utils.ts",
+      "bytes": 99,
+      "sha256": "024a9cb633fa767f8e85b36857bb7f43388b76a90ff4be47c4bfcae36020beb8"
+    },
+    {
+      "path": "edu-agent/ui/licenses/ai-elements-LICENSE",
+      "bytes": 552,
+      "sha256": "b4f9adb7c568904834d0dd6cc98d16c390d21ca32fc17ae7a267715269bd5529"
+    },
+    {
+      "path": "edu-agent/ui/licenses/magicui-LICENSE.md",
+      "bytes": 1060,
+      "sha256": "0147b84235ed916b8b4e89c1f80655351c5afe7d211b629be61f553a227b34ba"
+    },
+    {
+      "path": "edu-agent/ui/licenses/react-bits-LICENSE.md",
+      "bytes": 1303,
+      "sha256": "f4c33af6739191537738662d223b68d77bc226f4b57ea883e16481d8cc5c73c9"
+    },
+    {
+      "path": "edu-agent/ui/package-lock.json",
+      "bytes": 26219,
+      "sha256": "f2863f8834df5459245df01310768ed18ba18b82cc7f50ea141187e75ebe0765"
+    },
+    {
+      "path": "edu-agent/ui/package.json",
+      "bytes": 306,
+      "sha256": "b5eb561873503be6ce325dc0d375be001cd6932b5abeaa585dbfdd1fd5525bc3"
+    },
+    {
+      "path": "edu-agent/ui/src.tsx",
+      "bytes": 9766,
+      "sha256": "cd6c8df47afe1b7373fb1d6c51387dccd489221b75612542fed6745373bdba6d"
+    },
+    {
+      "path": "edu-agent/ui/THIRD_PARTY.md",
+      "bytes": 1943,
+      "sha256": "c0ac974a0f9d5a7ae84638198866a6ec475303807a8f2c0fda9b67a38f14d6f5"
+    },
+    {
+      "path": "edu-agent/vendor/__init__.py",
+      "bytes": 80,
+      "sha256": "92c3079d0d727bb98dfc1cd8a844e2524f0207f68cbd4186181d5bd078bcfe56"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/.gitignore",
+      "bytes": 41,
+      "sha256": "711cb6460f3ca9b04a7ca130f53dd4ac71af7cdf9f4050189dc18afe3009557f"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/__init__.py",
+      "bytes": 415,
+      "sha256": "e451fceb16ecc8139790b25ec8ba9aed415cd588dbe057a3b5d8e62eccb29657"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/ADAPTIVE.md",
+      "bytes": 6224,
+      "sha256": "1197d7b7113ec6d07448cc7cd4798b66c1b8c830b8ab31c58e46dead845d9a20"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/contracts.md",
+      "bytes": 7751,
+      "sha256": "3e5773dad44173403bd9bda3a7a330fec5353d7ddfff12a9032d5ac110631e8c"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/examples/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/examples/adaptive_host.py",
+      "bytes": 3881,
+      "sha256": "d4041ff78dccffa5ef4274d30b79cec5f4b4089e8958b0a860e32a4b00776a01"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/examples/adaptive_server.py",
+      "bytes": 6102,
+      "sha256": "6373fa2887c8ccd8b7521206394321d276cc11fd1aa20d1babfb68fe39abe4ae"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/examples/adaptive_ui.html",
+      "bytes": 15394,
+      "sha256": "d91dbedbca9794a34b0048e7c538213e3327b1892c88ba23d0390d662ba5b369"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/examples/antigravity_review.ps1",
+      "bytes": 2763,
+      "sha256": "57e51adebb3206fb6089c05e5a8a3311af2f67bfd7da55884bb4a59bce1e40b8"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/examples/demo.py",
+      "bytes": 3012,
+      "sha256": "05c8a61a12f375c8d2af63d75eeeb30acd3910ed2d4cca274b3f984fbfd3a964"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/examples/host_storage.py",
+      "bytes": 3059,
+      "sha256": "c42419d2e018871276e7dac938658171098b444307a40fcec01aa30f9f4405b8"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/examples/live_check.py",
+      "bytes": 3415,
+      "sha256": "b6005aeb21c095309f672cfa3b8dd3e94f9f3ce50019094d6e78bd786852f7d5"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/examples/verify.py",
+      "bytes": 4732,
+      "sha256": "c22d835e53d9c35d5ef22a57e1c2dc5662d7b4937b03079945fcfb3930c03460"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/examples/演示讲稿.md",
+      "bytes": 1404,
+      "sha256": "da44e816df7725b12cf34a5d10e29cab8607ebd9c7460b4f50eadc31ce3e721a"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/fixtures/logic_adaptive.json",
+      "bytes": 3575,
+      "sha256": "fc74609394f81cd7010f33f515d9398b8e11f5e4984eb203dfc6aab68f02f4d8"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/fixtures/logic_demo.json",
+      "bytes": 4032,
+      "sha256": "332998de62ce67b7a527339adeb2cc63cdc9280ff1f673dfca6578a0c99591bc"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/fixtures/logic_extensions.json",
+      "bytes": 1053,
+      "sha256": "c07695dd5169de4d8941ad6840c22c8891f3bd7659a1f8bd0313255c42765137"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/fixtures/REVIEW.md",
+      "bytes": 1863,
+      "sha256": "c60f3f340668261d06f199c5a2e639100a28afff113a0fc361fc763745c1c569"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/HANDOVER.md",
+      "bytes": 4630,
+      "sha256": "81c05cb330c0d4c34199fa909f8bcbc2fa7437cb483b3b5f3ae635e32733919f"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/lab/__init__.py",
+      "bytes": 201,
+      "sha256": "307bca25881b2a2b2a7ccaee6ba88bd7f399ba2cc3bf21dc84507852ed300546"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/lab/adaptive.py",
+      "bytes": 28705,
+      "sha256": "6cc60ef90f8b55e6c97d9e4ba2a67bbabe7daf623e36793ec91c565af1eaf4e8"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/lab/adaptive_plan.py",
+      "bytes": 2994,
+      "sha256": "9678c5584928786021e1e76ee92ab6d978b512b44ef6a155d65590ad81c037b3"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/lab/aiping.py",
+      "bytes": 6495,
+      "sha256": "15447ff320bda627f800abdea9b6e6b8a20b864eafba32938b58cfd0cce36423"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/lab/content.py",
+      "bytes": 3841,
+      "sha256": "748ab01e3328f5cd80a47914f10637b9207ee73b1bb767e54f61f6d873070557"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/lab/dynamic_questions.py",
+      "bytes": 26388,
+      "sha256": "b0e8047695a15fa45a89dadcf6ad65b98cc784bd0c276d32bff8368005f1b5d3"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/lab/engine.py",
+      "bytes": 28285,
+      "sha256": "8e961eda06af56256aa4ead175aee8d3e0600b8e1a0428c37c00be7dd6aeab22"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/lab/errors.py",
+      "bytes": 420,
+      "sha256": "0a47973ce69fb1e8d9b6ea5bc758813b761c1ebc74afc4164737359a7e62343f"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/lab/models.py",
+      "bytes": 7303,
+      "sha256": "44bb14886b73f7ec5a4677b674303c7c5fef96184994db1f5b09f04a0fcbb788"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/lab/plan.py",
+      "bytes": 1807,
+      "sha256": "0c0dbce60bcfda902b1f267159fcba8d312bb875a3fcafbf15483baa19b26f9b"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/README.md",
+      "bytes": 8376,
+      "sha256": "8e37be325c4ae9df57d8c14798bf6fac3ee8003d6c5110f23311bee92e05ee1c"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/tests/test_adaptive.py",
+      "bytes": 17001,
+      "sha256": "3743d4d05ffec8e6f6fc0e8b6e130b09318f21a3f7784d4f539c3a442ac2c774"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/tests/test_aiping.py",
+      "bytes": 3061,
+      "sha256": "558ad17650ac675bfc9377f88bdb2b63b6c598d1d0282fe5277c47710a4d2c4b"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/tests/test_lab.py",
+      "bytes": 23409,
+      "sha256": "78b5d690e62ffaf34014119dde89f971c7480ddbebd267b4f958de89cfeead2c"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/verification/adaptive-final.json",
+      "bytes": 5235,
+      "sha256": "d10570b72fe4f69961442d2afcda1f2dadd114471ded1dec3d76c530b216d4c2"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/verification/adaptive-independent-review.json",
+      "bytes": 1203,
+      "sha256": "3d2a071ff5c5b9fe6f97d08cc3888941aea297aff69b8399693554fa2e878a30"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/verification/adaptive-live/DeepSeek-V4.1-Flash-failure_feedback_recovery.json",
+      "bytes": 132267,
+      "sha256": "80ec27f17203fdaf590920e2142ecf4c3abf016e8bd9ef8a84671346d3b6990d"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/verification/adaptive-receipt.json",
+      "bytes": 2414,
+      "sha256": "6db518fbf415a1d8b1f1fc01d5a510c5e3b87d60d3d165d2269668b6543b49f5"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/verification/adaptive-review-pass3.txt",
+      "bytes": 517,
+      "sha256": "e62a3f7f611515c24ea86a09d5601bb11429796adefcdf068b4068a2f695b03a"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/verification/adaptive-source-manifest.json",
+      "bytes": 2880,
+      "sha256": "e49cc77fedc5d086e5b875ef7b36cfdecac73e0c59833baf87a1aac2856a23c5"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/verification/adaptive-tests.log",
+      "bytes": 9001,
+      "sha256": "3ac29d7e0a59e365d37ae40204dd77f59f028775a684f5bdd7b6da912a7e556b"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/verification/adaptive-ui/live-receipt.json",
+      "bytes": 183,
+      "sha256": "71fde93a116e6f47cb7e6576e40da71b2cb1f291289e623ce63004e6d2e502da"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/verification/adaptive-ui/receipt.json",
+      "bytes": 642,
+      "sha256": "039c387afd53fb4464029e7d5bcd39f5eab6072f38527f5a6ce5a735f942cdd6"
+    },
+    {
+      "path": "edu-agent/vendor/blindspot_lab/verification/adaptive-ui/visual-check.md",
+      "bytes": 1330,
+      "sha256": "145bbfc09d75fc97fb7414fbd3bff61046f27bde160b0cd6d99d5608ddd5c15a"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 8524,
+      "sha256": "83d59f86e47bc0d4141113d779a8f7356df226325602977ac89e698de236cf82"
+    },
+    {
+      "path": "README.md",
+      "bytes": 719,
+      "sha256": "4c19922a6ff47a15ae3c00a514e5389124926e78887099929e8d3c444d02620d"
+    },
+    {
+      "path": "validation/backend-tests.log",
+      "bytes": 755,
+      "sha256": "587b3cda1f5e0664060cec008785ad241df4098baec8c286710151d258b5c1dd"
+    },
+    {
+      "path": "validation/dynamic-live.json",
+      "bytes": 4697,
+      "sha256": "d89cb236d999da4dabccc65ff433cf32714c0fe378ed40f4907107eb55bc56c6"
+    },
+    {
+      "path": "validation/dynamic-worker-summary.md",
+      "bytes": 435,
+      "sha256": "5d3f5ef2d5cb16953c0f22d4984c2db37968061643145981da27b09e6013749c"
+    },
+    {
+      "path": "validation/finish-review.json",
+      "bytes": 1823,
+      "sha256": "b5fd77abe89e2d187db0562cad30cadec63ffc4c46157b639613fbb61fe43436"
+    },
+    {
+      "path": "validation/independent-review.txt",
+      "bytes": 708,
+      "sha256": "988e1b13fc4a0d66e35a1064614d8744f60667a430e2b3df71b4eb68cf4630be"
+    },
+    {
+      "path": "validation/live-http-server.log",
+      "bytes": 1501,
+      "sha256": "1fd0ac04bec146a6e240c3546f091849fa20d3a82bf7898a5288c72e40708327"
+    },
+    {
+      "path": "validation/live-http.json",
+      "bytes": 2113,
+      "sha256": "d31cf3d1a576a69f307d8b1021bca0224443eb2bfbdbfeaf20844af5e652156f"
+    },
+    {
+      "path": "validation/model-provenance.json",
+      "bytes": 1109,
+      "sha256": "906ae75edee6f209109a7640426fae9fe97b0fee2a8001cdf1c8c22b076bd4cd"
+    },
+    {
+      "path": "validation/production-check.json",
+      "bytes": 631,
+      "sha256": "dfa778485b8cfcf66ff305414eeb72d208d4ae2d7f0e741ba48aaeebdd10a578"
+    },
+    {
+      "path": "validation/quote-ui.json",
+      "bytes": 286,
+      "sha256": "b582c4ed14966e244be8dccd4e49a3e359c36e31ba7bb94ae04738327c881d8b"
+    },
+    {
+      "path": "validation/reviewed-source-hashes.json",
+      "bytes": 2408,
+      "sha256": "a74a27e4d489f3ba2383dfa12fbfcc312fe2cf6a1cfe655f16eba8eabc4afca3"
+    },
+    {
+      "path": "validation/screenshots/first-preparation.png",
+      "bytes": 1198353,
+      "sha256": "c75dff2d40a5ff04f93859715099109d3a844fb1c0774373164cf25c66970a5d"
+    },
+    {
+      "path": "validation/screenshots/first-recommendations.png",
+      "bytes": 1108259,
+      "sha256": "e6fee9021db8196ff4558da4339bbc2a89807faf4dd83cccb83f462650f8ddef"
+    },
+    {
+      "path": "validation/screenshots/lab-with-rail.png",
+      "bytes": 936427,
+      "sha256": "f86d9d02b1384e0b02078e8ab950192da80d6ac67b15e33ac0f4b463530ee30f"
+    },
+    {
+      "path": "validation/screenshots/mobile-first-preparation.png",
+      "bytes": 208617,
+      "sha256": "4c222e6cda71edda2959fc0008fa8f204fbb664cebb0a8fd5f0f85955866e984"
+    },
+    {
+      "path": "validation/ui-smoke.json",
+      "bytes": 2202,
+      "sha256": "7d0f33f292042c70113d20ca3e787714d80a38634fd112b7ba024d2c4636cbe7"
+    }
+  ],
+  "excludes": [
+    "credentials",
+    "personal databases",
+    "private courses",
+    "runtimes",
+    "node_modules",
+    "model prompts/raw drafts",
+    "recovery backups"
+  ],
+  "reviewed_files": {
+    "backend/lab_adapter/__init__.py": "bad6373ffb740aea2cd8b0c0ffd1e3f8e8711e547ffc8d2089371b4fbe5828ea",
+    "backend/lab_adapter/blindspot.py": "b0c831273fbc5e2bda26d09694b0cca368b4a13ab025d59630a91a79d6804ab4",
+    "backend/services/journey.py": "bfdfe8a1a82f2e28693a2a4c7bf65de5db08f1d2bb00a8919cfc0092e5b6eee6",
+    "backend/services/lab_service.py": "cb7bbb03d26e4be6289d0cd7b660b6c3c0cbe248e094b2692f2fd5e8c85dea62",
+    "backend/services/recommender.py": "95d82d04a809660736ecce1fe4ac4e2969b1c0bb2af0b53e8f5d7b52e069fe5d",
+    "backend/services/session_store.py": "acdefcd14f00de16cd7aa7fffcf59d8bac5b130e065cd17df8e15400533fe1ab",
+    "frontend/components.js": "8f076424071e2b2ff072705807488c4d0b05a95933cc61fd11eea5c63191d01d",
+    "frontend/enhancements.js": "6e803fd7bdb00a4f6036f1524a51363084df66d899e7d4d04b57973683dad034",
+    "frontend/index.html": "2edca4438b5fc5bc9059ab1d68e032a1c34b3dc487049c93bb64093788f6d717",
+    "frontend/journey.js": "5175248cfa4043d5138a35f7f7b301125d3a069fb1fe2d91ab3a579550622c0f",
+    "frontend/platform.js": "f40d74e645c09800b080afb350403674b8f6361fa832ecb137eeb0f7cd8c102e",
+    "frontend/workspace.css": "b5646b7450b63efb59f9ce6e10d418dc73718a686ad283d123d5f6de4166247c",
+    "tests/test_dynamic_questions.py": "faf2e6c4fdd87dd56a1393b368e150b82830f692627edc8e50ffbf0723ebab2b",
+    "tests/test_integration.py": "d60cbbeb006bdc822e446f17f01bc67a8bf52588f7f3fec00d422fc8a178ffcb",
+    "tests/test_lab_inflight.py": "6faf3f7cc09d327f0a4cb0b912e1dbd7015a880890016dadd15c2b23f976a578",
+    "tests/test_program_matching.py": "15858debc149def8bf0e5dcc09d35150fbf402493b0236f77b32f34c0b30d713",
+    "ui/src.tsx": "cd6c8df47afe1b7373fb1d6c51387dccd489221b75612542fed6745373bdba6d",
+    "vendor/blindspot_lab/examples/adaptive_host.py": "d4041ff78dccffa5ef4274d30b79cec5f4b4089e8958b0a860e32a4b00776a01",
+    "vendor/blindspot_lab/fixtures/logic_extensions.json": "c07695dd5169de4d8941ad6840c22c8891f3bd7659a1f8bd0313255c42765137",
+    "vendor/blindspot_lab/lab/adaptive.py": "6cc60ef90f8b55e6c97d9e4ba2a67bbabe7daf623e36793ec91c565af1eaf4e8",
+    "vendor/blindspot_lab/lab/content.py": "748ab01e3328f5cd80a47914f10637b9207ee73b1bb767e54f61f6d873070557",
+    "vendor/blindspot_lab/lab/dynamic_questions.py": "b0e8047695a15fa45a89dadcf6ad65b98cc784bd0c276d32bff8368005f1b5d3",
+    "vendor/blindspot_lab/lab/models.py": "44bb14886b73f7ec5a4677b674303c7c5fef96184994db1f5b09f04a0fcbb788"
+  }
+}

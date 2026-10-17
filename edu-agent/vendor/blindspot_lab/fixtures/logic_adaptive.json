@@ -1,0 +1,12 @@
+{
+  "version": "logic-adaptive.v2",
+  "provenance": "开发用自编演示题；经本地逐题核对，非官方真题，未做学生效果验证。",
+  "questions": [
+    {"question_id":"q_adapt_read_02","role":"verification","track":"reading","difficulty":1,"stem":"只有通过审核，才能领取设备。小安尚未通过审核。仅据这条规则，可以必然得出什么？","options":[{"id":"A","text":"小安可以领取设备"},{"id":"B","text":"小安不能领取设备"},{"id":"C","text":"无法判断小安能否领取设备"},{"id":"D","text":"暂时不会判断"}],"correct_option_id":"B","rationale":"领取设备→通过审核。未通过审核，所以不能领取设备；这是必要条件不满足。"},
+    {"question_id":"q_adapt_direction_02","role":"verification","track":"direction","difficulty":1,"stem":"已知：完成全部实验→获得实验章。小李完成了全部实验。仅据这些信息能得出什么？","options":[{"id":"A","text":"小李获得实验章"},{"id":"B","text":"小李没有获得实验章"},{"id":"C","text":"还不能确定是否获得实验章"},{"id":"D","text":"暂时不会判断"}],"correct_option_id":"A","rationale":"已知P→Q且P成立，可推出Q成立；本题检查是否把禁止倒推误解成任何方向都不能推。"},
+    {"question_id":"q_adapt_read_03","role":"verification","track":"reading","difficulty":1,"stem":"报名参加观测活动的人都必须持有通行证。小叶没有通行证。根据这条规则，哪项必然成立？","options":[{"id":"A","text":"小叶已报名参加活动"},{"id":"B","text":"小叶没有报名参加活动"},{"id":"C","text":"小叶一定不喜欢观测"},{"id":"D","text":"暂时不会判断"}],"correct_option_id":"B","rationale":"报名→持证；无证可推出未报名，不能推出兴趣。"},
+    {"question_id":"q_adapt_direction_03","role":"verification","track":"direction","difficulty":1,"stem":"已知提交作品就会收到回执。小程尚未提交作品。仅据这条规则能否确定小程没收到回执？","options":[{"id":"A","text":"能，未提交就必定没回执"},{"id":"B","text":"不能，规则没有排除其他收到回执的途径"},{"id":"C","text":"能确定已经收到回执"},{"id":"D","text":"暂时不会判断"}],"correct_option_id":"B","rationale":"P→Q不能推出非P→非Q；前件未成立不排除后件由其他原因成立。"},
+    {"question_id":"q_adapt_transfer_02","role":"verification","track":"transfer","difficulty":2,"stem":"已知进入样本室必须完成登记，完成登记必须提交申请。小林进入了样本室。以下哪项必然成立？","options":[{"id":"A","text":"所有提交申请的人都能进入样本室"},{"id":"B","text":"小林提交了申请"},{"id":"C","text":"未进入样本室的人都没有申请"},{"id":"D","text":"暂时不会判断"}],"correct_option_id":"B","rationale":"进入→登记→申请，由进入可以推出申请，不能反转整个条件链。"},
+    {"question_id":"q_adapt_transfer_03","role":"verification","track":"transfer","difficulty":2,"stem":"启用设备必须先通过校准，通过校准必须留存记录。小赵没有留存记录。仅据规则，哪项必然成立？","options":[{"id":"A","text":"小赵没有启用设备"},{"id":"B","text":"小赵已经启用设备"},{"id":"C","text":"有记录就一定能启用设备"},{"id":"D","text":"暂时不会判断"}],"correct_option_id":"A","rationale":"启用→校准→记录，无记录可推出未启用；有记录不能反向保证启用。"}
+  ]
+}

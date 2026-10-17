@@ -1,0 +1,94 @@
+{
+  "school_id": "neu",
+  "school_name": "东北大学",
+  "applicable_year": 2027,
+  "college_code": "013",
+  "college_name": "013 生命科学与健康学院",
+  "source": {
+    "title": "东北大学2027年硕士研究生招生专业目录",
+    "page_url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/page.htm",
+    "source_level": "official",
+    "site_render": "server-side HTML（静态，无需 JS）",
+    "fetched_at": "2026-10-16T21:38:41+08:00"
+  },
+  "extracted": {
+    "college_pages": [],
+    "college_note": "本文件由 scripts/_neu_parse_catalog.py 从官方专业目录页面内联 HTML 表格解析；「院系所」「专业」「考试科目」列在原文用 rowspan 纵向合并，解析时先展开再取值。该目录页只有 5 列（院系所/专业/研究方向/学习方式/考试科目），不含「拟招生人数」，故 admission_scale 另取官方《2026年硕士研究生招生专业目录（含拟招生人数）》附件 neu_2026_scale.pdf（见 admission_scale_source_year）；duration_years / tuition 取官方 2027 年学制汇总表与学费标准明细表（见各自 *_source_year）；re_exam_* 取官方《2026年硕士研究生招生考试复试参考信息》（见 re_exam_source_year）。",
+    "sources": {
+      "admission_scale": {
+        "data_year": 2026,
+        "page_url": "https://yz.neu.edu.cn/2025/1009/c5933a293424/page.htm",
+        "attachment_download": "https://yz.neu.edu.cn/_upload/article/files/70/ba/c702279f4bdabfe25fca5b1e6e11/106a5be3-929b-4d8c-81b3-4debc9b8cae2.pdf"
+      },
+      "duration_years": {
+        "data_year": 2027,
+        "page_url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "attachment_download": "https://yz.neu.edu.cn/_upload/article/files/7c/2a/7e2da1164b4b91f7358d35de7ef0/fbd72bb5-da62-41ab-935c-65bf68fb6a91.pdf"
+      },
+      "tuition": {
+        "data_year": 2027,
+        "page_url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "attachment_download": "https://yz.neu.edu.cn/_upload/article/files/7c/2a/7e2da1164b4b91f7358d35de7ef0/ad11c8dc-9d3a-4bd9-a9ee-06834729942c.pdf"
+      },
+      "re_exam": {
+        "data_year": 2026,
+        "page_url": "https://yz.neu.edu.cn/2025/1018/c5933a293857/page.htm",
+        "attachment_download": null
+      }
+    },
+    "programs": [
+      {
+        "program_code": "071000",
+        "program_name": "生物学",
+        "admission_scale": 71,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 25,
+        "degree_type": "全日制学术学位",
+        "study_mode": "全日制",
+        "duration_years": 3,
+        "duration_years_source_year": 2027,
+        "tuition": "8000元/年.生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①101思想政治理论",
+          "②201英语（一）",
+          "③621普通生物学",
+          "④865细胞生物学"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01细胞生物学",
+          "02植物学",
+          "03神经生物学",
+          "04合成生物技术"
+        ],
+        "notes": null
+      }
+    ],
+    "tuition_rows_2027": [
+      [
+        "013",
+        "生命科学与健康学院",
+        "071000",
+        "生物学",
+        "全日制",
+        "8000元/年.生"
+      ]
+    ],
+    "duration_rows_2027": [
+      [
+        "013",
+        "生命科学与健康学院",
+        "071000",
+        "生物学",
+        "全日制",
+        "3"
+      ]
+    ]
+  }
+}

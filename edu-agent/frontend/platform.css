@@ -1,0 +1,394 @@
+/* ============================================================
+   platform.css —— 整站接入增量样式
+   只负责：顶级导航、三个 page 的显隐、准备页/安排页卡片与控件。
+   原 styles.css 与 #page-lab 内部样式一律不动。
+   ============================================================ */
+
+/* ---------- 页面切换（body[data-page] + hidden 双保险） ---------- */
+.pages { display: contents; }
+.page { display: none; }
+body[data-page="prepare"] #page-prepare { display: block; }
+body[data-page="lab"]      #page-lab      { display: block; }
+body[data-page="plan"]     #page-plan     { display: block; }
+[hidden] { display: none !important; }
+
+/* 非实验室页：隐藏原顶栏子 tabs / 轮次 / 预算 / 情境入口与左 rail 阶段，
+   保留真实的模式标签与状态（刷新）。 */
+body:not([data-page="lab"]) #tabs,
+body:not([data-page="lab"]) [data-mount="round"],
+body:not([data-page="lab"]) .tb-budget,
+body:not([data-page="lab"]) .context-entry,
+body:not([data-page="lab"]) .rail-steps { display: none; }
+
+body { overflow-x: clip; }
+
+/* ---------- 顶级导航 ---------- */
+.platform-nav {
+  background: #f0e9d8;
+  border-bottom: 1px solid #d7ccba;
+}
+.pnav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.pnav-btn {
+  font-family: "Songti SC", "STSong", "Noto Serif SC", "SimSun", serif;
+  letter-spacing: .12em;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #24231f;
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: background .18s ease, color .18s ease, border-color .18s ease;
+  white-space: nowrap;
+}
+.pnav-btn:hover { border-color: #b74632; color: #8c3022; }
+.pnav-btn[aria-current="page"] {
+  background: #b74632;
+  border-color: #b74632;
+  color: #fbf7ec;
+}
+.pnav-btn:focus-visible {
+  outline: 2px solid #b74632;
+  outline-offset: 2px;
+}
+
+/* ---------- 全局通知（导航下方；错误 role=alert，成功 role=status） ---------- */
+.gnotice { background: #fbf7ec; border-bottom: 1px solid #d7ccba; }
+.gnotice-inner { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+.notice-line { margin: 0; padding: 9px 2px; font-size: 14px; line-height: 1.7; color: #403d35; }
+.notice-line[role="alert"] { color: #8c3022; }
+
+/* ---------- 新页面骨架（不碰 #page-lab 内部） ---------- */
+.page { min-width: 0; }
+#page-prepare, #page-plan {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 8px 20px 56px;
+}
+
+.page-head { padding: 22px 4px 2px; }
+.page-title {
+  font-family: "Songti SC", "STSong", "Noto Serif SC", "SimSun", serif;
+  font-size: 26px;
+  letter-spacing: .08em;
+  color: #24231f;
+  margin: 0;
+}
+.page-sub {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #6d6759;
+}
+
+.block {
+  background: #fbf7ec;
+  border: 1px solid #d7ccba;
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-top: 18px;
+}
+.block-title {
+  font-family: "Songti SC", "STSong", "Noto Serif SC", "SimSun", serif;
+  font-size: 18px;
+  letter-spacing: .06em;
+  color: #24231f;
+  margin: 0 0 8px;
+}
+.block-title::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #b74632;
+  border-radius: 2px;
+  margin-right: 9px;
+  vertical-align: 2px;
+}
+.block-hint {
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #6d6759;
+}
+.mount { min-width: 0; }
+
+/* ---------- 准备页：摘要一行全宽在上，档案（主）与助手（辅）同行 ---------- */
+.summary-line { margin: 0; font-size: 14.5px; line-height: 1.8; color: #24231f; }
+.duplex { display: block; }
+@media (min-width: 1000px) {
+  .duplex {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 0 18px;
+    align-items: start;
+  }
+}
+
+/* ---------- 通用控件（仅新页面作用域） ---------- */
+#page-prepare button, #page-plan button { font: inherit; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #d7ccba;
+  background: #f3ecdc;
+  color: #24231f;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background .15s ease, border-color .15s ease;
+}
+.btn:hover { border-color: #b74632; }
+.btn:focus-visible { outline: 2px solid #b74632; outline-offset: 2px; }
+.btn[disabled] { opacity: .5; cursor: not-allowed; }
+.btn-primary { background: #b74632; border-color: #b74632; color: #fbf7ec; }
+.btn-primary:hover { background: #a03b29; }
+.btn-ghost { background: transparent; }
+.btn-sm { padding: 5px 12px; font-size: 13px; }
+
+/* ---------- 表单（档案 / 资料录入 / 每日分钟） ---------- */
+.portal-form .field { margin: 0 0 12px; }
+.field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.field > span, .field-label { font-size: 13px; color: #403d35; letter-spacing: .04em; }
+[data-platform] input[type="text"],
+[data-platform] input[type="number"],
+[data-platform] select,
+[data-platform] textarea,
+.field input, .field select, .field textarea {
+  font: inherit;
+  font-size: 14px;
+  color: #24231f;
+  background: #fffdf7;
+  border: 1px solid #d7ccba;
+  border-radius: 8px;
+  padding: 9px 11px;
+  min-width: 0;
+  max-width: 100%;
+}
+[data-platform] textarea, .field textarea { resize: vertical; min-height: 72px; }
+[data-platform] input:focus-visible,
+[data-platform] select:focus-visible,
+[data-platform] textarea:focus-visible,
+.field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible {
+  outline: 2px solid rgba(183, 70, 50, .5);
+  outline-offset: 1px;
+  border-color: #b74632;
+}
+.form-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+.portal-error { color: #8c3022; font-size: 13px; margin: 8px 0 0; }
+.muted { color: #6d6759; }
+
+/* 档案五项：宽于 700px 两列排布，「报考方向」跨列；窄屏单列 */
+@media (min-width: 701px) {
+  .pf-profile { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 16px; }
+  .pf-profile .field { margin: 0; }
+  .pf-profile .field:nth-child(2) { grid-column: 1 / -1; }
+  .pf-profile > .portal-error,
+  .pf-profile > .btn { grid-column: 1 / -1; }
+  .pf-profile > .btn { justify-self: start; }
+}
+
+/* ---------- Agent 对话 ---------- */
+.agent-log-list { display: flex; flex-direction: column; gap: 12px; }
+.agent-msg { display: flex; min-width: 0; }
+.agent-msg .bubble {
+  max-width: 88%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 14.5px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.agent-msg-user { justify-content: flex-end; }
+.agent-msg-user .bubble { background: #24231f; color: #f6f1e7; border-radius: 12px 12px 4px 12px; }
+.agent-msg-reply .bubble { background: #fffdf7; border: 1px solid #d7ccba; border-radius: 12px 12px 12px 4px; }
+.agent-tools {
+  margin: -4px 0 4px;
+  padding-left: 10px;
+  border-left: 3px solid #e2d8c4;
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: #6d6759;
+}
+.agent-tools .tool-record { margin: 2px 0; overflow-wrap: anywhere; }
+.agent-compose { display: flex; gap: 8px; margin-top: 14px; align-items: flex-end; }
+.agent-compose textarea { flex: 1; }
+.agent-compose .btn { flex: none; }
+
+/* ---------- 院校推荐 ---------- */
+.rec-card {
+  background: #fffdf7;
+  border: 1px solid #d7ccba;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-top: 12px;
+}
+.rec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.rec-name {
+  font-family: "Songti SC", "STSong", serif;
+  font-size: 17px;
+  color: #24231f;
+}
+.rec-meta { font-size: 13px; color: #6d6759; }
+.rec-detail { margin-top: 10px; }
+.rec-detail summary {
+  cursor: pointer;
+  font-size: 13.5px;
+  color: #8c3022;
+  list-style: none;
+}
+.rec-detail summary::before { content: "▸ "; }
+.rec-detail[open] summary::before { content: "▾ "; }
+.tag-row { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0; }
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  border: 1px solid #d7ccba;
+  color: #403d35;
+  background: #f3ecdc;
+}
+.tag-fact { background: #ede7d8; }
+.tag-judgment { background: #f3dfd6; border-color: #e0b6a8; color: #8c3022; }
+.tag-unknown { background: transparent; border-style: dashed; color: #6d6759; }
+.fact-row {
+  display: flex;
+  gap: 10px;
+  font-size: 13.5px;
+  line-height: 1.7;
+  padding: 6px 2px;
+  border-top: 1px dashed #e2d8c4;
+}
+.fact-k { flex: none; min-width: 72px; color: #6d6759; }
+.fact-v { overflow-wrap: anywhere; }
+.src-link {
+  color: #8c3022;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+.rec-actions { margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap; }
+.rec-confirmed {
+  border-color: #b74632;
+  box-shadow: inset 0 0 0 1px #b74632;
+}
+
+/* ---------- 资料库 ---------- */
+.mat-list { list-style: none; margin: 12px 0 0; padding: 0; }
+.mat-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 2px;
+  border-top: 1px dashed #d7ccba;
+  align-items: flex-start;
+}
+.mat-item:first-child { border-top: 0; }
+.mat-main { min-width: 0; }
+.mat-title { font-weight: 600; font-size: 14.5px; color: #24231f; overflow-wrap: anywhere; }
+.mat-body {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #6d6759;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.mat-item .btn { flex: none; }
+.empty-state {
+  font-size: 13.5px;
+  color: #6d6759;
+  border: 1px dashed #d7ccba;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ---------- 下一步安排：计划 / 时间线 ---------- */
+.plan-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px 2px;
+  border-top: 1px dashed #d7ccba;
+  align-items: baseline;
+}
+.plan-row:first-child { border-top: 0; }
+.plan-subject {
+  font-family: "Songti SC", "STSong", serif;
+  font-size: 16px;
+  color: #24231f;
+}
+.plan-task { font-size: 13.5px; line-height: 1.7; color: #403d35; }
+.plan-meta { font-size: 12.5px; color: #6d6759; }
+.minutes-form { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 12px; }
+.minutes-form input { width: 110px; }
+
+.timeline { list-style: none; margin: 4px 0 0; padding: 0; }
+.timeline-item {
+  position: relative;
+  margin-left: 6px;
+  padding: 0 0 16px 20px;
+  border-left: 2px solid #e4d9c4;
+}
+.timeline-item:last-child { padding-bottom: 4px; }
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #b74632;
+}
+.timeline-item time { display: block; font-size: 12px; color: #6d6759; }
+.timeline-item .t-text { font-size: 14px; line-height: 1.7; color: #24231f; overflow-wrap: anywhere; }
+
+/* ---------- 手机 390px：换页不溢出 ---------- */
+@media (max-width: 520px) {
+  .pnav-inner { padding: 8px 12px; gap: 6px; }
+  .pnav-btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 9px 4px;
+    font-size: 13.5px;
+    letter-spacing: .04em;
+    text-align: center;
+    white-space: normal;
+  }
+  #page-prepare, #page-plan { padding: 6px 12px 48px; }
+  .page-title { font-size: 22px; }
+  .page-head { padding: 16px 2px 0; }
+  .block { padding: 15px 14px; border-radius: 12px; }
+  .agent-msg .bubble { max-width: 100%; }
+  .agent-compose { flex-direction: column; align-items: stretch; }
+  .agent-compose .btn { align-self: flex-end; }
+  .fact-k { min-width: 60px; }
+  .minutes-form input { width: 92px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pnav-btn, .btn { transition: none; }
+}

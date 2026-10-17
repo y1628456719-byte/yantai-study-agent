@@ -1,0 +1,1036 @@
+{
+  "school_id": "neu",
+  "school_name": "东北大学",
+  "applicable_year": 2027,
+  "college_code": "017",
+  "college_name": "017计算机科学与工程学院",
+  "metric_years": {
+    "exam_subjects": 2027,
+    "re_exam_ratio": 2026,
+    "re_exam_subjects": 2026,
+    "score_weight": 2026,
+    "duration_years": 2027,
+    "tuition": 2027,
+    "admission_scale": 2026,
+    "recommend_scale": 2026
+  },
+  "source": {
+    "title": "东北大学2027年硕士研究生招生专业目录",
+    "page_url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/page.htm",
+    "source_level": "official",
+    "site_render": "server-side HTML（静态，无需 JS）",
+    "fetched_at": "2026-10-16T21:36:38+08:00"
+  },
+  "extracted": {
+    "college_pages": [],
+    "college_note": "东北大学 081000 信息与通信工程 / 085402 通信工程（含宽带网络、移动通信等）均挂靠在 017 计算机科学与工程学院，不在 005 信息科学与工程学院。原始 HTML 表中「院系所」列使用 rowspan 合并，直接拍平会导致学院归属错位，本文件用 rowspan 展开后的矩阵解析。同一专业代码的多条研究方向已合并为一条。",
+    "programs": [
+      {
+        "program_code": "081000",
+        "program_name": "信息与通信工程",
+        "admission_scale": 41,
+        "recommend_scale": 27,
+        "degree_type": "全日制学术学位",
+        "study_mode": "(1)全日制",
+        "duration_years": 3,
+        "tuition": "8000元/年·生",
+        "exam_subjects": [
+          {
+            "code": "101",
+            "name": "思想政治理论",
+            "text": "101 思想政治理论"
+          },
+          {
+            "code": "201",
+            "name": "英语（一）",
+            "text": "201 英语（一）"
+          },
+          {
+            "code": "301",
+            "name": "数学（一）",
+            "text": "301 数学（一）"
+          },
+          {
+            "code": "841",
+            "name": "通信专业基础",
+            "text": "841 通信专业基础"
+          }
+        ],
+        "exam_subjects_raw": "①101思想政治理论②201英语（一）③301数学（一）④841通信专业基础",
+        "re_exam_subjects": "专业机试40分 + 综合面试60分",
+        "directions": [
+          "01新一代网络及网算协同技术",
+          "02天空地一体化网络",
+          "03无线通信技术",
+          "04多媒体信号处理",
+          "05通感一体化与认知信号处理",
+          "06【秦皇岛】信息与通信工程"
+        ],
+        "notes": null,
+        "duration_source": {
+          "title": "东北大学2027年硕士研究生招生专业学制情况汇总表",
+          "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+          "attachment": "fbd72bb5-da62-41ab-935c-65bf68fb6a91.pdf",
+          "raw": "081000 信息与通信工程 全日制 3\n017 计算机科学与工程学院 081200 计算机科学与技术 全日制 3\n017 计算机科学与工程学院 085402 通信工程（含宽带网络、移动通信等） 全日制 3\n017 计算机科学与工程学院 0"
+        },
+        "tuition_source": {
+          "title": "东北大学2027年硕士研究生招生专业学费标准明细表",
+          "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+          "attachment": "ad11c8dc-9d3a-4bd9-a9ee-06834729942c.pdf",
+          "raw": "081000 信息与通信工程 全日制 8000元/年.生\n017 计算机科学与工程学院 081200 计算机科学与技术 全日制 8000元/年.生\n017 计算机科学与工程学院 085402 通信工程（含宽带网络 、移动通信等） 全日制 10000元/年.生\n017 计算机科学与"
+        },
+        "re_exam_ratio": "120%",
+        "re_exam_content_reference_books": [
+          {
+            "title": "C程序设计",
+            "publisher": "（第五版）谭浩"
+          },
+          {
+            "title": "计算机网络",
+            "publisher": "（第七版）谢希"
+          },
+          {
+            "title": "数字信号处理导论",
+            "publisher": "（第二"
+          }
+        ],
+        "additional_exam_subjects": [
+          "数字系统设计基础",
+          "单片机原理与接口技术"
+        ],
+        "additional_exam_reference_books": [
+          {
+            "subject": "数字系统设计基础",
+            "reference_book": "数字逻辑与数字系统"
+          },
+          {
+            "subject": "单片机原理与接口技术",
+            "reference_book": "单片机原理及应用"
+          }
+        ],
+        "admit_list_rule": "按报考志愿（总",
+        "re_exam_source": {
+          "title": "017 计算机科学与工程学院 2026年硕士研究生复试参考信息",
+          "page_url": "https://yz.neu.edu.cn/2025/1018/c5933a293857/page.htm",
+          "attachment_url": "https://yz.neu.edu.cn/_upload/article/files/1f/0d/b7d07d3c48029807e784d5331a44/ecdc4ae2-dd60-440d-b8ab-9c860f438488.pdf",
+          "pdf_pages": 3,
+          "source_level": "official"
+        },
+        "admission_scale_source": {
+          "title": "东北大学2026年硕士研究生招生专业目录（拟招生人数表）",
+          "url": "https://yz.neu.edu.cn/2025/1009/c5933a293424/page.htm",
+          "attachment": "106a5be3-929b-4d8c-81b3-4debc9b8cae2.pdf",
+          "note": "表列名：学院码及名称/专业代码及名称/研究方向代码及名称/学习方式/拟招生人数/硕士推免人数/备注；表内数字为「主校区」合计，【秦皇岛】【佛山】等异地校区单列。",
+          "raw": "081000 信息与通信工程 01 新一代网络及网算协同技术 全日制\n41 27\n017 计算机科学与工程学院 081000 信息与通信工程 02 天空地一体化网络 全日制\n017 计算机科学与工程学院 081000 信息与通信工程 03 无线通信技术 全日制\n017 计算机科学与工程学院 081000 信息与通信工程 04 多媒体信号处理 全日制\n017 计算机科学与工程学院 081000 信息与通信工程 05 通感一体化与认知信号处"
+        }
+      },
+      {
+        "program_code": "085402",
+        "program_name": "通信工程（含宽带网络、移动通信等）",
+        "admission_scale": 25,
+        "recommend_scale": 7,
+        "degree_type": "全日制专业学位",
+        "study_mode": "(1)全日制",
+        "duration_years": 3,
+        "tuition": "10000元/年·生",
+        "exam_subjects": [
+          {
+            "code": "101",
+            "name": "思想政治理论",
+            "text": "101 思想政治理论"
+          },
+          {
+            "code": "204",
+            "name": "英语（二）",
+            "text": "204 英语（二）"
+          },
+          {
+            "code": "302",
+            "name": "数学（二）",
+            "text": "302 数学（二）"
+          },
+          {
+            "code": "841",
+            "name": "通信专业基础",
+            "text": "841 通信专业基础"
+          }
+        ],
+        "exam_subjects_raw": "①101思想政治理论②204英语（二）③302数学（二）④841通信专业基础",
+        "re_exam_subjects": "专业机试40分 + 综合面试60分",
+        "directions": [
+          "01网算协同技术及应用",
+          "02工业无线通信技术",
+          "03通感一体化应用",
+          "04多媒体信号处理及应用",
+          "05认知信号处理及应用",
+          "06【秦皇岛】通信工程（含宽带网络、移动通信等）",
+          "07【佛山】通信工程（含宽带网络、移动通信等）"
+        ],
+        "notes": null,
+        "duration_source": {
+          "title": "东北大学2027年硕士研究生招生专业学制情况汇总表",
+          "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+          "attachment": "fbd72bb5-da62-41ab-935c-65bf68fb6a91.pdf",
+          "raw": "085402 通信工程（含宽带网络、移动通信等） 全日制 3\n017 计算机科学与工程学院 085404 计算机技术 全日制 3\n017 计算机科学与工程学院 085410 人工智能 全日制 3\n第 3 页，共 4 页"
+        },
+        "tuition_source": {
+          "title": "东北大学2027年硕士研究生招生专业学费标准明细表",
+          "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+          "attachment": "ad11c8dc-9d3a-4bd9-a9ee-06834729942c.pdf",
+          "raw": "085402 通信工程（含宽带网络 、移动通信等） 全日制 10000元/年.生\n017 计算机科学与工程学院 085404 计算机技术 全日制 10000元/年.生\n017 计算机科学与工程学院 085410 人工智能 全日制 10000元/年.生\n017 计算机科学与工程学院"
+        },
+        "re_exam_ratio": "120%",
+        "re_exam_content_reference_books": [
+          {
+            "title": "C程序设计",
+            "publisher": "（第五版）谭浩"
+          },
+          {
+            "title": "计算机网络",
+            "publisher": "（第七版）谢希"
+          },
+          {
+            "title": "数字信号处理导论",
+            "publisher": "（第二"
+          }
+        ],
+        "additional_exam_subjects": [
+          "数字系统设计基础",
+          "单片机原理与接口技术"
+        ],
+        "additional_exam_reference_books": [
+          {
+            "subject": "数字系统设计基础",
+            "reference_book": "数字逻辑与数字系统"
+          },
+          {
+            "subject": "单片机原理与接口技术",
+            "reference_book": "单片机原理及应用"
+          }
+        ],
+        "admit_list_rule": "按报考志愿（总",
+        "re_exam_source": {
+          "title": "017 计算机科学与工程学院 2026年硕士研究生复试参考信息",
+          "page_url": "https://yz.neu.edu.cn/2025/1018/c5933a293857/page.htm",
+          "attachment_url": "https://yz.neu.edu.cn/_upload/article/files/1f/0d/b7d07d3c48029807e784d5331a44/ecdc4ae2-dd60-440d-b8ab-9c860f438488.pdf",
+          "pdf_pages": 3,
+          "source_level": "official"
+        },
+        "admission_scale_source": {
+          "title": "东北大学2026年硕士研究生招生专业目录（拟招生人数表）",
+          "url": "https://yz.neu.edu.cn/2025/1009/c5933a293424/page.htm",
+          "attachment": "106a5be3-929b-4d8c-81b3-4debc9b8cae2.pdf",
+          "note": "表列名：学院码及名称/专业代码及名称/研究方向代码及名称/学习方式/拟招生人数/硕士推免人数/备注；表内数字为「主校区」合计，【秦皇岛】【佛山】等异地校区单列。",
+          "raw": "085402 通信工程（含宽带网络、移动通信等） 01 网算协同技术及应用 全日制\n25 7\n017 计算机科学与工程学院 085402 通信工程（含宽带网络、移动通信等） 02 工业无线通信技术 全日制\n017 计算机科学与工程学院 085402 通信工程（含宽带网络、移动通信等） 03 通感一体化应用 全日制\n017 计算机科学与工程学院 085402 通信工程（含宽带网络、移动通信等） 04 多媒体信号处理及应用 全日制\n017 "
+        }
+      }
+    ],
+    "reference_books": {
+      "by_exam_code": {},
+      "titles": [],
+      "count": 0
+    },
+    "retest_list_2026": {
+      "applicable_year": 2026,
+      "source": {
+        "title": "东北大学2026年硕士研究生招生考试复试工作安排（含复试名单）",
+        "page_url": "https://yz.neu.edu.cn/2026/0314/c5932a451100/page.htm",
+        "attachment_url": "https://yz.neu.edu.cn/_upload/article/files/41/6c/ef07f6dc4ec4b560a0b9269d1a51/c7773530-ec79-48ee-963f-babc0aae4392.pdf",
+        "pdf_pages": 19,
+        "source_level": "official"
+      },
+      "plan_table_017": [
+        {
+          "college": "017计算机科学与工程学院",
+          "major_code": "081000",
+          "major": "信息与通信工程",
+          "direction": "其他研究方向",
+          "mode": "全日制",
+          "plan": 14
+        },
+        {
+          "college": "017计算机科学与工程学院",
+          "major_code": "081000",
+          "major": "信息与通信工程",
+          "direction": "【秦皇岛】信息与通信工程",
+          "mode": "全日制",
+          "plan": 4
+        },
+        {
+          "college": "017计算机科学与工程学院",
+          "major_code": "081200",
+          "major": "计算机科学与技术",
+          "direction": "其他研究方向",
+          "mode": "全日制",
+          "plan": 53
+        },
+        {
+          "college": "017计算机科学与工程学院",
+          "major_code": "081200",
+          "major": "计算机科学与技术",
+          "direction": "【秦皇岛】计算机科学与技术",
+          "mode": "全日制",
+          "plan": 4
+        },
+        {
+          "college": "017计算机科学与工程学院",
+          "major_code": "085402",
+          "major": "通信工程（含宽带网络、移动通信等）",
+          "direction": "其他研究方向",
+          "mode": "全日制",
+          "plan": 20
+        },
+        {
+          "college": "017计算机科学与工程学院",
+          "major_code": "085402",
+          "major": "通信工程（含宽带网络、移动通信等）",
+          "direction": "【秦皇岛】通信工程（含宽带网络、移动通信等）",
+          "mode": "全日制",
+          "plan": 57
+        },
+        {
+          "college": "017计算机科学与工程学院",
+          "major_code": "085402",
+          "major": "通信工程（含宽带网络、移动通信等）",
+          "direction": "【佛山】通信工程（含宽带网络、移动通信等）",
+          "mode": "全日制",
+          "plan": 5
+        },
+        {
+          "college": "017计算机科学与工程学院",
+          "major_code": "085404",
+          "major": "计算机技术",
+          "direction": "其他研究方向",
+          "mode": "全日制",
+          "plan": 20
+        },
+        {
+          "college": "017计算机科学与工程学院",
+          "major_code": "085404",
+          "major": "计算机技术",
+          "direction": "【秦皇岛】计算机技术",
+          "mode": "全日制",
+          "plan": 35
+        },
+        {
+          "college": "017计算机科学与工程学院",
+          "major_code": "085404",
+          "major": "计算机技术",
+          "direction": "【佛山】计算机技术",
+          "mode": "全日制",
+          "plan": 12
+        },
+        {
+          "college": "017计算机科学与工程学院",
+          "major_code": "085410",
+          "major": "人工智能",
+          "direction": "其他研究方向",
+          "mode": "全日制",
+          "plan": 12
+        },
+        {
+          "college": "017计算机科学与工程学院",
+          "major_code": "085410",
+          "major": "人工智能",
+          "direction": "【佛山】人工智能",
+          "mode": "全日制",
+          "plan": 4
+        },
+        {
+          "college": "017计算机科学与工程学院",
+          "major_code": "140500",
+          "major": "智能科学与技术",
+          "direction": "不区分研究方向",
+          "mode": "全日制",
+          "plan": 9
+        }
+      ],
+      "by_major_017": {
+        "081000": {
+          "count": 22,
+          "min_total": 331,
+          "max_total": 419,
+          "min_5_totals": [
+            331,
+            340,
+            340,
+            340,
+            344
+          ],
+          "min_single": {
+            "zz": 61,
+            "wy": 47,
+            "k1": 83,
+            "k2": 94
+          },
+          "note": "进入复试名单者的初试总分统计（第一志愿），不是学校公布的复试分数线，也不能当作录取最低分。"
+        },
+        "085402": {
+          "count": 27,
+          "min_total": 367,
+          "max_total": 435,
+          "min_5_totals": [
+            367,
+            367,
+            368,
+            368,
+            369
+          ],
+          "min_single": {
+            "zz": 60,
+            "wy": 69,
+            "k1": 107,
+            "k2": 88
+          },
+          "note": "进入复试名单者的初试总分统计（第一志愿），不是学校公布的复试分数线，也不能当作录取最低分。"
+        }
+      }
+    },
+    "retest_reference_2026": {
+      "applicable_year": 2026,
+      "source": {
+        "title": "017 计算机科学与工程学院 2026年硕士研究生复试参考信息",
+        "page_url": "https://yz.neu.edu.cn/2025/1018/c5933a293857/page.htm",
+        "attachment_url": "https://yz.neu.edu.cn/_upload/article/files/1f/0d/b7d07d3c48029807e784d5331a44/ecdc4ae2-dd60-440d-b8ab-9c860f438488.pdf",
+        "pdf_pages": 3,
+        "source_level": "official"
+      },
+      "score_formula": "初试成绩满分为500分的专业，考生总成绩=初试总分÷5×65%+复试总分÷1×35%；初试成绩满分为300分的专业，考生总成绩=初试总分÷3×65%+复试总分÷1×35%。",
+      "score_weight": "初试 65% + 复试 35%（总成绩=初试总分÷5×65%+复试总分×35%）",
+      "by_major": {
+        "081000": {
+          "re_exam_ratio": "120%",
+          "re_exam_method": "专业机试40分 + 综合面试60分",
+          "re_exam_content_reference_books": [
+            {
+              "title": "C程序设计",
+              "publisher": "（第五版）谭浩"
+            },
+            {
+              "title": "计算机网络",
+              "publisher": "（第七版）谢希"
+            },
+            {
+              "title": "数字信号处理导论",
+              "publisher": "（第二"
+            }
+          ],
+          "additional_exam_subjects": [
+            "数字系统设计基础",
+            "单片机原理与接口技术"
+          ],
+          "additional_exam_reference_books": [
+            {
+              "subject": "数字系统设计基础",
+              "reference_book": "数字逻辑与数字系统"
+            },
+            {
+              "subject": "单片机原理与接口技术",
+              "reference_book": "单片机原理及应用"
+            }
+          ],
+          "admit_list_rule": "按报考志愿（总",
+          "raw": "081000信息与通信工程\n01新一代网络及网算协同技术\n专业机试40分\n综合面试60分\n[1]《C程序设计》（第五版）谭浩\n强主编，清华大学出版社，2017年\n[2]《计算机网络》（第七版）谢希\n仁编著，电子工业出版社\n[3]《数字信号处理导论》（第二\n版）胡广书编著，清华大学出版社\n120%\n按学院专业\n统一确定复试名\n单\n按报考志愿（总\n校研究方向【代\n码01-05】、分\n校研究方向【代\n码06】）分别确\n定拟录取名单\n[1]数字系统设计基础\n参考书目：《数字逻辑与数字系统\n》（第五版）李景宏，王永军等\n编，电子工业出版社\n[2]单片机原理与接口技术\n参考书目：《单片机原理及应用》\n（第三版）张毅刚等，高等教育出\n版社\n02天空地一体化网络\n03无线通信技术\n04多媒体信号处理\n05通感一体化与认知信号处理\n06【秦皇岛】信息与通信工程\n"
+        },
+        "085402": {
+          "re_exam_ratio": "120%",
+          "re_exam_method": "专业机试40分 + 综合面试60分",
+          "re_exam_content_reference_books": [
+            {
+              "title": "C程序设计",
+              "publisher": "（第五版）谭浩"
+            },
+            {
+              "title": "计算机网络",
+              "publisher": "（第七版）谢希"
+            },
+            {
+              "title": "数字信号处理导论",
+              "publisher": "（第二"
+            }
+          ],
+          "additional_exam_subjects": [
+            "数字系统设计基础",
+            "单片机原理与接口技术"
+          ],
+          "additional_exam_reference_books": [
+            {
+              "subject": "数字系统设计基础",
+              "reference_book": "数字逻辑与数字系统"
+            },
+            {
+              "subject": "单片机原理与接口技术",
+              "reference_book": "单片机原理及应用"
+            }
+          ],
+          "admit_list_rule": "按报考志愿（总",
+          "raw": "085402通信工程（含宽\n带网络、移动通信等）\n01网算协同技术及应用\n专业机试40分\n综合面试60分\n[1]《C程序设计》（第五版）谭浩\n强主编，清华大学出版社，2017年\n[2]《计算机网络》（第七版）谢希\n仁编著，电子工业出版社\n[3]《数字信号处理导论》（第二\n版）胡广书编著，清华大学出版社\n120%\n按学院专业\n统一确定复试名\n单\n按报考志愿（总\n校研究方向【代\n码01-05】、分\n校研究方向【代\n码06】、佛山研\n究方向【代码07\n】）分别确定拟\n录取名单\n[1]数字系统设计基础\n参考书目：《数字逻辑与数字系统\n》（第五版）李景宏，王永军等\n编，电子工业出版社\n[2]单片机原理与接口技术\n参考书目：《单片机原理及应用》\n（第三版）张毅刚等，高等教育出\n版社\n02工业无线通信技术\n03通感一体化应用\n04多媒体信号处理及应用\n05认知信号处理及应用\n06【秦皇岛】通信工程（含宽带\n网络、移动通信等）\n07【佛山】通信工程（含宽带网\n络、移动通信等）\n第 1 页，共 3 页\n东北大学计算机科学与工程学院2026年硕士研究生复试参考信息 联系人及电话：张老师 024-83673145\n专业 研究方向 复试方式及分数组成 专业素质和能力考核内容参考 复试比例 复试名单确定规则 拟录取名单确定规则 同等学力加试科目及参考书目\n"
+        }
+      }
+    },
+    "score_formula": "初试 65% + 复试 35%（总成绩=初试总分÷5×65%+复试总分×35%）",
+    "history": [
+      {
+        "applicable_year": 2027,
+        "source": {
+          "title": "东北大学2027年硕士研究生招生专业目录",
+          "page_url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/page.htm",
+          "source_level": "official"
+        },
+        "college_name": "017计算机科学与工程学院",
+        "programs": [
+          {
+            "program_code": "081000",
+            "program_name": "信息与通信工程",
+            "admission_scale": 41,
+            "recommend_scale": 27,
+            "degree_type": "全日制学术学位",
+            "study_mode": "(1)全日制",
+            "duration_years": 3,
+            "tuition": "8000元/年·生",
+            "exam_subjects": [
+              {
+                "code": "101",
+                "name": "思想政治理论",
+                "text": "101 思想政治理论"
+              },
+              {
+                "code": "201",
+                "name": "英语（一）",
+                "text": "201 英语（一）"
+              },
+              {
+                "code": "301",
+                "name": "数学（一）",
+                "text": "301 数学（一）"
+              },
+              {
+                "code": "841",
+                "name": "通信专业基础",
+                "text": "841 通信专业基础"
+              }
+            ],
+            "exam_subjects_raw": "①101思想政治理论②201英语（一）③301数学（一）④841通信专业基础",
+            "re_exam_subjects": "专业机试40分 + 综合面试60分",
+            "directions": [
+              "01新一代网络及网算协同技术",
+              "02天空地一体化网络",
+              "03无线通信技术",
+              "04多媒体信号处理",
+              "05通感一体化与认知信号处理",
+              "06【秦皇岛】信息与通信工程"
+            ],
+            "notes": null,
+            "duration_source": {
+              "title": "东北大学2027年硕士研究生招生专业学制情况汇总表",
+              "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+              "attachment": "fbd72bb5-da62-41ab-935c-65bf68fb6a91.pdf",
+              "raw": "081000 信息与通信工程 全日制 3\n017 计算机科学与工程学院 081200 计算机科学与技术 全日制 3\n017 计算机科学与工程学院 085402 通信工程（含宽带网络、移动通信等） 全日制 3\n017 计算机科学与工程学院 0"
+            },
+            "tuition_source": {
+              "title": "东北大学2027年硕士研究生招生专业学费标准明细表",
+              "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+              "attachment": "ad11c8dc-9d3a-4bd9-a9ee-06834729942c.pdf",
+              "raw": "081000 信息与通信工程 全日制 8000元/年.生\n017 计算机科学与工程学院 081200 计算机科学与技术 全日制 8000元/年.生\n017 计算机科学与工程学院 085402 通信工程（含宽带网络 、移动通信等） 全日制 10000元/年.生\n017 计算机科学与"
+            },
+            "re_exam_ratio": "120%",
+            "re_exam_content_reference_books": [
+              {
+                "title": "C程序设计",
+                "publisher": "（第五版）谭浩"
+              },
+              {
+                "title": "计算机网络",
+                "publisher": "（第七版）谢希"
+              },
+              {
+                "title": "数字信号处理导论",
+                "publisher": "（第二"
+              }
+            ],
+            "additional_exam_subjects": [
+              "数字系统设计基础",
+              "单片机原理与接口技术"
+            ],
+            "additional_exam_reference_books": [
+              {
+                "subject": "数字系统设计基础",
+                "reference_book": "数字逻辑与数字系统"
+              },
+              {
+                "subject": "单片机原理与接口技术",
+                "reference_book": "单片机原理及应用"
+              }
+            ],
+            "admit_list_rule": "按报考志愿（总",
+            "re_exam_source": {
+              "title": "017 计算机科学与工程学院 2026年硕士研究生复试参考信息",
+              "page_url": "https://yz.neu.edu.cn/2025/1018/c5933a293857/page.htm",
+              "attachment_url": "https://yz.neu.edu.cn/_upload/article/files/1f/0d/b7d07d3c48029807e784d5331a44/ecdc4ae2-dd60-440d-b8ab-9c860f438488.pdf",
+              "pdf_pages": 3,
+              "source_level": "official"
+            },
+            "admission_scale_source": {
+              "title": "东北大学2026年硕士研究生招生专业目录（拟招生人数表）",
+              "url": "https://yz.neu.edu.cn/2025/1009/c5933a293424/page.htm",
+              "attachment": "106a5be3-929b-4d8c-81b3-4debc9b8cae2.pdf",
+              "note": "表列名：学院码及名称/专业代码及名称/研究方向代码及名称/学习方式/拟招生人数/硕士推免人数/备注；表内数字为「主校区」合计，【秦皇岛】【佛山】等异地校区单列。",
+              "raw": "081000 信息与通信工程 01 新一代网络及网算协同技术 全日制\n41 27\n017 计算机科学与工程学院 081000 信息与通信工程 02 天空地一体化网络 全日制\n017 计算机科学与工程学院 081000 信息与通信工程 03 无线通信技术 全日制\n017 计算机科学与工程学院 081000 信息与通信工程 04 多媒体信号处理 全日制\n017 计算机科学与工程学院 081000 信息与通信工程 05 通感一体化与认知信号处"
+            }
+          },
+          {
+            "program_code": "085402",
+            "program_name": "通信工程（含宽带网络、移动通信等）",
+            "admission_scale": 25,
+            "recommend_scale": 7,
+            "degree_type": "全日制专业学位",
+            "study_mode": "(1)全日制",
+            "duration_years": 3,
+            "tuition": "10000元/年·生",
+            "exam_subjects": [
+              {
+                "code": "101",
+                "name": "思想政治理论",
+                "text": "101 思想政治理论"
+              },
+              {
+                "code": "204",
+                "name": "英语（二）",
+                "text": "204 英语（二）"
+              },
+              {
+                "code": "302",
+                "name": "数学（二）",
+                "text": "302 数学（二）"
+              },
+              {
+                "code": "841",
+                "name": "通信专业基础",
+                "text": "841 通信专业基础"
+              }
+            ],
+            "exam_subjects_raw": "①101思想政治理论②204英语（二）③302数学（二）④841通信专业基础",
+            "re_exam_subjects": "专业机试40分 + 综合面试60分",
+            "directions": [
+              "01网算协同技术及应用",
+              "02工业无线通信技术",
+              "03通感一体化应用",
+              "04多媒体信号处理及应用",
+              "05认知信号处理及应用",
+              "06【秦皇岛】通信工程（含宽带网络、移动通信等）",
+              "07【佛山】通信工程（含宽带网络、移动通信等）"
+            ],
+            "notes": null,
+            "duration_source": {
+              "title": "东北大学2027年硕士研究生招生专业学制情况汇总表",
+              "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+              "attachment": "fbd72bb5-da62-41ab-935c-65bf68fb6a91.pdf",
+              "raw": "085402 通信工程（含宽带网络、移动通信等） 全日制 3\n017 计算机科学与工程学院 085404 计算机技术 全日制 3\n017 计算机科学与工程学院 085410 人工智能 全日制 3\n第 3 页，共 4 页"
+            },
+            "tuition_source": {
+              "title": "东北大学2027年硕士研究生招生专业学费标准明细表",
+              "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+              "attachment": "ad11c8dc-9d3a-4bd9-a9ee-06834729942c.pdf",
+              "raw": "085402 通信工程（含宽带网络 、移动通信等） 全日制 10000元/年.生\n017 计算机科学与工程学院 085404 计算机技术 全日制 10000元/年.生\n017 计算机科学与工程学院 085410 人工智能 全日制 10000元/年.生\n017 计算机科学与工程学院"
+            },
+            "re_exam_ratio": "120%",
+            "re_exam_content_reference_books": [
+              {
+                "title": "C程序设计",
+                "publisher": "（第五版）谭浩"
+              },
+              {
+                "title": "计算机网络",
+                "publisher": "（第七版）谢希"
+              },
+              {
+                "title": "数字信号处理导论",
+                "publisher": "（第二"
+              }
+            ],
+            "additional_exam_subjects": [
+              "数字系统设计基础",
+              "单片机原理与接口技术"
+            ],
+            "additional_exam_reference_books": [
+              {
+                "subject": "数字系统设计基础",
+                "reference_book": "数字逻辑与数字系统"
+              },
+              {
+                "subject": "单片机原理与接口技术",
+                "reference_book": "单片机原理及应用"
+              }
+            ],
+            "admit_list_rule": "按报考志愿（总",
+            "re_exam_source": {
+              "title": "017 计算机科学与工程学院 2026年硕士研究生复试参考信息",
+              "page_url": "https://yz.neu.edu.cn/2025/1018/c5933a293857/page.htm",
+              "attachment_url": "https://yz.neu.edu.cn/_upload/article/files/1f/0d/b7d07d3c48029807e784d5331a44/ecdc4ae2-dd60-440d-b8ab-9c860f438488.pdf",
+              "pdf_pages": 3,
+              "source_level": "official"
+            },
+            "admission_scale_source": {
+              "title": "东北大学2026年硕士研究生招生专业目录（拟招生人数表）",
+              "url": "https://yz.neu.edu.cn/2025/1009/c5933a293424/page.htm",
+              "attachment": "106a5be3-929b-4d8c-81b3-4debc9b8cae2.pdf",
+              "note": "表列名：学院码及名称/专业代码及名称/研究方向代码及名称/学习方式/拟招生人数/硕士推免人数/备注；表内数字为「主校区」合计，【秦皇岛】【佛山】等异地校区单列。",
+              "raw": "085402 通信工程（含宽带网络、移动通信等） 01 网算协同技术及应用 全日制\n25 7\n017 计算机科学与工程学院 085402 通信工程（含宽带网络、移动通信等） 02 工业无线通信技术 全日制\n017 计算机科学与工程学院 085402 通信工程（含宽带网络、移动通信等） 03 通感一体化应用 全日制\n017 计算机科学与工程学院 085402 通信工程（含宽带网络、移动通信等） 04 多媒体信号处理及应用 全日制\n017 "
+            }
+          }
+        ]
+      },
+      {
+        "applicable_year": 2026,
+        "source": {
+          "title": "东北大学2026年硕士研究生招生专业目录",
+          "page_url": "https://yz.neu.edu.cn/2025/1009/c5933a293436/page.htm",
+          "source_level": "official"
+        },
+        "college_name": "017计算机科学与工程学院",
+        "programs": [
+          {
+            "program_code": "081000",
+            "program_name": "信息与通信工程",
+            "admission_scale": 41,
+            "recommend_scale": 27,
+            "degree_type": "全日制学术学位",
+            "study_mode": "(1)全日制",
+            "duration_years": 3,
+            "tuition": "8000元/年·生",
+            "exam_subjects": [
+              {
+                "code": "101",
+                "name": "思想政治理论",
+                "text": "101 思想政治理论"
+              },
+              {
+                "code": "201",
+                "name": "英语（一）",
+                "text": "201 英语（一）"
+              },
+              {
+                "code": "301",
+                "name": "数学（一）",
+                "text": "301 数学（一）"
+              },
+              {
+                "code": "841",
+                "name": "通信专业基础",
+                "text": "841 通信专业基础"
+              }
+            ],
+            "exam_subjects_raw": "①101思想政治理论②201英语（一）③301数学（一）④841通信专业基础",
+            "re_exam_subjects": null,
+            "directions": [
+              "01新一代网络及网算协同技术",
+              "02天空地一体化网络",
+              "03无线通信技术",
+              "04多媒体信号处理",
+              "05通感一体化与认知信号处理",
+              "06【秦皇岛】信息与通信工程"
+            ],
+            "notes": null,
+            "admission_scale_source": {
+              "title": "东北大学2026年硕士研究生招生专业目录（拟招生人数表）",
+              "url": "https://yz.neu.edu.cn/2025/1009/c5933a293424/page.htm",
+              "attachment": "106a5be3-929b-4d8c-81b3-4debc9b8cae2.pdf",
+              "note": "表列名：学院码及名称/专业代码及名称/研究方向代码及名称/学习方式/拟招生人数/硕士推免人数/备注；表内数字为「主校区」合计，【秦皇岛】【佛山】等异地校区单列。",
+              "raw": "081000 信息与通信工程 01 新一代网络及网算协同技术 全日制\n41 27\n017 计算机科学与工程学院 081000 信息与通信工程 02 天空地一体化网络 全日制\n017 计算机科学与工程学院 081000 信息与通信工程 03 无线通信技术 全日制\n017 计算机科学与工程学院 081000 信息与通信工程 04 多媒体信号处理 全日制\n017 计算机科学与工程学院 081000 信息与通信工程 05 通感一体化与认知信号处"
+            },
+            "duration_source": {
+              "title": "东北大学2026年硕士研究生招生专业学制情况汇总表",
+              "url": "https://yz.neu.edu.cn/2025/1009/c5933a293424/page.htm",
+              "attachment": "e38b7eb1-254a-49b8-9df5-9e8d76f778bc.pdf",
+              "raw": "081000 信息与通信工程 全日制 3\n017 计算机科学与工程学院 081200 计算机科学与技术 全日制 3\n017 计算机科学与工程学院 085402 通信工程（含宽带网络、移动通信等） 全日制 3\n017 计算机科学与工程学院 0"
+            },
+            "tuition_source": {
+              "title": "东北大学2026年硕士研究生招生专业学费标准明细表",
+              "url": "https://yz.neu.edu.cn/2025/1009/c5933a293424/page.htm",
+              "attachment": "bbe89af6-1d4a-4cf5-aa5c-8cd14ffc8043.pdf",
+              "raw": "081000 信息与通信工程 全日制 8000元/年.生\n017 计算机科学与工程学院 081200 计算机科学与技术 全日制 8000元/年.生\n017 计算机科学与工程学院 085402 通信工程（含宽带网络、移动通信等） 全日制 10000元/年.生\n017 计算机科学与工"
+            }
+          },
+          {
+            "program_code": "085402",
+            "program_name": "通信工程（含宽带网络、移动通信等）",
+            "admission_scale": 25,
+            "recommend_scale": 7,
+            "degree_type": "全日制专业学位",
+            "study_mode": "(1)全日制",
+            "duration_years": 3,
+            "tuition": "10000元/年·生",
+            "exam_subjects": [
+              {
+                "code": "101",
+                "name": "思想政治理论",
+                "text": "101 思想政治理论"
+              },
+              {
+                "code": "204",
+                "name": "英语（二）",
+                "text": "204 英语（二）"
+              },
+              {
+                "code": "302",
+                "name": "数学（二）",
+                "text": "302 数学（二）"
+              },
+              {
+                "code": "841",
+                "name": "通信专业基础",
+                "text": "841 通信专业基础"
+              }
+            ],
+            "exam_subjects_raw": "①101思想政治理论②204英语（二）③302数学（二）④841通信专业基础",
+            "re_exam_subjects": null,
+            "directions": [
+              "01网算协同技术及应用",
+              "02工业无线通信技术",
+              "03通感一体化应用",
+              "04多媒体信号处理及应用",
+              "05认知信号处理及应用",
+              "06【秦皇岛】通信工程（含宽带网络、移动通信等）",
+              "07【佛山】通信工程（含宽带网络、移动通信等）"
+            ],
+            "notes": null,
+            "admission_scale_source": {
+              "title": "东北大学2026年硕士研究生招生专业目录（拟招生人数表）",
+              "url": "https://yz.neu.edu.cn/2025/1009/c5933a293424/page.htm",
+              "attachment": "106a5be3-929b-4d8c-81b3-4debc9b8cae2.pdf",
+              "note": "表列名：学院码及名称/专业代码及名称/研究方向代码及名称/学习方式/拟招生人数/硕士推免人数/备注；表内数字为「主校区」合计，【秦皇岛】【佛山】等异地校区单列。",
+              "raw": "085402 通信工程（含宽带网络、移动通信等） 01 网算协同技术及应用 全日制\n25 7\n017 计算机科学与工程学院 085402 通信工程（含宽带网络、移动通信等） 02 工业无线通信技术 全日制\n017 计算机科学与工程学院 085402 通信工程（含宽带网络、移动通信等） 03 通感一体化应用 全日制\n017 计算机科学与工程学院 085402 通信工程（含宽带网络、移动通信等） 04 多媒体信号处理及应用 全日制\n017 "
+            },
+            "duration_source": {
+              "title": "东北大学2026年硕士研究生招生专业学制情况汇总表",
+              "url": "https://yz.neu.edu.cn/2025/1009/c5933a293424/page.htm",
+              "attachment": "e38b7eb1-254a-49b8-9df5-9e8d76f778bc.pdf",
+              "raw": "085402 通信工程（含宽带网络、移动通信等） 全日制 3\n017 计算机科学与工程学院 085404 计算机技术 全日制 3\n017 计算机科学与工程学院 085410 人工智能 全日制 3\n第 3 页，共 4 页"
+            },
+            "tuition_source": {
+              "title": "东北大学2026年硕士研究生招生专业学费标准明细表",
+              "url": "https://yz.neu.edu.cn/2025/1009/c5933a293424/page.htm",
+              "attachment": "bbe89af6-1d4a-4cf5-aa5c-8cd14ffc8043.pdf",
+              "raw": "085402 通信工程（含宽带网络、移动通信等） 全日制 10000元/年.生\n017 计算机科学与工程学院 085404 计算机技术 全日制 10000元/年.生\n017 计算机科学与工程学院 085410 人工智能 全日制 10000元/年.生\n017 计算机科学与工程学院 "
+            }
+          }
+        ]
+      },
+      {
+        "applicable_year": 2025,
+        "source": {
+          "title": "东北大学2025年硕士研究生招生专业目录",
+          "page_url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/page.htm",
+          "source_level": "official"
+        },
+        "college_name": "017计算机科学与工程学院",
+        "programs": [
+          {
+            "program_code": "081000",
+            "program_name": "信息与通信工程",
+            "admission_scale": null,
+            "recommend_scale": null,
+            "degree_type": "全日制学术学位",
+            "study_mode": "(1)全日制",
+            "duration_years": null,
+            "tuition": null,
+            "exam_subjects": [
+              {
+                "code": "101",
+                "name": "思想政治理论",
+                "text": "101 思想政治理论"
+              },
+              {
+                "code": "201",
+                "name": "英语（一）",
+                "text": "201 英语（一）"
+              },
+              {
+                "code": "301",
+                "name": "数学（一）",
+                "text": "301 数学（一）"
+              },
+              {
+                "code": "841",
+                "name": "通信专业基础",
+                "text": "841 通信专业基础"
+              }
+            ],
+            "exam_subjects_raw": "①101思想政治理论②201英语（一）③301数学（一）④841通信专业基础",
+            "re_exam_subjects": null,
+            "directions": [
+              "01新一代网络及网算协同技术",
+              "02天空地一体化网络",
+              "03无线通信技术",
+              "04多媒体信号处理",
+              "05通感一体化与认知信号处理",
+              "06【秦皇岛】信息与通信工程"
+            ],
+            "notes": null
+          },
+          {
+            "program_code": "085402",
+            "program_name": "通信工程（含宽带网络、移动通信等）",
+            "admission_scale": null,
+            "recommend_scale": null,
+            "degree_type": "全日制专业学位",
+            "study_mode": "(1)全日制",
+            "duration_years": null,
+            "tuition": null,
+            "exam_subjects": [
+              {
+                "code": "101",
+                "name": "思想政治理论",
+                "text": "101 思想政治理论"
+              },
+              {
+                "code": "204",
+                "name": "英语（二）",
+                "text": "204 英语（二）"
+              },
+              {
+                "code": "302",
+                "name": "数学（二）",
+                "text": "302 数学（二）"
+              },
+              {
+                "code": "841",
+                "name": "通信专业基础",
+                "text": "841 通信专业基础"
+              }
+            ],
+            "exam_subjects_raw": "①101思想政治理论②204英语（二）③302数学（二）④841通信专业基础",
+            "re_exam_subjects": null,
+            "directions": [
+              "01网算协同技术及应用",
+              "02工业无线通信技术",
+              "03通感一体化应用",
+              "04多媒体信号处理及应用",
+              "05认知信号处理及应用",
+              "06【秦皇岛】通信工程（含宽带网络、移动通信等）",
+              "07【佛山】通信工程（含宽带网络、移动通信等）"
+            ],
+            "notes": null
+          }
+        ]
+      },
+      {
+        "applicable_year": 2024,
+        "source": {
+          "title": "东北大学2024年硕士研究生招生专业目录",
+          "page_url": "https://yz.neu.edu.cn/2023/0919/c5933a235261/page.htm",
+          "source_level": "official"
+        },
+        "college_name": "017计算机科学与工程学院",
+        "programs": [
+          {
+            "program_code": "081000",
+            "program_name": "信息与通信工程",
+            "admission_scale": null,
+            "recommend_scale": null,
+            "degree_type": "全日制学术学位",
+            "study_mode": "(1)全日制",
+            "duration_years": null,
+            "tuition": null,
+            "exam_subjects": [
+              {
+                "code": "101",
+                "name": "思想政治理论",
+                "text": "101 思想政治理论"
+              },
+              {
+                "code": "201",
+                "name": "英语（一）",
+                "text": "201 英语（一）"
+              },
+              {
+                "code": "301",
+                "name": "数学（一）",
+                "text": "301 数学（一）"
+              },
+              {
+                "code": "841",
+                "name": "通信专业基础",
+                "text": "841 通信专业基础"
+              }
+            ],
+            "exam_subjects_raw": "①101思想政治理论②201英语（一）③301数学（一）④841通信专业基础",
+            "re_exam_subjects": null,
+            "directions": [
+              "01新一代网络结构及关键技术",
+              "02无线通信系统及关键技术",
+              "03现代数字信号处理技术",
+              "04光通信与光网络技术",
+              "05软件无线电与嵌入式技术",
+              "06【秦皇岛】信息与通信工程"
+            ],
+            "notes": null
+          },
+          {
+            "program_code": "085402",
+            "program_name": "通信工程（含宽带网络、移动通信等）",
+            "admission_scale": null,
+            "recommend_scale": null,
+            "degree_type": "全日制专业学位",
+            "study_mode": "(1)全日制",
+            "duration_years": null,
+            "tuition": null,
+            "exam_subjects": [
+              {
+                "code": "101",
+                "name": "思想政治理论",
+                "text": "101 思想政治理论"
+              },
+              {
+                "code": "204",
+                "name": "英语（二）",
+                "text": "204 英语（二）"
+              },
+              {
+                "code": "302",
+                "name": "数学（二）",
+                "text": "302 数学（二）"
+              },
+              {
+                "code": "841",
+                "name": "通信专业基础",
+                "text": "841 通信专业基础"
+              }
+            ],
+            "exam_subjects_raw": "①101思想政治理论②204英语（二）③302数学（二）④841通信专业基础",
+            "re_exam_subjects": null,
+            "directions": [
+              "01新一代网络结构关键技术及应用",
+              "02无线通信系统关键技术及应用",
+              "03现代数字信号处理技术及应用",
+              "04光通信与光网络技术及应用",
+              "05软件无线电、嵌入式技术及应用",
+              "06【秦皇岛】通信工程（含宽带网络、移动通信等）",
+              "07【佛山】通信工程（含宽带网络、移动通信等）"
+            ],
+            "notes": null
+          }
+        ]
+      }
+    ]
+  },
+  "missing_fields": [
+    "score_line_total",
+    "score_line_single",
+    "line_vs_national",
+    "admission_ratio",
+    "admitted_min_score",
+    "recommend_ratio",
+    "reference_books_count",
+    "discipline_rating",
+    "has_phd",
+    "accepts_cross_major",
+    "policy_change_flag"
+  ],
+  "unknowns": [
+    "复试基本分数线（初试成绩基本要求）历年整页均为 jpg 图片，正文无文字与表格，未经 OCR 无法取得数值；对应图片 URL 已登记在 data/schools/neu.json 的 attachments 中，数值留 null。作为可追溯的替代证据，本文件另给 extracted.retest_list_2026 —— 2026 年 017 学院复试名单 PDF 中进入复试者的初试总分统计（081000 最低 331、085402 最低 367），它不是官方分数线，不得填进 score_line_total / admitted_min_score。",
+    "复试笔试科目：需人工比对「复试参考信息」页每个学院的附件 PDF，本次已配对到 017 计算机科学与工程学院的 2026 年复试参考信息 PDF 并解析（见 extracted.retest_reference_2026.by_major），re_exam_subjects 填的是该件原文的「复试方式及分数组成」（专业机试 + 综合面试），不是笔试科目名；005 等其他学院未配对。",
+    "2027 年拟招生人数：《2027年硕士研究生招生章程》附件尚未发布拟招生人数表，故 admission_scale 仅能给出 2026 年度的值并已标注 metric_years；2026 年的**统考**招生计划（扣推免后）见 extracted.retest_list_2026.plan_table_017。"
+  ],
+  "generated_at": "2026-10-16T21:36:38+08:00"
+}

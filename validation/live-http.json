@@ -1,0 +1,76 @@
+{
+  "mode": "live",
+  "setup": "Synthetic initial diagnosis seeded offline with synthetic explanation; subsequent HTTP continue/submit/read/replay use real live adapter and isolated SQLite.",
+  "events": [
+    {
+      "action": "read",
+      "request_id": null,
+      "revision": 2,
+      "stage": "summary",
+      "duration_seconds": 0.094,
+      "model_calls_observed": 0
+    },
+    {
+      "action": "continue",
+      "request_id": "ca040e9af89241f98114b09041e005c1",
+      "revision": 3,
+      "stage": "verification",
+      "duration_seconds": 39.812,
+      "model_calls_observed": 2
+    },
+    {
+      "action": "continue",
+      "request_id": "ca040e9af89241f98114b09041e005c1",
+      "revision": 3,
+      "stage": "verification",
+      "duration_seconds": 0.016,
+      "model_calls_observed": 2
+    },
+    {
+      "action": "read",
+      "request_id": null,
+      "revision": 3,
+      "stage": "verification",
+      "duration_seconds": 0.031,
+      "model_calls_observed": 2
+    },
+    {
+      "action": "submit",
+      "request_id": "5f58a8f3a8634cc5a291dbf9777d85b2",
+      "revision": 4,
+      "stage": "summary",
+      "duration_seconds": 14.953,
+      "model_calls_observed": 3
+    },
+    {
+      "action": "submit",
+      "request_id": "5f58a8f3a8634cc5a291dbf9777d85b2",
+      "revision": 4,
+      "stage": "summary",
+      "duration_seconds": 0.016,
+      "model_calls_observed": 3
+    },
+    {
+      "action": "read",
+      "request_id": null,
+      "revision": 4,
+      "stage": "summary",
+      "duration_seconds": 0.015,
+      "model_calls_observed": 3
+    }
+  ],
+  "status": "PASS",
+  "dynamic_question_id": "q_dyn_chain_94af40892d19e30a_59c1ad38",
+  "dynamic_bank_size": 2,
+  "dynamic_topic_labels": [
+    "条件链迁移",
+    "且与或"
+  ],
+  "unique_followup_grade_count": 1,
+  "real_model_calls_observed": 3,
+  "request_replay_no_extra_model_calls": true,
+  "request_replay_no_extra_grades": true,
+  "database_restore_checked": true,
+  "read_back_after_submit": true,
+  "private_keys_sent_to_browser": false
+}

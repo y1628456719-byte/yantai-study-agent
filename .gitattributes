@@ -1,0 +1,2 @@
+# Preserve the exact delivery bytes used by manifest.json.
+* -text

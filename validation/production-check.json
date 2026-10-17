@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "port": 8790,
+      "mode": "mock",
+      "first_information_screen": true,
+      "no_manual_school_selector": true,
+      "left_rail": true,
+      "no_crossed_out_banner": true,
+      "browser_errors": [],
+      "writes": 0
+    },
+    {
+      "port": 8791,
+      "mode": "live",
+      "first_information_screen": true,
+      "no_manual_school_selector": true,
+      "left_rail": true,
+      "no_crossed_out_banner": true,
+      "browser_errors": [],
+      "writes": 0
+    }
+  ],
+  "boundary": "Fresh browser rendering/read-only API requests only; no live inference or full production study actions."
+}

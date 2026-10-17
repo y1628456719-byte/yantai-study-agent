@@ -1,0 +1,117 @@
+{
+  "school_id": "jlu",
+  "school_name": "吉林大学",
+  "applicable_year": 2027,
+  "college_code": "502",
+  "college_name": "502 通信工程学院",
+  "source": {
+    "title": "吉林大学2027年全日制硕士研究生招生专业目录",
+    "page_url": "https://yzb.jlu.edu.cn/info/1047/3678.htm",
+    "attachment_wbfileid": "18205630",
+    "attachment_download": "https://yzb.jlu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=2109433285&wbfileid=18205630",
+    "pdf_pages": 80,
+    "source_level": "official",
+    "fetched_at": "2026-10-16T20:39:17+08:00"
+  },
+  "extracted": {
+    "college_pages": [
+      45
+    ],
+    "college_total_2027": 141,
+    "contact": {
+      "person": "梁栋\n联系电话",
+      "phone": "0431-85095775"
+    },
+    "policy_notes": [
+      "141 招收跨学科考生，不加试；不招收同等学力考生"
+    ],
+    "degree_blocks": [
+      {
+        "degree_type": "全日制学术学位",
+        "duration_years": 3,
+        "declared_scale": 51
+      },
+      {
+        "degree_type": "全日制专业学位",
+        "duration_years": 3,
+        "declared_scale": 90
+      }
+    ],
+    "programs": [
+      {
+        "program_code": "081000",
+        "program_name": "信息与通信工程",
+        "admission_scale": 33,
+        "degree_type": "全日制学术学位",
+        "duration_years": 3,
+        "exam_subjects": [
+          "101 思想政治理论",
+          "201 英语（一）",
+          "301 数学（一）",
+          "806 模拟与数字电子技术"
+        ],
+        "re_exam_subjects": "电路与数字信号处理",
+        "notes": null
+      },
+      {
+        "program_code": "081100",
+        "program_name": "控制科学与工程",
+        "admission_scale": 18,
+        "degree_type": "全日制学术学位",
+        "duration_years": 3,
+        "exam_subjects": [
+          "101 思想政治理论",
+          "201 英语（一）",
+          "301 数学（一）",
+          "806 模拟与数字电子技术"
+        ],
+        "re_exam_subjects": "自动控制原理",
+        "notes": null
+      },
+      {
+        "program_code": "085402",
+        "program_name": "通信工程（含宽带网络、移动通信等）",
+        "admission_scale": 57,
+        "degree_type": "全日制专业学位",
+        "duration_years": 3,
+        "exam_subjects": [
+          "101 思想政治理论",
+          "201 英语（一）",
+          "302 数学（二）",
+          "806 模拟与数字电子技术"
+        ],
+        "re_exam_subjects": "电路与数字信号处理",
+        "notes": null
+      },
+      {
+        "program_code": "085406",
+        "program_name": "控制工程",
+        "admission_scale": 33,
+        "degree_type": "全日制专业学位",
+        "duration_years": 3,
+        "exam_subjects": [
+          "101 思想政治理论",
+          "201 英语（一）",
+          "302 数学（二）",
+          "806 模拟与数字电子技术"
+        ],
+        "re_exam_subjects": "自动控制原理",
+        "notes": null
+      }
+    ],
+    "reference_books": {
+      "by_exam_code": {
+        "806": [
+          "模拟与数字电子技术"
+        ]
+      },
+      "titles": [
+        "电子线路(线性部分)",
+        "模拟电子技术基础",
+        "电子技术基础（数字部分）",
+        "数字电路与逻辑设计"
+      ],
+      "count": 4
+    }
+  }
+}

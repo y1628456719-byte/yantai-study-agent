@@ -1,0 +1,111 @@
+{
+  "created_at": "2026-10-16T12:40:01.739465+00:00",
+  "schema": "adaptive-delivery.v2",
+  "source_manifest_sha256": "653ffceddb7abaf6802c67e3ff0b896540da1c0e24480f5c083d80c633d6d46f",
+  "status": "module_verified_with_declared_scope",
+  "implemented": [
+    "bounded next-cycle verification with fresh authored questions",
+    "four feedback actions separate from grading",
+    "evidence/time responsive plan and safe pause/resume",
+    "interactive loopback acceptance page with reasons and references"
+  ],
+  "local_tests": {
+    "count": 60,
+    "exit_code": 0,
+    "routes": "64 initial answer combinations followed by two bounded rounds, plus feedback/plan/CAS/restore/timeout/HTTP checks"
+  },
+  "browser": {
+    "status": "passed",
+    "browser": "Installed Edge / Playwright",
+    "fallback": "Browser plugin not available",
+    "viewports": [
+      "1365x1000",
+      "390x844"
+    ],
+    "checks": [
+      "failure -> feedback -> budget pause/resume -> fresh question -> reload -> correct -> guessed -> third-round limit -> stop",
+      "mobile answer + no horizontal overflow",
+      "no page or console errors on normal routes",
+      "initial loading locks start",
+      "response lost after commit -> reload -> same request ID retry -> no duplicate feedback",
+      "server-restart empty-state response injection clears old forms and offers start"
+    ],
+    "errors": []
+  },
+  "live_browser": {
+    "status": "passed",
+    "runtime_mode": "live",
+    "model": "DeepSeek-V4.1-Flash",
+    "scope": "browser_start_and_one_real_submission_only",
+    "not_whole_site": true,
+    "errors": []
+  },
+  "real_api": {
+    "model": "DeepSeek-V4.1-Flash",
+    "status": "completed",
+    "steps": 10,
+    "calls": 7,
+    "runtime_fingerprint": {
+      "lab/__init__.py": "307bca25881b2a2b2a7ccaee6ba88bd7f399ba2cc3bf21dc84507852ed300546",
+      "lab/adaptive.py": "31d065482947aa2368358d981c345d0c80c2117f3ed4f12238b5d97683c20e47",
+      "lab/adaptive_plan.py": "9678c5584928786021e1e76ee92ab6d978b512b44ef6a155d65590ad81c037b3",
+      "lab/aiping.py": "15447ff320bda627f800abdea9b6e6b8a20b864eafba32938b58cfd0cce36423",
+      "lab/content.py": "3c3c260f4cec907c20e81bbdd84017f3e96c09291bd7b2d378466c17c59c3b09",
+      "lab/engine.py": "8e961eda06af56256aa4ead175aee8d3e0600b8e1a0428c37c00be7dd6aeab22",
+      "lab/errors.py": "0a47973ce69fb1e8d9b6ea5bc758813b761c1ebc74afc4164737359a7e62343f",
+      "lab/models.py": "c4ee028243c7718872795185a628607fd8459c26574747c9a1173f890b45bd27",
+      "lab/plan.py": "0c0dbce60bcfda902b1f267159fcba8d312bb875a3fcafbf15483baa19b26f9b",
+      "fixtures/logic_adaptive.json": "fc74609394f81cd7010f33f515d9398b8e11f5e4984eb203dfc6aab68f02f4d8",
+      "fixtures/logic_demo.json": "332998de62ce67b7a527339adeb2cc63cdc9280ff1f673dfca6578a0c99591bc"
+    }
+  },
+  "model_prose_checked": "Current synthetic route manually inspected; question numbering and grading consistent in inspected examples, no guarantee for arbitrary future prose",
+  "external_support": {
+    "GLM-5.3": "max design critique completed",
+    "Kimi-K3": "max UI review and one diagnostic probe completed; first full HTML draft timed out",
+    "Antigravity": "Gemini4-high design review and Gemini3.8-flash-high code/question review completed; claims independently triaged"
+  },
+  "independent_review": {
+    "verdict": "PASS",
+    "reviewed_source_manifest_sha256": "653ffceddb7abaf6802c67e3ff0b896540da1c0e24480f5c083d80c633d6d46f",
+    "runtime_attested": true,
+    "runtime": {
+      "sandbox": "read-only",
+      "approval": "never",
+      "project_instructions": "disabled",
+      "model": "gpt-6.1-sol",
+      "requested_effort": "max",
+      "elapsed_seconds": 140,
+      "launcher": "task-local canonical copy; only fixed high effort raised to max; isolation unchanged"
+    },
+    "verdict_file": "adaptive-review-pass3.txt",
+    "evidence_packet_sha256": "372d5d531c6d5c3f1824e9771e1d4cd78ed6911663b6e207a008118864ab1527",
+    "scope": "Cumulative v2 upgrade; prior full-source reviews and exact final repair diff with immutable baseline",
+    "prior_reviews": [
+      {
+        "verdict": "NEEDS_FIXES",
+        "manifest": "1ad8b1e30ca3b4b9aa576aa4abc2e087e95c60246dd4afc0674f7bdfd847d451",
+        "confirmed_findings": 4
+      },
+      {
+        "verdict": "NEEDS_FIXES",
+        "manifest": "613757dfe7bd61855d7b02ef337eea9346ba3ba3f9b49fa72711f0f1d052ca98",
+        "confirmed_findings": 2
+      }
+    ],
+    "reviewer_reran_tests": false,
+    "whole_site_verified": false,
+    "student_effectiveness_verified": false
+  },
+  "limits": [
+    "Only included authored logic material; not arbitrary documents or official questions",
+    "Reference store is in-memory: browser refresh restores; server restart does not persist",
+    "No teammate frontend/backend/database integration, no real-student effectiveness evaluation",
+    "Live route is synthetic inputs on DeepSeek; not all provider models passed complete runtime routes"
+  ],
+  "whole_site_verified": false,
+  "student_effectiveness_verified": false,
+  "credentials_in_project": false,
+  "old_v1_zip_preserved": true,
+  "git_repository": false
+}

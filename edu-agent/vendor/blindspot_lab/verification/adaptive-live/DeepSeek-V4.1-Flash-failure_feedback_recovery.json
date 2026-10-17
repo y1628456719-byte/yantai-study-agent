@@ -1,0 +1,3083 @@
+{
+  "model": "DeepSeek-V4.1-Flash",
+  "effort": "max",
+  "route": "failure_feedback_recovery",
+  "input_type": "synthetic_answers_not_students",
+  "runtime_fingerprint": {
+    "lab/__init__.py": "307bca25881b2a2b2a7ccaee6ba88bd7f399ba2cc3bf21dc84507852ed300546",
+    "lab/adaptive.py": "31d065482947aa2368358d981c345d0c80c2117f3ed4f12238b5d97683c20e47",
+    "lab/adaptive_plan.py": "9678c5584928786021e1e76ee92ab6d978b512b44ef6a155d65590ad81c037b3",
+    "lab/aiping.py": "15447ff320bda627f800abdea9b6e6b8a20b864eafba32938b58cfd0cce36423",
+    "lab/content.py": "3c3c260f4cec907c20e81bbdd84017f3e96c09291bd7b2d378466c17c59c3b09",
+    "lab/engine.py": "8e961eda06af56256aa4ead175aee8d3e0600b8e1a0428c37c00be7dd6aeab22",
+    "lab/errors.py": "0a47973ce69fb1e8d9b6ea5bc758813b761c1ebc74afc4164737359a7e62343f",
+    "lab/models.py": "c4ee028243c7718872795185a628607fd8459c26574747c9a1173f890b45bd27",
+    "lab/plan.py": "0c0dbce60bcfda902b1f267159fcba8d312bb875a3fcafbf15483baa19b26f9b",
+    "fixtures/logic_adaptive.json": "fc74609394f81cd7010f33f515d9398b8e11f5e4984eb203dfc6aab68f02f4d8",
+    "fixtures/logic_demo.json": "332998de62ce67b7a527339adeb2cc63cdc9280ff1f673dfca6578a0c99591bc"
+  },
+  "steps": [
+    {
+      "action": "start",
+      "params": {},
+      "lab_state": {
+        "stage": "diagnosis",
+        "substage": "initial",
+        "question": {
+          "question_id": "q_initial_01",
+          "stem": "参加科研营必须先完成安全培训。小林已经完成安全培训。仅据这些信息，可以必然得出什么？",
+          "options": [
+            {
+              "id": "A",
+              "text": "小林一定能参加科研营"
+            },
+            {
+              "id": "B",
+              "text": "还不能确定小林是否能参加科研营"
+            },
+            {
+              "id": "C",
+              "text": "小林一定不能参加科研营"
+            },
+            {
+              "id": "D",
+              "text": "暂时不会判断"
+            }
+          ]
+        },
+        "feedback": null,
+        "hypotheses": [],
+        "evidence": [],
+        "explanation": null,
+        "judgment_change": null,
+        "summary": null,
+        "next_action": "answer",
+        "is_demo": true,
+        "runtime_mode": "live",
+        "adaptation": {
+          "strategy": "arrows",
+          "label": "标箭头",
+          "reason": "先收集首题与区分题证据，完成后再给讲解。",
+          "evidence_ids": []
+        },
+        "cycle": {
+          "round": 1,
+          "max_rounds": 3,
+          "can_continue": false,
+          "can_answer": true,
+          "stop_reason": "answer_pending",
+          "estimated_spent_minutes": 0,
+          "budget_minutes": 60
+        },
+        "history": []
+      },
+      "plan": {
+        "daily_minutes": 60,
+        "estimated_spent_minutes": 0,
+        "available_minutes": 60,
+        "tasks": [
+          {
+            "task": "完成首题，记录当前理解",
+            "minutes": 1,
+            "kind": "observe",
+            "reason": "先收集首题与区分题证据，完成后再给讲解。",
+            "evidence_ids": []
+          },
+          {
+            "task": "完成区分题，核对暂时判断",
+            "minutes": 1,
+            "kind": "observe",
+            "reason": "先收集首题与区分题证据，完成后再给讲解。",
+            "evidence_ids": []
+          },
+          {
+            "task": "用未见题核对本次理解",
+            "minutes": 1,
+            "kind": "verify",
+            "reason": "先收集首题与区分题证据，完成后再给讲解。",
+            "evidence_ids": []
+          }
+        ],
+        "deferred": [],
+        "total_minutes": 3,
+        "note": "时间为演示估算；首轮验证1分钟，追加轮讲解1分钟与验证2分钟。先留验证预算，不将未验证记为完成。"
+      }
+    },
+    {
+      "action": "submit",
+      "params": {
+        "question_id": "q_initial_01",
+        "answer": "A"
+      },
+      "lab_state": {
+        "stage": "diagnosis",
+        "substage": "distinguish",
+        "question": {
+          "question_id": "q_distinguish_01",
+          "stem": "去掉故事表述：P是Q的充分条件。哪一项准确表达这句话的方向？",
+          "options": [
+            {
+              "id": "A",
+              "text": "P成立能推出Q成立，即P→Q"
+            },
+            {
+              "id": "B",
+              "text": "Q成立能推出P成立，即Q→P"
+            },
+            {
+              "id": "C",
+              "text": "P与Q必定不能同时成立"
+            },
+            {
+              "id": "D",
+              "text": "暂时不能确定方向"
+            }
+          ]
+        },
+        "feedback": {
+          "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+          "is_correct": false,
+          "text": "本次选择已记录。请先完成区分题，之后再查看解析与材料依据。"
+        },
+        "hypotheses": [
+          {
+            "id": "direction",
+            "status": "tentative",
+            "reason": "首题表现只作暂时观察，需完成区分题后再核对解释。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1"
+            ],
+            "label": "可能混淆条件方向"
+          },
+          {
+            "id": "reading",
+            "status": "tentative",
+            "reason": "首题表现只作暂时观察，需完成区分题后再核对解释。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1"
+            ],
+            "label": "复杂表述下的信息提取值得复查"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "question_id": "q_initial_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "9f113433b9b34ab2b14c1b6c856666df",
+            "question": {
+              "question_id": "q_initial_01",
+              "stem": "参加科研营必须先完成安全培训。小林已经完成安全培训。仅据这些信息，可以必然得出什么？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "小林一定能参加科研营"
+                },
+                {
+                  "id": "B",
+                  "text": "还不能确定小林是否能参加科研营"
+                },
+                {
+                  "id": "C",
+                  "text": "小林一定不能参加科研营"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          }
+        ],
+        "explanation": null,
+        "judgment_change": {
+          "before": [],
+          "after": [
+            {
+              "id": "direction",
+              "status": "tentative",
+              "reason": "首题表现只作暂时观察，需完成区分题后再核对解释。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1"
+              ],
+              "label": "可能混淆条件方向"
+            },
+            {
+              "id": "reading",
+              "status": "tentative",
+              "reason": "首题表现只作暂时观察，需完成区分题后再核对解释。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1"
+              ],
+              "label": "复杂表述下的信息提取值得复查"
+            }
+          ],
+          "trigger_evidence_id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+          "trigger_answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+          "trigger_feedback_id": null,
+          "trigger_action": "submit",
+          "sequence": 1
+        },
+        "summary": null,
+        "next_action": "answer",
+        "is_demo": true,
+        "runtime_mode": "live",
+        "adaptation": {
+          "strategy": "arrows",
+          "label": "标箭头",
+          "reason": "先收集首题与区分题证据，完成后再给讲解。",
+          "evidence_ids": []
+        },
+        "cycle": {
+          "round": 1,
+          "max_rounds": 3,
+          "can_continue": false,
+          "can_answer": true,
+          "stop_reason": "answer_pending",
+          "estimated_spent_minutes": 1,
+          "budget_minutes": 60
+        },
+        "history": []
+      },
+      "plan": {
+        "daily_minutes": 60,
+        "estimated_spent_minutes": 1,
+        "available_minutes": 59,
+        "tasks": [
+          {
+            "task": "完成区分题，核对暂时判断",
+            "minutes": 1,
+            "kind": "observe",
+            "reason": "先收集首题与区分题证据，完成后再给讲解。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1"
+            ]
+          },
+          {
+            "task": "用未见题核对本次理解",
+            "minutes": 1,
+            "kind": "verify",
+            "reason": "先收集首题与区分题证据，完成后再给讲解。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1"
+            ]
+          }
+        ],
+        "deferred": [],
+        "total_minutes": 2,
+        "note": "时间为演示估算；首轮验证1分钟，追加轮讲解1分钟与验证2分钟。先留验证预算，不将未验证记为完成。"
+      }
+    },
+    {
+      "action": "submit",
+      "params": {
+        "question_id": "q_distinguish_01",
+        "answer": "A"
+      },
+      "lab_state": {
+        "stage": "verification",
+        "substage": null,
+        "question": {
+          "question_id": "q_verify_reading_01",
+          "stem": "只有持有预约码，才能进入展厅。小周持有预约码。仅据这句话能否断定小周能进入展厅？",
+          "options": [
+            {
+              "id": "A",
+              "text": "能，预约码保证进入"
+            },
+            {
+              "id": "B",
+              "text": "不能，预约码只是进入的必要条件"
+            },
+            {
+              "id": "C",
+              "text": "能断定小周不能进入"
+            },
+            {
+              "id": "D",
+              "text": "暂时不会判断"
+            }
+          ]
+        },
+        "feedback": {
+          "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+          "is_correct": true,
+          "text": "这轮先看两题：第1题把“完成安全培训”当成能推出“参加科研营”；但给定规则的方向是“参加科研营→完成安全培训”，所以不能由完成培训必然推出参加。第2题能准确指出“P是Q的充分条件”即P→Q，说明直接概念辨认这一层是清楚的。下一步进入验证环节，复查带情境和连接词时能否保持同一方向。"
+        },
+        "hypotheses": [
+          {
+            "id": "direction",
+            "status": "revised",
+            "reason": "第1题选A，表现为由“完成安全培训”反推“一定能参加科研营”，与“参加科研营→完成培训”的规则方向相反；第2题选A，能正确指出“P是Q的充分条件”即P→Q。两题合并看，方向混淆不是稳定结论，本轮改为在情境题中可能混淆、直接概念辨认时可判断。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "m:demo_logic_v1:2"
+            ],
+            "label": "可能混淆条件方向"
+          },
+          {
+            "id": "reading",
+            "status": "tentative",
+            "reason": "第1题在“必须先完成”的故事表述中选A，提示信息提取或连接词方向检查值得复查；第2题去掉故事表述后选A，说明直接概念辨认时未出现同类错误。仅两题证据，暂作待验证解释。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "m:demo_logic_v1:3"
+            ],
+            "label": "复杂表述下的信息提取值得复查"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "m:demo_logic_v1:1",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "若P成立就能推出Q成立，记作P→Q。P是Q的充分条件，Q是P的必要条件。",
+            "locator": {
+              "start": 0,
+              "end": 36,
+              "line": 1
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:2",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "仅有P→Q，不能反过来推出Q→P；Q成立而P不成立，与P→Q并不矛盾。",
+            "locator": {
+              "start": 37,
+              "end": 72,
+              "line": 2
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:3",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "审题时先圈出“必须”“只有”“就”等连接词，再分别标出条件与结论，最后检查推理方向。",
+            "locator": {
+              "start": 126,
+              "end": 168,
+              "line": 4
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "question_id": "q_initial_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "9f113433b9b34ab2b14c1b6c856666df",
+            "question": {
+              "question_id": "q_initial_01",
+              "stem": "参加科研营必须先完成安全培训。小林已经完成安全培训。仅据这些信息，可以必然得出什么？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "小林一定能参加科研营"
+                },
+                {
+                  "id": "B",
+                  "text": "还不能确定小林是否能参加科研营"
+                },
+                {
+                  "id": "C",
+                  "text": "小林一定不能参加科研营"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "question_id": "q_distinguish_01",
+            "answer": "A",
+            "is_correct": true,
+            "request_id": "37e5bd85ff0c4fb4b075c3676c08cc9b",
+            "question": {
+              "question_id": "q_distinguish_01",
+              "stem": "去掉故事表述：P是Q的充分条件。哪一项准确表达这句话的方向？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "P成立能推出Q成立，即P→Q"
+                },
+                {
+                  "id": "B",
+                  "text": "Q成立能推出P成立，即Q→P"
+                },
+                {
+                  "id": "C",
+                  "text": "P与Q必定不能同时成立"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不能确定方向"
+                }
+              ]
+            }
+          }
+        ],
+        "explanation": {
+          "text": "已答题显示：第1题中，材料规则是“参加科研营→完成安全培训”，完成安全培训是必要条件；小林完成培训不能推出他一定能参加科研营，因此B才是必然结论。第2题中，“P是Q的充分条件”表示P成立能推出Q成立，即P→Q，你选A符合这一规则。整体上，直接概念辨认方向正确；首题错误更适合解释为在情境表述中把必要条件方向当成充分条件来使用，属于本轮暂时解释，不据此认定粗心或永久能力。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "m:demo_logic_v1:1",
+            "m:demo_logic_v1:2",
+            "m:demo_logic_v1:3"
+          ]
+        },
+        "judgment_change": {
+          "before": [
+            {
+              "id": "direction",
+              "status": "tentative",
+              "reason": "首题表现只作暂时观察，需完成区分题后再核对解释。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1"
+              ],
+              "label": "可能混淆条件方向"
+            },
+            {
+              "id": "reading",
+              "status": "tentative",
+              "reason": "首题表现只作暂时观察，需完成区分题后再核对解释。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1"
+              ],
+              "label": "复杂表述下的信息提取值得复查"
+            }
+          ],
+          "after": [
+            {
+              "id": "direction",
+              "status": "revised",
+              "reason": "第1题选A，表现为由“完成安全培训”反推“一定能参加科研营”，与“参加科研营→完成培训”的规则方向相反；第2题选A，能正确指出“P是Q的充分条件”即P→Q。两题合并看，方向混淆不是稳定结论，本轮改为在情境题中可能混淆、直接概念辨认时可判断。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "m:demo_logic_v1:2"
+              ],
+              "label": "可能混淆条件方向"
+            },
+            {
+              "id": "reading",
+              "status": "tentative",
+              "reason": "第1题在“必须先完成”的故事表述中选A，提示信息提取或连接词方向检查值得复查；第2题去掉故事表述后选A，说明直接概念辨认时未出现同类错误。仅两题证据，暂作待验证解释。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "m:demo_logic_v1:3"
+              ],
+              "label": "复杂表述下的信息提取值得复查"
+            }
+          ],
+          "trigger_evidence_id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+          "trigger_answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+          "trigger_feedback_id": null,
+          "trigger_action": "submit",
+          "sequence": 2
+        },
+        "summary": null,
+        "next_action": "answer",
+        "is_demo": true,
+        "runtime_mode": "live",
+        "adaptation": {
+          "strategy": "steps",
+          "label": "分步拆解",
+          "reason": "根据首题与区分题的差异组织讲解，接下来换情境验证。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2"
+          ]
+        },
+        "cycle": {
+          "round": 1,
+          "max_rounds": 3,
+          "can_continue": false,
+          "can_answer": true,
+          "stop_reason": "answer_pending",
+          "estimated_spent_minutes": 2,
+          "budget_minutes": 60
+        },
+        "history": []
+      },
+      "plan": {
+        "daily_minutes": 60,
+        "estimated_spent_minutes": 2,
+        "available_minutes": 58,
+        "tasks": [
+          {
+            "task": "用未见题核对本次理解",
+            "minutes": 1,
+            "kind": "verify",
+            "reason": "根据首题与区分题的差异组织讲解，接下来换情境验证。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2"
+            ]
+          },
+          {
+            "task": "复盘变化与仍不确定的地方",
+            "minutes": 3,
+            "kind": "review",
+            "reason": "根据首题与区分题的差异组织讲解，接下来换情境验证。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2"
+            ]
+          }
+        ],
+        "deferred": [],
+        "total_minutes": 4,
+        "note": "时间为演示估算；首轮验证1分钟，追加轮讲解1分钟与验证2分钟。先留验证预算，不将未验证记为完成。"
+      }
+    },
+    {
+      "action": "submit",
+      "params": {
+        "question_id": "q_verify_reading_01",
+        "answer": "A"
+      },
+      "lab_state": {
+        "stage": "summary",
+        "substage": null,
+        "question": null,
+        "feedback": {
+          "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+          "is_correct": false,
+          "text": "本轮记录：第1题和第3题都出现了把已知条件当作结论充分依据的反向判断；第2题能直接辨认“P是Q的充分条件”的方向。综合看，较像在具体连接词情境中方向检查不稳，而不是概念完全不会；这只是本轮暂时解释，不据此认定粗心或固定水平。建议作答时先圈出“必须”“只有”等词，写出条件→结论，再检查能否反向推出。"
+        },
+        "hypotheses": [
+          {
+            "id": "direction",
+            "status": "revised",
+            "reason": "第2题选A正确，说明直接问“P是Q的充分条件”时可辨认P→Q；但第1题由完成培训推出能参加、第3题由持有预约码推出能进入，均把必要条件或前件当成可反向保证，因此“可能混淆条件方向”仍有表现，按修订处理。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "m:demo_logic_v1:2"
+            ],
+            "label": "可能混淆条件方向"
+          },
+          {
+            "id": "reading",
+            "status": "tentative",
+            "reason": "第1、3题都涉及“必须先”“只有……才”等连接词表述，提取条件与结论时可能出现方向错位；第2题去掉故事表述后答对，说明信息提取负担可能相关，但本轮证据不足以单独支持，保持tentative。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "m:demo_logic_v1:3"
+            ],
+            "label": "复杂表述下的信息提取值得复查"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "m:demo_logic_v1:1",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "若P成立就能推出Q成立，记作P→Q。P是Q的充分条件，Q是P的必要条件。",
+            "locator": {
+              "start": 0,
+              "end": 36,
+              "line": 1
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:2",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "仅有P→Q，不能反过来推出Q→P；Q成立而P不成立，与P→Q并不矛盾。",
+            "locator": {
+              "start": 37,
+              "end": 72,
+              "line": 2
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:3",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "审题时先圈出“必须”“只有”“就”等连接词，再分别标出条件与结论，最后检查推理方向。",
+            "locator": {
+              "start": 126,
+              "end": 168,
+              "line": 4
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "question_id": "q_initial_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "9f113433b9b34ab2b14c1b6c856666df",
+            "question": {
+              "question_id": "q_initial_01",
+              "stem": "参加科研营必须先完成安全培训。小林已经完成安全培训。仅据这些信息，可以必然得出什么？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "小林一定能参加科研营"
+                },
+                {
+                  "id": "B",
+                  "text": "还不能确定小林是否能参加科研营"
+                },
+                {
+                  "id": "C",
+                  "text": "小林一定不能参加科研营"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "question_id": "q_distinguish_01",
+            "answer": "A",
+            "is_correct": true,
+            "request_id": "37e5bd85ff0c4fb4b075c3676c08cc9b",
+            "question": {
+              "question_id": "q_distinguish_01",
+              "stem": "去掉故事表述：P是Q的充分条件。哪一项准确表达这句话的方向？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "P成立能推出Q成立，即P→Q"
+                },
+                {
+                  "id": "B",
+                  "text": "Q成立能推出P成立，即Q→P"
+                },
+                {
+                  "id": "C",
+                  "text": "P与Q必定不能同时成立"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不能确定方向"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "question_id": "q_verify_reading_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "67fb8ad84af94ea58fe8f9debf8d8256",
+            "question": {
+              "question_id": "q_verify_reading_01",
+              "stem": "只有持有预约码，才能进入展厅。小周持有预约码。仅据这句话能否断定小周能进入展厅？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "能，预约码保证进入"
+                },
+                {
+                  "id": "B",
+                  "text": "不能，预约码只是进入的必要条件"
+                },
+                {
+                  "id": "C",
+                  "text": "能断定小周不能进入"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          }
+        ],
+        "explanation": {
+          "text": "第1题：“参加科研营必须先完成安全培训”表示参加科研营→完成安全培训；完成安全培训只是必要条件，不能推出一定参加，所以选B，不选A。第2题：“P是Q的充分条件”就是P成立能推出Q成立，即P→Q，选A。第3题：“只有持有预约码，才能进入展厅”表示进入展厅→持有预约码；持有预约码不能保证能进入，所以选B，不选A。共同点：沿P→Q判断，不能随意反过来用Q→P；遇到“必须”“只有……才”等表述，先写清条件和结论，再检查推理方向。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "m:demo_logic_v1:1",
+            "m:demo_logic_v1:2",
+            "m:demo_logic_v1:3"
+          ]
+        },
+        "judgment_change": {
+          "before": [
+            {
+              "id": "direction",
+              "status": "revised",
+              "reason": "第1题选A，表现为由“完成安全培训”反推“一定能参加科研营”，与“参加科研营→完成培训”的规则方向相反；第2题选A，能正确指出“P是Q的充分条件”即P→Q。两题合并看，方向混淆不是稳定结论，本轮改为在情境题中可能混淆、直接概念辨认时可判断。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "m:demo_logic_v1:2"
+              ],
+              "label": "可能混淆条件方向"
+            },
+            {
+              "id": "reading",
+              "status": "tentative",
+              "reason": "第1题在“必须先完成”的故事表述中选A，提示信息提取或连接词方向检查值得复查；第2题去掉故事表述后选A，说明直接概念辨认时未出现同类错误。仅两题证据，暂作待验证解释。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "m:demo_logic_v1:3"
+              ],
+              "label": "复杂表述下的信息提取值得复查"
+            }
+          ],
+          "after": [
+            {
+              "id": "direction",
+              "status": "revised",
+              "reason": "第2题选A正确，说明直接问“P是Q的充分条件”时可辨认P→Q；但第1题由完成培训推出能参加、第3题由持有预约码推出能进入，均把必要条件或前件当成可反向保证，因此“可能混淆条件方向”仍有表现，按修订处理。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "m:demo_logic_v1:2"
+              ],
+              "label": "可能混淆条件方向"
+            },
+            {
+              "id": "reading",
+              "status": "tentative",
+              "reason": "第1、3题都涉及“必须先”“只有……才”等连接词表述，提取条件与结论时可能出现方向错位；第2题去掉故事表述后答对，说明信息提取负担可能相关，但本轮证据不足以单独支持，保持tentative。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "m:demo_logic_v1:3"
+              ],
+              "label": "复杂表述下的信息提取值得复查"
+            }
+          ],
+          "trigger_evidence_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+          "trigger_answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+          "trigger_feedback_id": null,
+          "trigger_action": "submit",
+          "sequence": 3
+        },
+        "summary": {
+          "result_status": "needs_practice",
+          "verification_correct": false,
+          "result": "换题验证未通过，建议更换方法后再试。",
+          "uncertainty": "仅为自编样本中的本次表现，不能证明长期掌握或学习效果。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3"
+          ]
+        },
+        "next_action": "continue",
+        "is_demo": true,
+        "runtime_mode": "live",
+        "adaptation": {
+          "strategy": "analogy",
+          "label": "换种表达",
+          "reason": "最近一次换题未通过，更换讲解方法，再用新题核对。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a3"
+          ]
+        },
+        "cycle": {
+          "round": 1,
+          "max_rounds": 3,
+          "can_continue": true,
+          "can_answer": false,
+          "stop_reason": null,
+          "estimated_spent_minutes": 3,
+          "budget_minutes": 60
+        },
+        "history": [
+          {
+            "sequence": 3,
+            "before": "分步拆解",
+            "after": "换种表达",
+            "reason": "最近一次换题未通过，更换讲解方法，再用新题核对。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a3"
+            ]
+          }
+        ]
+      },
+      "plan": {
+        "daily_minutes": 60,
+        "estimated_spent_minutes": 3,
+        "available_minutes": 57,
+        "tasks": [
+          {
+            "task": "换种表达：回看已答题",
+            "minutes": 1,
+            "kind": "learn",
+            "reason": "最近一次换题未通过，更换讲解方法，再用新题核对。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3"
+            ]
+          },
+          {
+            "task": "用未见题核对本次理解",
+            "minutes": 2,
+            "kind": "verify",
+            "reason": "最近一次换题未通过，更换讲解方法，再用新题核对。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3"
+            ]
+          },
+          {
+            "task": "复盘变化与仍不确定的地方",
+            "minutes": 3,
+            "kind": "review",
+            "reason": "最近一次换题未通过，更换讲解方法，再用新题核对。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3"
+            ]
+          }
+        ],
+        "deferred": [],
+        "total_minutes": 6,
+        "note": "时间为演示估算；首轮验证1分钟，追加轮讲解1分钟与验证2分钟。先留验证预算，不将未验证记为完成。"
+      }
+    },
+    {
+      "action": "feedback",
+      "params": {
+        "feedback": "unclear"
+      },
+      "lab_state": {
+        "stage": "summary",
+        "substage": null,
+        "question": null,
+        "feedback": {
+          "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+          "is_correct": false,
+          "text": "本轮记录：第1题和第3题都出现了把已知条件当作结论充分依据的反向判断；第2题能直接辨认“P是Q的充分条件”的方向。综合看，较像在具体连接词情境中方向检查不稳，而不是概念完全不会；这只是本轮暂时解释，不据此认定粗心或固定水平。建议作答时先圈出“必须”“只有”等词，写出条件→结论，再检查能否反向推出。"
+        },
+        "hypotheses": [
+          {
+            "id": "uncertain",
+            "status": "inconclusive",
+            "reason": "第2题能辨认“P是Q的充分条件”对应P→Q，但第1题和第3题在“必须”“只有……才……”这类必要条件表述中都出现了把必要条件当成充分条件来倒推的迹象；再加上你自报第3题没懂，目前只能暂不确定是概念方向未稳、连接词提取不熟还是单步推断习惯未用起来，不能认定唯一原因或长期掌握。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ],
+            "label": "目前无法区分原因"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "m:demo_logic_v1:1",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "若P成立就能推出Q成立，记作P→Q。P是Q的充分条件，Q是P的必要条件。",
+            "locator": {
+              "start": 0,
+              "end": 36,
+              "line": 1
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:2",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "仅有P→Q，不能反过来推出Q→P；Q成立而P不成立，与P→Q并不矛盾。",
+            "locator": {
+              "start": 37,
+              "end": 72,
+              "line": 2
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:3",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "审题时先圈出“必须”“只有”“就”等连接词，再分别标出条件与结论，最后检查推理方向。",
+            "locator": {
+              "start": 126,
+              "end": 168,
+              "line": 4
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "question_id": "q_initial_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "9f113433b9b34ab2b14c1b6c856666df",
+            "question": {
+              "question_id": "q_initial_01",
+              "stem": "参加科研营必须先完成安全培训。小林已经完成安全培训。仅据这些信息，可以必然得出什么？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "小林一定能参加科研营"
+                },
+                {
+                  "id": "B",
+                  "text": "还不能确定小林是否能参加科研营"
+                },
+                {
+                  "id": "C",
+                  "text": "小林一定不能参加科研营"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "question_id": "q_distinguish_01",
+            "answer": "A",
+            "is_correct": true,
+            "request_id": "37e5bd85ff0c4fb4b075c3676c08cc9b",
+            "question": {
+              "question_id": "q_distinguish_01",
+              "stem": "去掉故事表述：P是Q的充分条件。哪一项准确表达这句话的方向？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "P成立能推出Q成立，即P→Q"
+                },
+                {
+                  "id": "B",
+                  "text": "Q成立能推出P成立，即Q→P"
+                },
+                {
+                  "id": "C",
+                  "text": "P与Q必定不能同时成立"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不能确定方向"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "question_id": "q_verify_reading_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "67fb8ad84af94ea58fe8f9debf8d8256",
+            "question": {
+              "question_id": "q_verify_reading_01",
+              "stem": "只有持有预约码，才能进入展厅。小周持有预约码。仅据这句话能否断定小周能进入展厅？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "能，预约码保证进入"
+                },
+                {
+                  "id": "B",
+                  "text": "不能，预约码只是进入的必要条件"
+                },
+                {
+                  "id": "C",
+                  "text": "能断定小周不能进入"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "type": "feedback",
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+            "kind": "unclear",
+            "target_answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "sequence": 4,
+            "label": "没懂"
+          }
+        ],
+        "explanation": {
+          "text": "按“先圈连接词，再分别写条件和结论，每一步只作一次推断”来讲解。\n1. 第3题圈出“只有……才……”。它标明“持有预约码”是进入展厅的必要条件，写成方向就是：进入展厅→持有预约码。已知小周持有预约码，这只是方向箭头的右边；只作一次推断，不能把箭头反着用，所以不能推出“能进入展厅”。\n2. 第1题圈出“必须先”。它写成方向是：参加科研营→完成安全培训。已知小林完成安全培训，也只是箭头右边，不能反推“参加科研营”。\n3. 第2题你选对了：P是Q的充分条件，就写P→Q。说明直接辨认方向时可用；遇到故事或连接词时，把同一动作再做一遍：先圈词，再写“谁推出谁”，最后只顺着箭头推一次，不反向跳。\n材料也强调：有P→Q，不能反过来推出Q→P；Q成立而P不成立并不矛盾。\n因此，第3题较稳妥的判断是“不能，预约码只是进入的必要条件”，而不是“预约码保证进入”。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "run_bf5e733aad22461b86fb7edd5c100834:f1",
+            "m:demo_logic_v1:1",
+            "m:demo_logic_v1:2",
+            "m:demo_logic_v1:3"
+          ]
+        },
+        "judgment_change": {
+          "before": [
+            {
+              "id": "direction",
+              "status": "revised",
+              "reason": "第2题选A正确，说明直接问“P是Q的充分条件”时可辨认P→Q；但第1题由完成培训推出能参加、第3题由持有预约码推出能进入，均把必要条件或前件当成可反向保证，因此“可能混淆条件方向”仍有表现，按修订处理。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "m:demo_logic_v1:2"
+              ],
+              "label": "可能混淆条件方向"
+            },
+            {
+              "id": "reading",
+              "status": "tentative",
+              "reason": "第1、3题都涉及“必须先”“只有……才”等连接词表述，提取条件与结论时可能出现方向错位；第2题去掉故事表述后答对，说明信息提取负担可能相关，但本轮证据不足以单独支持，保持tentative。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "m:demo_logic_v1:3"
+              ],
+              "label": "复杂表述下的信息提取值得复查"
+            }
+          ],
+          "after": [
+            {
+              "id": "uncertain",
+              "status": "inconclusive",
+              "reason": "第2题能辨认“P是Q的充分条件”对应P→Q，但第1题和第3题在“必须”“只有……才……”这类必要条件表述中都出现了把必要条件当成充分条件来倒推的迹象；再加上你自报第3题没懂，目前只能暂不确定是概念方向未稳、连接词提取不熟还是单步推断习惯未用起来，不能认定唯一原因或长期掌握。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "run_bf5e733aad22461b86fb7edd5c100834:f1"
+              ],
+              "label": "目前无法区分原因"
+            }
+          ],
+          "trigger_evidence_id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+          "trigger_answer_id": null,
+          "trigger_feedback_id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+          "trigger_action": "feedback",
+          "sequence": 4
+        },
+        "summary": {
+          "result_status": "needs_practice",
+          "verification_correct": false,
+          "result": "换题验证未通过，建议更换方法后再试。",
+          "uncertainty": "仅为自编样本中的本次表现，不能证明长期掌握或学习效果。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3"
+          ]
+        },
+        "next_action": "continue",
+        "is_demo": true,
+        "runtime_mode": "live",
+        "adaptation": {
+          "strategy": "steps",
+          "label": "分步拆解",
+          "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:f1"
+          ]
+        },
+        "cycle": {
+          "round": 1,
+          "max_rounds": 3,
+          "can_continue": true,
+          "can_answer": false,
+          "stop_reason": null,
+          "estimated_spent_minutes": 3,
+          "budget_minutes": 60
+        },
+        "history": [
+          {
+            "sequence": 3,
+            "before": "分步拆解",
+            "after": "换种表达",
+            "reason": "最近一次换题未通过，更换讲解方法，再用新题核对。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a3"
+            ]
+          },
+          {
+            "sequence": 4,
+            "before": "换种表达",
+            "after": "分步拆解",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          }
+        ]
+      },
+      "plan": {
+        "daily_minutes": 60,
+        "estimated_spent_minutes": 3,
+        "available_minutes": 57,
+        "tasks": [
+          {
+            "task": "分步拆解：回看已答题",
+            "minutes": 1,
+            "kind": "learn",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          },
+          {
+            "task": "用未见题核对本次理解",
+            "minutes": 2,
+            "kind": "verify",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          },
+          {
+            "task": "复盘变化与仍不确定的地方",
+            "minutes": 3,
+            "kind": "review",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          }
+        ],
+        "deferred": [],
+        "total_minutes": 6,
+        "note": "时间为演示估算；首轮验证1分钟，追加轮讲解1分钟与验证2分钟。先留验证预算，不将未验证记为完成。"
+      }
+    },
+    {
+      "action": "time",
+      "params": {
+        "minutes": 4
+      },
+      "lab_state": {
+        "stage": "summary",
+        "substage": null,
+        "question": null,
+        "feedback": {
+          "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+          "is_correct": false,
+          "text": "本轮记录：第1题和第3题都出现了把已知条件当作结论充分依据的反向判断；第2题能直接辨认“P是Q的充分条件”的方向。综合看，较像在具体连接词情境中方向检查不稳，而不是概念完全不会；这只是本轮暂时解释，不据此认定粗心或固定水平。建议作答时先圈出“必须”“只有”等词，写出条件→结论，再检查能否反向推出。"
+        },
+        "hypotheses": [
+          {
+            "id": "uncertain",
+            "status": "inconclusive",
+            "reason": "第2题能辨认“P是Q的充分条件”对应P→Q，但第1题和第3题在“必须”“只有……才……”这类必要条件表述中都出现了把必要条件当成充分条件来倒推的迹象；再加上你自报第3题没懂，目前只能暂不确定是概念方向未稳、连接词提取不熟还是单步推断习惯未用起来，不能认定唯一原因或长期掌握。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ],
+            "label": "目前无法区分原因"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "m:demo_logic_v1:1",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "若P成立就能推出Q成立，记作P→Q。P是Q的充分条件，Q是P的必要条件。",
+            "locator": {
+              "start": 0,
+              "end": 36,
+              "line": 1
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:2",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "仅有P→Q，不能反过来推出Q→P；Q成立而P不成立，与P→Q并不矛盾。",
+            "locator": {
+              "start": 37,
+              "end": 72,
+              "line": 2
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:3",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "审题时先圈出“必须”“只有”“就”等连接词，再分别标出条件与结论，最后检查推理方向。",
+            "locator": {
+              "start": 126,
+              "end": 168,
+              "line": 4
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "question_id": "q_initial_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "9f113433b9b34ab2b14c1b6c856666df",
+            "question": {
+              "question_id": "q_initial_01",
+              "stem": "参加科研营必须先完成安全培训。小林已经完成安全培训。仅据这些信息，可以必然得出什么？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "小林一定能参加科研营"
+                },
+                {
+                  "id": "B",
+                  "text": "还不能确定小林是否能参加科研营"
+                },
+                {
+                  "id": "C",
+                  "text": "小林一定不能参加科研营"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "question_id": "q_distinguish_01",
+            "answer": "A",
+            "is_correct": true,
+            "request_id": "37e5bd85ff0c4fb4b075c3676c08cc9b",
+            "question": {
+              "question_id": "q_distinguish_01",
+              "stem": "去掉故事表述：P是Q的充分条件。哪一项准确表达这句话的方向？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "P成立能推出Q成立，即P→Q"
+                },
+                {
+                  "id": "B",
+                  "text": "Q成立能推出P成立，即Q→P"
+                },
+                {
+                  "id": "C",
+                  "text": "P与Q必定不能同时成立"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不能确定方向"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "question_id": "q_verify_reading_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "67fb8ad84af94ea58fe8f9debf8d8256",
+            "question": {
+              "question_id": "q_verify_reading_01",
+              "stem": "只有持有预约码，才能进入展厅。小周持有预约码。仅据这句话能否断定小周能进入展厅？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "能，预约码保证进入"
+                },
+                {
+                  "id": "B",
+                  "text": "不能，预约码只是进入的必要条件"
+                },
+                {
+                  "id": "C",
+                  "text": "能断定小周不能进入"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "type": "feedback",
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+            "kind": "unclear",
+            "target_answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "sequence": 4,
+            "label": "没懂"
+          }
+        ],
+        "explanation": {
+          "text": "按“先圈连接词，再分别写条件和结论，每一步只作一次推断”来讲解。\n1. 第3题圈出“只有……才……”。它标明“持有预约码”是进入展厅的必要条件，写成方向就是：进入展厅→持有预约码。已知小周持有预约码，这只是方向箭头的右边；只作一次推断，不能把箭头反着用，所以不能推出“能进入展厅”。\n2. 第1题圈出“必须先”。它写成方向是：参加科研营→完成安全培训。已知小林完成安全培训，也只是箭头右边，不能反推“参加科研营”。\n3. 第2题你选对了：P是Q的充分条件，就写P→Q。说明直接辨认方向时可用；遇到故事或连接词时，把同一动作再做一遍：先圈词，再写“谁推出谁”，最后只顺着箭头推一次，不反向跳。\n材料也强调：有P→Q，不能反过来推出Q→P；Q成立而P不成立并不矛盾。\n因此，第3题较稳妥的判断是“不能，预约码只是进入的必要条件”，而不是“预约码保证进入”。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "run_bf5e733aad22461b86fb7edd5c100834:f1",
+            "m:demo_logic_v1:1",
+            "m:demo_logic_v1:2",
+            "m:demo_logic_v1:3"
+          ]
+        },
+        "judgment_change": {
+          "before": [
+            {
+              "id": "direction",
+              "status": "revised",
+              "reason": "第2题选A正确，说明直接问“P是Q的充分条件”时可辨认P→Q；但第1题由完成培训推出能参加、第3题由持有预约码推出能进入，均把必要条件或前件当成可反向保证，因此“可能混淆条件方向”仍有表现，按修订处理。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "m:demo_logic_v1:2"
+              ],
+              "label": "可能混淆条件方向"
+            },
+            {
+              "id": "reading",
+              "status": "tentative",
+              "reason": "第1、3题都涉及“必须先”“只有……才”等连接词表述，提取条件与结论时可能出现方向错位；第2题去掉故事表述后答对，说明信息提取负担可能相关，但本轮证据不足以单独支持，保持tentative。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "m:demo_logic_v1:3"
+              ],
+              "label": "复杂表述下的信息提取值得复查"
+            }
+          ],
+          "after": [
+            {
+              "id": "uncertain",
+              "status": "inconclusive",
+              "reason": "第2题能辨认“P是Q的充分条件”对应P→Q，但第1题和第3题在“必须”“只有……才……”这类必要条件表述中都出现了把必要条件当成充分条件来倒推的迹象；再加上你自报第3题没懂，目前只能暂不确定是概念方向未稳、连接词提取不熟还是单步推断习惯未用起来，不能认定唯一原因或长期掌握。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "run_bf5e733aad22461b86fb7edd5c100834:f1"
+              ],
+              "label": "目前无法区分原因"
+            }
+          ],
+          "trigger_evidence_id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+          "trigger_answer_id": null,
+          "trigger_feedback_id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+          "trigger_action": "feedback",
+          "sequence": 4
+        },
+        "summary": {
+          "result_status": "needs_practice",
+          "verification_correct": false,
+          "result": "换题验证未通过，建议更换方法后再试。",
+          "uncertainty": "仅为自编样本中的本次表现，不能证明长期掌握或学习效果。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3"
+          ]
+        },
+        "next_action": "pause_or_finish",
+        "is_demo": true,
+        "runtime_mode": "live",
+        "adaptation": {
+          "strategy": "steps",
+          "label": "分步拆解",
+          "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:f1"
+          ]
+        },
+        "cycle": {
+          "round": 1,
+          "max_rounds": 3,
+          "can_continue": false,
+          "can_answer": false,
+          "stop_reason": "time_budget",
+          "estimated_spent_minutes": 3,
+          "budget_minutes": 4
+        },
+        "history": [
+          {
+            "sequence": 3,
+            "before": "分步拆解",
+            "after": "换种表达",
+            "reason": "最近一次换题未通过，更换讲解方法，再用新题核对。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a3"
+            ]
+          },
+          {
+            "sequence": 4,
+            "before": "换种表达",
+            "after": "分步拆解",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          },
+          {
+            "sequence": 5,
+            "before": "60分钟",
+            "after": "4分钟",
+            "reason": "重新安排优先级，保留验证；不足时暂停，作答记录不变。",
+            "evidence_ids": []
+          }
+        ]
+      },
+      "plan": {
+        "daily_minutes": 4,
+        "estimated_spent_minutes": 3,
+        "available_minutes": 1,
+        "tasks": [],
+        "deferred": [
+          "用未见题核对本次理解",
+          "分步拆解：回看已答题",
+          "复盘变化与仍不确定的地方"
+        ],
+        "total_minutes": 0,
+        "note": "剩余预算不足以完成讲解与验证，暂停后可增加时间；已答记录保留。"
+      }
+    },
+    {
+      "action": "time",
+      "params": {
+        "minutes": 60
+      },
+      "lab_state": {
+        "stage": "summary",
+        "substage": null,
+        "question": null,
+        "feedback": {
+          "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+          "is_correct": false,
+          "text": "本轮记录：第1题和第3题都出现了把已知条件当作结论充分依据的反向判断；第2题能直接辨认“P是Q的充分条件”的方向。综合看，较像在具体连接词情境中方向检查不稳，而不是概念完全不会；这只是本轮暂时解释，不据此认定粗心或固定水平。建议作答时先圈出“必须”“只有”等词，写出条件→结论，再检查能否反向推出。"
+        },
+        "hypotheses": [
+          {
+            "id": "uncertain",
+            "status": "inconclusive",
+            "reason": "第2题能辨认“P是Q的充分条件”对应P→Q，但第1题和第3题在“必须”“只有……才……”这类必要条件表述中都出现了把必要条件当成充分条件来倒推的迹象；再加上你自报第3题没懂，目前只能暂不确定是概念方向未稳、连接词提取不熟还是单步推断习惯未用起来，不能认定唯一原因或长期掌握。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ],
+            "label": "目前无法区分原因"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "m:demo_logic_v1:1",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "若P成立就能推出Q成立，记作P→Q。P是Q的充分条件，Q是P的必要条件。",
+            "locator": {
+              "start": 0,
+              "end": 36,
+              "line": 1
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:2",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "仅有P→Q，不能反过来推出Q→P；Q成立而P不成立，与P→Q并不矛盾。",
+            "locator": {
+              "start": 37,
+              "end": 72,
+              "line": 2
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:3",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "审题时先圈出“必须”“只有”“就”等连接词，再分别标出条件与结论，最后检查推理方向。",
+            "locator": {
+              "start": 126,
+              "end": 168,
+              "line": 4
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "question_id": "q_initial_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "9f113433b9b34ab2b14c1b6c856666df",
+            "question": {
+              "question_id": "q_initial_01",
+              "stem": "参加科研营必须先完成安全培训。小林已经完成安全培训。仅据这些信息，可以必然得出什么？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "小林一定能参加科研营"
+                },
+                {
+                  "id": "B",
+                  "text": "还不能确定小林是否能参加科研营"
+                },
+                {
+                  "id": "C",
+                  "text": "小林一定不能参加科研营"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "question_id": "q_distinguish_01",
+            "answer": "A",
+            "is_correct": true,
+            "request_id": "37e5bd85ff0c4fb4b075c3676c08cc9b",
+            "question": {
+              "question_id": "q_distinguish_01",
+              "stem": "去掉故事表述：P是Q的充分条件。哪一项准确表达这句话的方向？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "P成立能推出Q成立，即P→Q"
+                },
+                {
+                  "id": "B",
+                  "text": "Q成立能推出P成立，即Q→P"
+                },
+                {
+                  "id": "C",
+                  "text": "P与Q必定不能同时成立"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不能确定方向"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "question_id": "q_verify_reading_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "67fb8ad84af94ea58fe8f9debf8d8256",
+            "question": {
+              "question_id": "q_verify_reading_01",
+              "stem": "只有持有预约码，才能进入展厅。小周持有预约码。仅据这句话能否断定小周能进入展厅？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "能，预约码保证进入"
+                },
+                {
+                  "id": "B",
+                  "text": "不能，预约码只是进入的必要条件"
+                },
+                {
+                  "id": "C",
+                  "text": "能断定小周不能进入"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "type": "feedback",
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+            "kind": "unclear",
+            "target_answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "sequence": 4,
+            "label": "没懂"
+          }
+        ],
+        "explanation": {
+          "text": "按“先圈连接词，再分别写条件和结论，每一步只作一次推断”来讲解。\n1. 第3题圈出“只有……才……”。它标明“持有预约码”是进入展厅的必要条件，写成方向就是：进入展厅→持有预约码。已知小周持有预约码，这只是方向箭头的右边；只作一次推断，不能把箭头反着用，所以不能推出“能进入展厅”。\n2. 第1题圈出“必须先”。它写成方向是：参加科研营→完成安全培训。已知小林完成安全培训，也只是箭头右边，不能反推“参加科研营”。\n3. 第2题你选对了：P是Q的充分条件，就写P→Q。说明直接辨认方向时可用；遇到故事或连接词时，把同一动作再做一遍：先圈词，再写“谁推出谁”，最后只顺着箭头推一次，不反向跳。\n材料也强调：有P→Q，不能反过来推出Q→P；Q成立而P不成立并不矛盾。\n因此，第3题较稳妥的判断是“不能，预约码只是进入的必要条件”，而不是“预约码保证进入”。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "run_bf5e733aad22461b86fb7edd5c100834:f1",
+            "m:demo_logic_v1:1",
+            "m:demo_logic_v1:2",
+            "m:demo_logic_v1:3"
+          ]
+        },
+        "judgment_change": {
+          "before": [
+            {
+              "id": "direction",
+              "status": "revised",
+              "reason": "第2题选A正确，说明直接问“P是Q的充分条件”时可辨认P→Q；但第1题由完成培训推出能参加、第3题由持有预约码推出能进入，均把必要条件或前件当成可反向保证，因此“可能混淆条件方向”仍有表现，按修订处理。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "m:demo_logic_v1:2"
+              ],
+              "label": "可能混淆条件方向"
+            },
+            {
+              "id": "reading",
+              "status": "tentative",
+              "reason": "第1、3题都涉及“必须先”“只有……才”等连接词表述，提取条件与结论时可能出现方向错位；第2题去掉故事表述后答对，说明信息提取负担可能相关，但本轮证据不足以单独支持，保持tentative。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "m:demo_logic_v1:3"
+              ],
+              "label": "复杂表述下的信息提取值得复查"
+            }
+          ],
+          "after": [
+            {
+              "id": "uncertain",
+              "status": "inconclusive",
+              "reason": "第2题能辨认“P是Q的充分条件”对应P→Q，但第1题和第3题在“必须”“只有……才……”这类必要条件表述中都出现了把必要条件当成充分条件来倒推的迹象；再加上你自报第3题没懂，目前只能暂不确定是概念方向未稳、连接词提取不熟还是单步推断习惯未用起来，不能认定唯一原因或长期掌握。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "run_bf5e733aad22461b86fb7edd5c100834:f1"
+              ],
+              "label": "目前无法区分原因"
+            }
+          ],
+          "trigger_evidence_id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+          "trigger_answer_id": null,
+          "trigger_feedback_id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+          "trigger_action": "feedback",
+          "sequence": 4
+        },
+        "summary": {
+          "result_status": "needs_practice",
+          "verification_correct": false,
+          "result": "换题验证未通过，建议更换方法后再试。",
+          "uncertainty": "仅为自编样本中的本次表现，不能证明长期掌握或学习效果。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3"
+          ]
+        },
+        "next_action": "continue",
+        "is_demo": true,
+        "runtime_mode": "live",
+        "adaptation": {
+          "strategy": "steps",
+          "label": "分步拆解",
+          "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:f1"
+          ]
+        },
+        "cycle": {
+          "round": 1,
+          "max_rounds": 3,
+          "can_continue": true,
+          "can_answer": false,
+          "stop_reason": null,
+          "estimated_spent_minutes": 3,
+          "budget_minutes": 60
+        },
+        "history": [
+          {
+            "sequence": 3,
+            "before": "分步拆解",
+            "after": "换种表达",
+            "reason": "最近一次换题未通过，更换讲解方法，再用新题核对。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a3"
+            ]
+          },
+          {
+            "sequence": 4,
+            "before": "换种表达",
+            "after": "分步拆解",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          },
+          {
+            "sequence": 5,
+            "before": "60分钟",
+            "after": "4分钟",
+            "reason": "重新安排优先级，保留验证；不足时暂停，作答记录不变。",
+            "evidence_ids": []
+          },
+          {
+            "sequence": 6,
+            "before": "4分钟",
+            "after": "60分钟",
+            "reason": "重新安排优先级，保留验证；不足时暂停，作答记录不变。",
+            "evidence_ids": []
+          }
+        ]
+      },
+      "plan": {
+        "daily_minutes": 60,
+        "estimated_spent_minutes": 3,
+        "available_minutes": 57,
+        "tasks": [
+          {
+            "task": "分步拆解：回看已答题",
+            "minutes": 1,
+            "kind": "learn",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          },
+          {
+            "task": "用未见题核对本次理解",
+            "minutes": 2,
+            "kind": "verify",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          },
+          {
+            "task": "复盘变化与仍不确定的地方",
+            "minutes": 3,
+            "kind": "review",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          }
+        ],
+        "deferred": [],
+        "total_minutes": 6,
+        "note": "时间为演示估算；首轮验证1分钟，追加轮讲解1分钟与验证2分钟。先留验证预算，不将未验证记为完成。"
+      }
+    },
+    {
+      "action": "continue",
+      "params": {},
+      "lab_state": {
+        "stage": "verification",
+        "substage": null,
+        "question": {
+          "question_id": "q_adapt_read_02",
+          "stem": "只有通过审核，才能领取设备。小安尚未通过审核。仅据这条规则，可以必然得出什么？",
+          "options": [
+            {
+              "id": "A",
+              "text": "小安可以领取设备"
+            },
+            {
+              "id": "B",
+              "text": "小安不能领取设备"
+            },
+            {
+              "id": "C",
+              "text": "无法判断小安能否领取设备"
+            },
+            {
+              "id": "D",
+              "text": "暂时不会判断"
+            }
+          ]
+        },
+        "feedback": {
+          "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+          "is_correct": false,
+          "text": "本轮记录：第1题和第3题都出现了把已知条件当作结论充分依据的反向判断；第2题能直接辨认“P是Q的充分条件”的方向。综合看，较像在具体连接词情境中方向检查不稳，而不是概念完全不会；这只是本轮暂时解释，不据此认定粗心或固定水平。建议作答时先圈出“必须”“只有”等词，写出条件→结论，再检查能否反向推出。"
+        },
+        "hypotheses": [
+          {
+            "id": "uncertain",
+            "status": "inconclusive",
+            "reason": "目前只能确认：第2题的方向辨认表现较好，而第1题和第3题都涉及由必要条件反推充分条件；同时第3题还有自报没懂。仅凭这些材料，不能确定是连接词识别、条件结论拆分还是阅读步骤中的哪一种稳定原因，也不能认定长期掌握或唯一错误原因，因此记为不确定。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ],
+            "label": "目前无法区分原因"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "m:demo_logic_v1:1",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "若P成立就能推出Q成立，记作P→Q。P是Q的充分条件，Q是P的必要条件。",
+            "locator": {
+              "start": 0,
+              "end": 36,
+              "line": 1
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:2",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "仅有P→Q，不能反过来推出Q→P；Q成立而P不成立，与P→Q并不矛盾。",
+            "locator": {
+              "start": 37,
+              "end": 72,
+              "line": 2
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:3",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "审题时先圈出“必须”“只有”“就”等连接词，再分别标出条件与结论，最后检查推理方向。",
+            "locator": {
+              "start": 126,
+              "end": 168,
+              "line": 4
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "question_id": "q_initial_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "9f113433b9b34ab2b14c1b6c856666df",
+            "question": {
+              "question_id": "q_initial_01",
+              "stem": "参加科研营必须先完成安全培训。小林已经完成安全培训。仅据这些信息，可以必然得出什么？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "小林一定能参加科研营"
+                },
+                {
+                  "id": "B",
+                  "text": "还不能确定小林是否能参加科研营"
+                },
+                {
+                  "id": "C",
+                  "text": "小林一定不能参加科研营"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "question_id": "q_distinguish_01",
+            "answer": "A",
+            "is_correct": true,
+            "request_id": "37e5bd85ff0c4fb4b075c3676c08cc9b",
+            "question": {
+              "question_id": "q_distinguish_01",
+              "stem": "去掉故事表述：P是Q的充分条件。哪一项准确表达这句话的方向？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "P成立能推出Q成立，即P→Q"
+                },
+                {
+                  "id": "B",
+                  "text": "Q成立能推出P成立，即Q→P"
+                },
+                {
+                  "id": "C",
+                  "text": "P与Q必定不能同时成立"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不能确定方向"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "question_id": "q_verify_reading_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "67fb8ad84af94ea58fe8f9debf8d8256",
+            "question": {
+              "question_id": "q_verify_reading_01",
+              "stem": "只有持有预约码，才能进入展厅。小周持有预约码。仅据这句话能否断定小周能进入展厅？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "能，预约码保证进入"
+                },
+                {
+                  "id": "B",
+                  "text": "不能，预约码只是进入的必要条件"
+                },
+                {
+                  "id": "C",
+                  "text": "能断定小周不能进入"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "type": "feedback",
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+            "kind": "unclear",
+            "target_answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "sequence": 4,
+            "label": "没懂"
+          }
+        ],
+        "explanation": {
+          "text": "先按三步走：第一步圈出“必须先”“只有……才能……”这类连接词；第二步把条件写在左边、结论写在右边；第三步只沿写出的方向推断一次，不反向。比如“只有完成培训，才能参加活动”应写成“参加活动→完成培训”。完成培训只是参加活动的必要条件；已经完成培训，只说明满足了必要条件，不能推出一定能参加活动。第1题中，“参加科研营必须先完成安全培训”应写成“参加科研营→完成培训”，所以由完成培训不能必然推出参加科研营。第3题中，“只有持有预约码，才能进入展厅”应写成“进入展厅→持有预约码”，小周持有预约码只说明满足进入的必要条件，不能说明预约码保证进入。第2题你已经能辨认“P是Q的充分条件”就是“P成立推出Q成立”，说明方向辨认本身可以记住；但换成“只有……才能……”时，还要重新圈词、重写方向，每一步只做一次推断，不要把必要条件当成充分条件。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "run_bf5e733aad22461b86fb7edd5c100834:f1",
+            "m:demo_logic_v1:1",
+            "m:demo_logic_v1:2",
+            "m:demo_logic_v1:3"
+          ]
+        },
+        "judgment_change": {
+          "before": [
+            {
+              "id": "uncertain",
+              "status": "inconclusive",
+              "reason": "第2题能辨认“P是Q的充分条件”对应P→Q，但第1题和第3题在“必须”“只有……才……”这类必要条件表述中都出现了把必要条件当成充分条件来倒推的迹象；再加上你自报第3题没懂，目前只能暂不确定是概念方向未稳、连接词提取不熟还是单步推断习惯未用起来，不能认定唯一原因或长期掌握。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "run_bf5e733aad22461b86fb7edd5c100834:f1"
+              ],
+              "label": "目前无法区分原因"
+            }
+          ],
+          "after": [
+            {
+              "id": "uncertain",
+              "status": "inconclusive",
+              "reason": "目前只能确认：第2题的方向辨认表现较好，而第1题和第3题都涉及由必要条件反推充分条件；同时第3题还有自报没懂。仅凭这些材料，不能确定是连接词识别、条件结论拆分还是阅读步骤中的哪一种稳定原因，也不能认定长期掌握或唯一错误原因，因此记为不确定。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "run_bf5e733aad22461b86fb7edd5c100834:f1"
+              ],
+              "label": "目前无法区分原因"
+            }
+          ],
+          "trigger_evidence_id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+          "trigger_answer_id": null,
+          "trigger_feedback_id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+          "trigger_action": "continue",
+          "sequence": 7
+        },
+        "summary": {
+          "result_status": "needs_practice",
+          "verification_correct": false,
+          "result": "换题验证未通过，建议更换方法后再试。",
+          "uncertainty": "仅为自编样本中的本次表现，不能证明长期掌握或学习效果。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3"
+          ]
+        },
+        "next_action": "answer",
+        "is_demo": true,
+        "runtime_mode": "live",
+        "adaptation": {
+          "strategy": "steps",
+          "label": "分步拆解",
+          "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:f1"
+          ]
+        },
+        "cycle": {
+          "round": 2,
+          "max_rounds": 3,
+          "can_continue": false,
+          "can_answer": true,
+          "stop_reason": "answer_pending",
+          "estimated_spent_minutes": 4,
+          "budget_minutes": 60
+        },
+        "history": [
+          {
+            "sequence": 3,
+            "before": "分步拆解",
+            "after": "换种表达",
+            "reason": "最近一次换题未通过，更换讲解方法，再用新题核对。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a3"
+            ]
+          },
+          {
+            "sequence": 4,
+            "before": "换种表达",
+            "after": "分步拆解",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          },
+          {
+            "sequence": 5,
+            "before": "60分钟",
+            "after": "4分钟",
+            "reason": "重新安排优先级，保留验证；不足时暂停，作答记录不变。",
+            "evidence_ids": []
+          },
+          {
+            "sequence": 6,
+            "before": "4分钟",
+            "after": "60分钟",
+            "reason": "重新安排优先级，保留验证；不足时暂停，作答记录不变。",
+            "evidence_ids": []
+          }
+        ]
+      },
+      "plan": {
+        "daily_minutes": 60,
+        "estimated_spent_minutes": 4,
+        "available_minutes": 56,
+        "tasks": [
+          {
+            "task": "用未见题核对本次理解",
+            "minutes": 2,
+            "kind": "verify",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          },
+          {
+            "task": "复盘变化与仍不确定的地方",
+            "minutes": 3,
+            "kind": "review",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          }
+        ],
+        "deferred": [],
+        "total_minutes": 5,
+        "note": "时间为演示估算；首轮验证1分钟，追加轮讲解1分钟与验证2分钟。先留验证预算，不将未验证记为完成。"
+      }
+    },
+    {
+      "action": "submit",
+      "params": {
+        "question_id": "q_adapt_read_02",
+        "answer": "B"
+      },
+      "lab_state": {
+        "stage": "summary",
+        "substage": null,
+        "question": null,
+        "feedback": {
+          "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:v2",
+          "is_correct": true,
+          "text": "领取设备→通过审核。未通过审核，所以不能领取设备；这是必要条件不满足。"
+        },
+        "hypotheses": [
+          {
+            "id": "no_issue",
+            "status": "tentative",
+            "reason": "本次记录中，直接辨认充分条件方向和必要条件不满足的题表现较好，说明可能已有可迁移的理解；但首题和预约码题未按规则方向作答，且你自报第3题“没懂”，现有证据仍混合，不能确定稳定问题或长期掌握。按允许的暂定假设，先记为暂无明显问题，后续需未见题核对，不能据此下结论。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:v2",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ],
+            "label": "本轮尚未观察到明确困难"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "m:demo_logic_v1:1",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "若P成立就能推出Q成立，记作P→Q。P是Q的充分条件，Q是P的必要条件。",
+            "locator": {
+              "start": 0,
+              "end": 36,
+              "line": 1
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:2",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "仅有P→Q，不能反过来推出Q→P；Q成立而P不成立，与P→Q并不矛盾。",
+            "locator": {
+              "start": 37,
+              "end": 72,
+              "line": 2
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:3",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "审题时先圈出“必须”“只有”“就”等连接词，再分别标出条件与结论，最后检查推理方向。",
+            "locator": {
+              "start": 126,
+              "end": 168,
+              "line": 4
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "question_id": "q_initial_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "9f113433b9b34ab2b14c1b6c856666df",
+            "question": {
+              "question_id": "q_initial_01",
+              "stem": "参加科研营必须先完成安全培训。小林已经完成安全培训。仅据这些信息，可以必然得出什么？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "小林一定能参加科研营"
+                },
+                {
+                  "id": "B",
+                  "text": "还不能确定小林是否能参加科研营"
+                },
+                {
+                  "id": "C",
+                  "text": "小林一定不能参加科研营"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "question_id": "q_distinguish_01",
+            "answer": "A",
+            "is_correct": true,
+            "request_id": "37e5bd85ff0c4fb4b075c3676c08cc9b",
+            "question": {
+              "question_id": "q_distinguish_01",
+              "stem": "去掉故事表述：P是Q的充分条件。哪一项准确表达这句话的方向？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "P成立能推出Q成立，即P→Q"
+                },
+                {
+                  "id": "B",
+                  "text": "Q成立能推出P成立，即Q→P"
+                },
+                {
+                  "id": "C",
+                  "text": "P与Q必定不能同时成立"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不能确定方向"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "question_id": "q_verify_reading_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "67fb8ad84af94ea58fe8f9debf8d8256",
+            "question": {
+              "question_id": "q_verify_reading_01",
+              "stem": "只有持有预约码，才能进入展厅。小周持有预约码。仅据这句话能否断定小周能进入展厅？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "能，预约码保证进入"
+                },
+                {
+                  "id": "B",
+                  "text": "不能，预约码只是进入的必要条件"
+                },
+                {
+                  "id": "C",
+                  "text": "能断定小周不能进入"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:v2",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:v2",
+            "question_id": "q_adapt_read_02",
+            "answer": "B",
+            "is_correct": true,
+            "sequence": 8,
+            "question": {
+              "question_id": "q_adapt_read_02",
+              "stem": "只有通过审核，才能领取设备。小安尚未通过审核。仅据这条规则，可以必然得出什么？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "小安可以领取设备"
+                },
+                {
+                  "id": "B",
+                  "text": "小安不能领取设备"
+                },
+                {
+                  "id": "C",
+                  "text": "无法判断小安能否领取设备"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "type": "feedback",
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+            "kind": "unclear",
+            "target_answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "sequence": 4,
+            "label": "没懂"
+          }
+        ],
+        "explanation": {
+          "text": "可以把关系先串成条件链，再做两种检查：正向推出是否成立，以及必要条件不满足时能否否定结论。第2题已经确认“P是Q的充分条件”就写成P→Q，这是起点。第1题中，“参加科研营必须先完成安全培训”写成“参加科研营→完成安全培训”；已知完成培训，只是满足了必要条件，不能倒推成一定参加科研营。第3题中，“只有持有预约码，才能进入展厅”写成“进入展厅→持有预约码”；只给持有预约码，仍不能推出一定能进入。第4题用反向检查：“领取设备→通过审核”，未通过审核说明必要条件不满足，所以可推出不能领取设备。你反馈第3题没懂，可以按固定顺序练：先圈出“必须”“只有”等连接词，再写箭头，再问箭头能不能倒推；只看到必要条件成立时，不要直接断定结论成立。后续可用未见题核对这种条件链检查是否稳定，但当前不指定下一题。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "run_bf5e733aad22461b86fb7edd5c100834:v2",
+            "run_bf5e733aad22461b86fb7edd5c100834:f1",
+            "m:demo_logic_v1:1",
+            "m:demo_logic_v1:2",
+            "m:demo_logic_v1:3"
+          ]
+        },
+        "judgment_change": {
+          "before": [
+            {
+              "id": "uncertain",
+              "status": "inconclusive",
+              "reason": "目前只能确认：第2题的方向辨认表现较好，而第1题和第3题都涉及由必要条件反推充分条件；同时第3题还有自报没懂。仅凭这些材料，不能确定是连接词识别、条件结论拆分还是阅读步骤中的哪一种稳定原因，也不能认定长期掌握或唯一错误原因，因此记为不确定。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "run_bf5e733aad22461b86fb7edd5c100834:f1"
+              ],
+              "label": "目前无法区分原因"
+            }
+          ],
+          "after": [
+            {
+              "id": "no_issue",
+              "status": "tentative",
+              "reason": "本次记录中，直接辨认充分条件方向和必要条件不满足的题表现较好，说明可能已有可迁移的理解；但首题和预约码题未按规则方向作答，且你自报第3题“没懂”，现有证据仍混合，不能确定稳定问题或长期掌握。按允许的暂定假设，先记为暂无明显问题，后续需未见题核对，不能据此下结论。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "run_bf5e733aad22461b86fb7edd5c100834:v2",
+                "run_bf5e733aad22461b86fb7edd5c100834:f1"
+              ],
+              "label": "本轮尚未观察到明确困难"
+            }
+          ],
+          "trigger_evidence_id": "run_bf5e733aad22461b86fb7edd5c100834:v2",
+          "trigger_answer_id": "run_bf5e733aad22461b86fb7edd5c100834:v2",
+          "trigger_feedback_id": null,
+          "trigger_action": "submit",
+          "sequence": 8
+        },
+        "summary": {
+          "result_status": "tentative_transfer",
+          "verification_correct": true,
+          "result": "本次换题答对，支持本次迁移表现。",
+          "uncertainty": "仅为自编样本中的本次表现，不能证明长期掌握或学习效果。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "run_bf5e733aad22461b86fb7edd5c100834:v2"
+          ]
+        },
+        "next_action": "continue",
+        "is_demo": true,
+        "runtime_mode": "live",
+        "adaptation": {
+          "strategy": "transfer",
+          "label": "提高迁移难度",
+          "reason": "本次验证答对，可尝试较难迁移；仍不代表长期掌握。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:v2"
+          ]
+        },
+        "cycle": {
+          "round": 2,
+          "max_rounds": 3,
+          "can_continue": true,
+          "can_answer": false,
+          "stop_reason": null,
+          "estimated_spent_minutes": 6,
+          "budget_minutes": 60
+        },
+        "history": [
+          {
+            "sequence": 3,
+            "before": "分步拆解",
+            "after": "换种表达",
+            "reason": "最近一次换题未通过，更换讲解方法，再用新题核对。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a3"
+            ]
+          },
+          {
+            "sequence": 4,
+            "before": "换种表达",
+            "after": "分步拆解",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          },
+          {
+            "sequence": 5,
+            "before": "60分钟",
+            "after": "4分钟",
+            "reason": "重新安排优先级，保留验证；不足时暂停，作答记录不变。",
+            "evidence_ids": []
+          },
+          {
+            "sequence": 6,
+            "before": "4分钟",
+            "after": "60分钟",
+            "reason": "重新安排优先级，保留验证；不足时暂停，作答记录不变。",
+            "evidence_ids": []
+          },
+          {
+            "sequence": 8,
+            "before": "分步拆解",
+            "after": "提高迁移难度",
+            "reason": "本次验证答对，可尝试较难迁移；仍不代表长期掌握。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:v2"
+            ]
+          }
+        ]
+      },
+      "plan": {
+        "daily_minutes": 60,
+        "estimated_spent_minutes": 6,
+        "available_minutes": 54,
+        "tasks": [
+          {
+            "task": "尝试条件链迁移",
+            "minutes": 1,
+            "kind": "learn",
+            "reason": "本次验证答对，可尝试较难迁移；仍不代表长期掌握。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:v2",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          },
+          {
+            "task": "用未见题核对本次理解",
+            "minutes": 2,
+            "kind": "verify",
+            "reason": "本次验证答对，可尝试较难迁移；仍不代表长期掌握。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:v2",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          },
+          {
+            "task": "复盘变化与仍不确定的地方",
+            "minutes": 3,
+            "kind": "review",
+            "reason": "本次验证答对，可尝试较难迁移；仍不代表长期掌握。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:v2",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          }
+        ],
+        "deferred": [],
+        "total_minutes": 6,
+        "note": "时间为演示估算；首轮验证1分钟，追加轮讲解1分钟与验证2分钟。先留验证预算，不将未验证记为完成。"
+      }
+    },
+    {
+      "action": "feedback",
+      "params": {
+        "feedback": "guessed"
+      },
+      "lab_state": {
+        "stage": "summary",
+        "substage": null,
+        "question": null,
+        "feedback": {
+          "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:v2",
+          "is_correct": true,
+          "text": "领取设备→通过审核。未通过审核，所以不能领取设备；这是必要条件不满足。"
+        },
+        "hypotheses": [
+          {
+            "id": "uncertain",
+            "status": "inconclusive",
+            "reason": "作答表现不一致：第2题能辨认“充分条件”的方向，第1、3题在连接词情境中出现方向混用；第4题虽选了B，但你自报是猜的，不能据此视为已掌握。因此目前不能确定是稳定薄弱、审题习惯还是对“只有……才……”不熟，暂不作出确定结论。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:v2",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1",
+              "run_bf5e733aad22461b86fb7edd5c100834:f2"
+            ],
+            "label": "目前无法区分原因"
+          }
+        ],
+        "evidence": [
+          {
+            "id": "m:demo_logic_v1:1",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "若P成立就能推出Q成立，记作P→Q。P是Q的充分条件，Q是P的必要条件。",
+            "locator": {
+              "start": 0,
+              "end": 36,
+              "line": 1
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:2",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "仅有P→Q，不能反过来推出Q→P；Q成立而P不成立，与P→Q并不矛盾。",
+            "locator": {
+              "start": 37,
+              "end": 72,
+              "line": 2
+            }
+          },
+          {
+            "id": "m:demo_logic_v1:3",
+            "type": "material",
+            "material_id": "demo_logic_v1",
+            "quote": "审题时先圈出“必须”“只有”“就”等连接词，再分别标出条件与结论，最后检查推理方向。",
+            "locator": {
+              "start": 126,
+              "end": 168,
+              "line": 4
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "question_id": "q_initial_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "9f113433b9b34ab2b14c1b6c856666df",
+            "question": {
+              "question_id": "q_initial_01",
+              "stem": "参加科研营必须先完成安全培训。小林已经完成安全培训。仅据这些信息，可以必然得出什么？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "小林一定能参加科研营"
+                },
+                {
+                  "id": "B",
+                  "text": "还不能确定小林是否能参加科研营"
+                },
+                {
+                  "id": "C",
+                  "text": "小林一定不能参加科研营"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "question_id": "q_distinguish_01",
+            "answer": "A",
+            "is_correct": true,
+            "request_id": "37e5bd85ff0c4fb4b075c3676c08cc9b",
+            "question": {
+              "question_id": "q_distinguish_01",
+              "stem": "去掉故事表述：P是Q的充分条件。哪一项准确表达这句话的方向？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "P成立能推出Q成立，即P→Q"
+                },
+                {
+                  "id": "B",
+                  "text": "Q成立能推出P成立，即Q→P"
+                },
+                {
+                  "id": "C",
+                  "text": "P与Q必定不能同时成立"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不能确定方向"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "question_id": "q_verify_reading_01",
+            "answer": "A",
+            "is_correct": false,
+            "request_id": "67fb8ad84af94ea58fe8f9debf8d8256",
+            "question": {
+              "question_id": "q_verify_reading_01",
+              "stem": "只有持有预约码，才能进入展厅。小周持有预约码。仅据这句话能否断定小周能进入展厅？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "能，预约码保证进入"
+                },
+                {
+                  "id": "B",
+                  "text": "不能，预约码只是进入的必要条件"
+                },
+                {
+                  "id": "C",
+                  "text": "能断定小周不能进入"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:v2",
+            "type": "answer",
+            "answer_id": "run_bf5e733aad22461b86fb7edd5c100834:v2",
+            "question_id": "q_adapt_read_02",
+            "answer": "B",
+            "is_correct": true,
+            "sequence": 8,
+            "question": {
+              "question_id": "q_adapt_read_02",
+              "stem": "只有通过审核，才能领取设备。小安尚未通过审核。仅据这条规则，可以必然得出什么？",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "小安可以领取设备"
+                },
+                {
+                  "id": "B",
+                  "text": "小安不能领取设备"
+                },
+                {
+                  "id": "C",
+                  "text": "无法判断小安能否领取设备"
+                },
+                {
+                  "id": "D",
+                  "text": "暂时不会判断"
+                }
+              ]
+            }
+          },
+          {
+            "type": "feedback",
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:f1",
+            "kind": "unclear",
+            "target_answer_id": "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "sequence": 4,
+            "label": "没懂"
+          },
+          {
+            "type": "feedback",
+            "id": "run_bf5e733aad22461b86fb7edd5c100834:f2",
+            "kind": "guessed",
+            "target_answer_id": "run_bf5e733aad22461b86fb7edd5c100834:v2",
+            "sequence": 9,
+            "label": "我是猜的"
+          }
+        ],
+        "explanation": {
+          "text": "先圈连接词，再写推出方向，最后试找反例。第1题“参加科研营必须先完成安全培训”表示：参加科研营→完成安全培训。若把它反过来想成“完成培训→参加科研营”，可设想某人完成了培训，但没报名或名额已满，所以仍未参加；因此完成培训不保证参加，第1题不能选“一定能参加”。第3题“只有持有预约码，才能进入展厅”表示：进入展厅→持有预约码。若误认为“持有预约码→能进入”，也可设想持有预约码但临时闭馆，仍不能进入；所以“预约码保证进入”不成立。第2题说明你能认出P是Q的充分条件即P→Q，这个方向是对的。第4题“只有通过审核，才能领取设备”应写成：领取设备→通过审核；未通过审核时不能领取，所以B与规则一致。但你说第4题是猜的，先不把它当作已掌握。材料还提醒：仅有P→Q不能反过来推出Q→P；不能凭词熟不熟作答，要靠连接词和反例检查。之后用一道未见题核对效果。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "run_bf5e733aad22461b86fb7edd5c100834:v2",
+            "run_bf5e733aad22461b86fb7edd5c100834:f1",
+            "run_bf5e733aad22461b86fb7edd5c100834:f2",
+            "m:demo_logic_v1:1",
+            "m:demo_logic_v1:2",
+            "m:demo_logic_v1:3"
+          ]
+        },
+        "judgment_change": {
+          "before": [
+            {
+              "id": "no_issue",
+              "status": "tentative",
+              "reason": "本次记录中，直接辨认充分条件方向和必要条件不满足的题表现较好，说明可能已有可迁移的理解；但首题和预约码题未按规则方向作答，且你自报第3题“没懂”，现有证据仍混合，不能确定稳定问题或长期掌握。按允许的暂定假设，先记为暂无明显问题，后续需未见题核对，不能据此下结论。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "run_bf5e733aad22461b86fb7edd5c100834:v2",
+                "run_bf5e733aad22461b86fb7edd5c100834:f1"
+              ],
+              "label": "本轮尚未观察到明确困难"
+            }
+          ],
+          "after": [
+            {
+              "id": "uncertain",
+              "status": "inconclusive",
+              "reason": "作答表现不一致：第2题能辨认“充分条件”的方向，第1、3题在连接词情境中出现方向混用；第4题虽选了B，但你自报是猜的，不能据此视为已掌握。因此目前不能确定是稳定薄弱、审题习惯还是对“只有……才……”不熟，暂不作出确定结论。",
+              "evidence_ids": [
+                "run_bf5e733aad22461b86fb7edd5c100834:a1",
+                "run_bf5e733aad22461b86fb7edd5c100834:a2",
+                "run_bf5e733aad22461b86fb7edd5c100834:a3",
+                "run_bf5e733aad22461b86fb7edd5c100834:v2",
+                "run_bf5e733aad22461b86fb7edd5c100834:f1",
+                "run_bf5e733aad22461b86fb7edd5c100834:f2"
+              ],
+              "label": "目前无法区分原因"
+            }
+          ],
+          "trigger_evidence_id": "run_bf5e733aad22461b86fb7edd5c100834:f2",
+          "trigger_answer_id": null,
+          "trigger_feedback_id": "run_bf5e733aad22461b86fb7edd5c100834:f2",
+          "trigger_action": "feedback",
+          "sequence": 9
+        },
+        "summary": {
+          "result_status": "needs_confirmation",
+          "verification_correct": true,
+          "result": "答对但仍有猜测或未理解的反馈，需要再核对。",
+          "uncertainty": "仅为自编样本中的本次表现，不能证明长期掌握或学习效果。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:a1",
+            "run_bf5e733aad22461b86fb7edd5c100834:a2",
+            "run_bf5e733aad22461b86fb7edd5c100834:a3",
+            "run_bf5e733aad22461b86fb7edd5c100834:v2",
+            "run_bf5e733aad22461b86fb7edd5c100834:f2"
+          ]
+        },
+        "next_action": "continue",
+        "is_demo": true,
+        "runtime_mode": "live",
+        "adaptation": {
+          "strategy": "counterexample",
+          "label": "反例检查",
+          "reason": "收到“我是猜的”，调整下一次讲解与验证；自报不改变题目判分。",
+          "evidence_ids": [
+            "run_bf5e733aad22461b86fb7edd5c100834:f2"
+          ]
+        },
+        "cycle": {
+          "round": 2,
+          "max_rounds": 3,
+          "can_continue": true,
+          "can_answer": false,
+          "stop_reason": null,
+          "estimated_spent_minutes": 6,
+          "budget_minutes": 60
+        },
+        "history": [
+          {
+            "sequence": 3,
+            "before": "分步拆解",
+            "after": "换种表达",
+            "reason": "最近一次换题未通过，更换讲解方法，再用新题核对。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a3"
+            ]
+          },
+          {
+            "sequence": 4,
+            "before": "换种表达",
+            "after": "分步拆解",
+            "reason": "收到“没懂”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:f1"
+            ]
+          },
+          {
+            "sequence": 5,
+            "before": "60分钟",
+            "after": "4分钟",
+            "reason": "重新安排优先级，保留验证；不足时暂停，作答记录不变。",
+            "evidence_ids": []
+          },
+          {
+            "sequence": 6,
+            "before": "4分钟",
+            "after": "60分钟",
+            "reason": "重新安排优先级，保留验证；不足时暂停，作答记录不变。",
+            "evidence_ids": []
+          },
+          {
+            "sequence": 8,
+            "before": "分步拆解",
+            "after": "提高迁移难度",
+            "reason": "本次验证答对，可尝试较难迁移；仍不代表长期掌握。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:v2"
+            ]
+          },
+          {
+            "sequence": 9,
+            "before": "提高迁移难度",
+            "after": "反例检查",
+            "reason": "收到“我是猜的”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:f2"
+            ]
+          }
+        ]
+      },
+      "plan": {
+        "daily_minutes": 60,
+        "estimated_spent_minutes": 6,
+        "available_minutes": 54,
+        "tasks": [
+          {
+            "task": "反例检查：回看已答题",
+            "minutes": 1,
+            "kind": "learn",
+            "reason": "收到“我是猜的”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:v2",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1",
+              "run_bf5e733aad22461b86fb7edd5c100834:f2"
+            ]
+          },
+          {
+            "task": "用未见题核对本次理解",
+            "minutes": 2,
+            "kind": "verify",
+            "reason": "收到“我是猜的”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:v2",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1",
+              "run_bf5e733aad22461b86fb7edd5c100834:f2"
+            ]
+          },
+          {
+            "task": "复盘变化与仍不确定的地方",
+            "minutes": 3,
+            "kind": "review",
+            "reason": "收到“我是猜的”，调整下一次讲解与验证；自报不改变题目判分。",
+            "evidence_ids": [
+              "run_bf5e733aad22461b86fb7edd5c100834:a1",
+              "run_bf5e733aad22461b86fb7edd5c100834:a2",
+              "run_bf5e733aad22461b86fb7edd5c100834:a3",
+              "run_bf5e733aad22461b86fb7edd5c100834:v2",
+              "run_bf5e733aad22461b86fb7edd5c100834:f1",
+              "run_bf5e733aad22461b86fb7edd5c100834:f2"
+            ]
+          }
+        ],
+        "deferred": [],
+        "total_minutes": 6,
+        "note": "时间为演示估算；首轮验证1分钟，追加轮讲解1分钟与验证2分钟。先留验证预算，不将未验证记为完成。"
+      }
+    }
+  ],
+  "status": "completed",
+  "calls": [
+    {
+      "model_requested": "DeepSeek-V4.1-Flash",
+      "model_returned": "DeepSeek-V4.1-Flash",
+      "status": "ok",
+      "request_id": "ebcea16a-fe40-463b-a959-b1262a2884e6",
+      "duration_seconds": 9.156,
+      "usage": {
+        "prompt_tokens": 1239,
+        "completion_tokens": 1357,
+        "total_tokens": 2596,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1040
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1239
+      },
+      "finish_reason": "stop",
+      "requested_reasoning_effort": "max"
+    },
+    {
+      "model_requested": "DeepSeek-V4.1-Flash",
+      "model_returned": "DeepSeek-V4.1-Flash",
+      "status": "ok",
+      "request_id": "0aafed81-600e-4d65-a07d-1e9d981fa698",
+      "duration_seconds": 16.547,
+      "usage": {
+        "prompt_tokens": 1580,
+        "completion_tokens": 2539,
+        "total_tokens": 4119,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1942
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1580
+      },
+      "finish_reason": "stop",
+      "requested_reasoning_effort": "max"
+    },
+    {
+      "model_requested": "DeepSeek-V4.1-Flash",
+      "model_returned": "DeepSeek-V4.1-Flash",
+      "status": "ok",
+      "request_id": "bfc14755-0875-41bd-9ccb-51a128a7d8aa",
+      "duration_seconds": 13.141,
+      "usage": {
+        "prompt_tokens": 1884,
+        "completion_tokens": 2077,
+        "total_tokens": 3961,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1400
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1884
+      },
+      "finish_reason": "stop",
+      "requested_reasoning_effort": "max"
+    },
+    {
+      "model_requested": "DeepSeek-V4.1-Flash",
+      "model_returned": "DeepSeek-V4.1-Flash",
+      "status": "ok",
+      "request_id": "23ea3d59-11ea-4c2a-aca3-7608ef9655f3",
+      "duration_seconds": 26.328,
+      "usage": {
+        "prompt_tokens": 2406,
+        "completion_tokens": 4349,
+        "total_tokens": 6755,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3573
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2278
+      },
+      "finish_reason": "stop",
+      "requested_reasoning_effort": "max"
+    },
+    {
+      "model_requested": "DeepSeek-V4.1-Flash",
+      "model_returned": "DeepSeek-V4.1-Flash",
+      "status": "ok",
+      "request_id": "073c9716-799a-4752-80bc-d83460b4c398",
+      "duration_seconds": 24.953,
+      "usage": {
+        "prompt_tokens": 2406,
+        "completion_tokens": 4160,
+        "total_tokens": 6566,
+        "prompt_tokens_details": {
+          "cached_tokens": 2176
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3547
+        },
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 230
+      },
+      "finish_reason": "stop",
+      "requested_reasoning_effort": "max"
+    },
+    {
+      "model_requested": "DeepSeek-V4.1-Flash",
+      "model_returned": "DeepSeek-V4.1-Flash",
+      "status": "ok",
+      "request_id": "2c50cf16-115f-4d30-97e3-a9c8c3e10076",
+      "duration_seconds": 27.234,
+      "usage": {
+        "prompt_tokens": 2834,
+        "completion_tokens": 4628,
+        "total_tokens": 7462,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3940
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 2194
+      },
+      "finish_reason": "stop",
+      "requested_reasoning_effort": "max"
+    },
+    {
+      "model_requested": "DeepSeek-V4.1-Flash",
+      "model_returned": "DeepSeek-V4.1-Flash",
+      "status": "ok",
+      "request_id": "82a750af-5866-451f-af62-57955961cadb",
+      "duration_seconds": 31.219,
+      "usage": {
+        "prompt_tokens": 2996,
+        "completion_tokens": 5153,
+        "total_tokens": 8149,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4426
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1972
+      },
+      "finish_reason": "stop",
+      "requested_reasoning_effort": "max"
+    }
+  ],
+  "fingerprint_unchanged": true
+}

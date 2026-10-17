@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-10-16T12:36:50.296986+00:00",
+  "source_manifest_sha256": "653ffceddb7abaf6802c67e3ff0b896540da1c0e24480f5c083d80c633d6d46f",
+  "test_exit_code": 0,
+  "test_count": 60,
+  "ui": {
+    "status": "passed",
+    "browser": "Installed Edge / Playwright",
+    "fallback": "Browser plugin not available",
+    "viewports": [
+      "1365x1000",
+      "390x844"
+    ],
+    "checks": [
+      "failure -> feedback -> budget pause/resume -> fresh question -> reload -> correct -> guessed -> third-round limit -> stop",
+      "mobile answer + no horizontal overflow",
+      "no page or console errors on normal routes",
+      "initial loading locks start",
+      "response lost after commit -> reload -> same request ID retry -> no duplicate feedback",
+      "server-restart empty-state response injection clears old forms and offers start"
+    ],
+    "errors": []
+  },
+  "live_ui": {
+    "status": "passed",
+    "runtime_mode": "live",
+    "model": "DeepSeek-V4.1-Flash",
+    "scope": "browser_start_and_one_real_submission_only",
+    "not_whole_site": true,
+    "errors": []
+  },
+  "real_model_route": {
+    "model": "DeepSeek-V4.1-Flash",
+    "status": "completed",
+    "steps": 10,
+    "calls": 7,
+    "runtime_fingerprint": {
+      "lab/__init__.py": "307bca25881b2a2b2a7ccaee6ba88bd7f399ba2cc3bf21dc84507852ed300546",
+      "lab/adaptive.py": "31d065482947aa2368358d981c345d0c80c2117f3ed4f12238b5d97683c20e47",
+      "lab/adaptive_plan.py": "9678c5584928786021e1e76ee92ab6d978b512b44ef6a155d65590ad81c037b3",
+      "lab/aiping.py": "15447ff320bda627f800abdea9b6e6b8a20b864eafba32938b58cfd0cce36423",
+      "lab/content.py": "3c3c260f4cec907c20e81bbdd84017f3e96c09291bd7b2d378466c17c59c3b09",
+      "lab/engine.py": "8e961eda06af56256aa4ead175aee8d3e0600b8e1a0428c37c00be7dd6aeab22",
+      "lab/errors.py": "0a47973ce69fb1e8d9b6ea5bc758813b761c1ebc74afc4164737359a7e62343f",
+      "lab/models.py": "c4ee028243c7718872795185a628607fd8459c26574747c9a1173f890b45bd27",
+      "lab/plan.py": "0c0dbce60bcfda902b1f267159fcba8d312bb875a3fcafbf15483baa19b26f9b",
+      "fixtures/logic_adaptive.json": "fc74609394f81cd7010f33f515d9398b8e11f5e4984eb203dfc6aab68f02f4d8",
+      "fixtures/logic_demo.json": "332998de62ce67b7a527339adeb2cc63cdc9280ff1f673dfca6578a0c99591bc"
+    }
+  },
+  "whole_site_verified": false,
+  "student_effectiveness_verified": false
+}

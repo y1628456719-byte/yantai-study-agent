@@ -1,0 +1,81 @@
+{
+  "base": "http://127.0.0.1:8830",
+  "mode": "mock",
+  "checks": [
+    "fresh direct lab link requires first preparation",
+    "first screen collects information instead of asking for a school",
+    "original mascot and fixed ink background preserved",
+    "profile information produces recommendations before target confirmation",
+    "recommendations show actual school evidence",
+    "MLIS uses its exact sourced cutoff and no engineering substitution",
+    "only explicit confirmation saves the recommended school",
+    "archive and reference have independent left entrances",
+    "crossed-out diagnosis strip is absent",
+    "native diagnostic loop grades three actual answers",
+    "feedback updates real plan and keeps grades",
+    "archive opens without leaving the workspace",
+    "reference page opens from left rail",
+    "study plan is linked to same learning record",
+    "existing work survives reload and setup gate",
+    "demo remains separate and return is accessible without strip",
+    "demo return restores original actual answers",
+    "390px layout has no horizontal overflow",
+    "reset returns new user to profile information before recommendations",
+    "no browser runtime errors"
+  ],
+  "errors": [],
+  "write_sequence": [
+    {
+      "method": "PATCH",
+      "path": "/api/v1/sessions/s_236e964c047b/profile"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/sessions/s_236e964c047b/recommendations"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/sessions/s_236e964c047b/target"
+    },
+    {
+      "method": "POST",
+      "path": "/api/prepare"
+    },
+    {
+      "method": "POST",
+      "path": "/api/action"
+    },
+    {
+      "method": "POST",
+      "path": "/api/action"
+    },
+    {
+      "method": "POST",
+      "path": "/api/action"
+    },
+    {
+      "method": "POST",
+      "path": "/api/action"
+    },
+    {
+      "method": "POST",
+      "path": "/api/action"
+    },
+    {
+      "method": "POST",
+      "path": "/api/prepare"
+    },
+    {
+      "method": "POST",
+      "path": "/api/action"
+    },
+    {
+      "method": "POST",
+      "path": "/api/journey/return"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reset"
+    }
+  ]
+}

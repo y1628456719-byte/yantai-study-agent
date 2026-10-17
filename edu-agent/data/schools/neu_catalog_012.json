@@ -1,0 +1,234 @@
+{
+  "school_id": "neu",
+  "school_name": "东北大学",
+  "applicable_year": 2027,
+  "college_code": "012",
+  "college_name": "012 艺术学院",
+  "source": {
+    "title": "东北大学2027年硕士研究生招生专业目录",
+    "page_url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/page.htm",
+    "source_level": "official",
+    "site_render": "server-side HTML（静态，无需 JS）",
+    "fetched_at": "2026-10-16T21:38:41+08:00"
+  },
+  "extracted": {
+    "college_pages": [],
+    "college_note": "本文件由 scripts/_neu_parse_catalog.py 从官方专业目录页面内联 HTML 表格解析；「院系所」「专业」「考试科目」列在原文用 rowspan 纵向合并，解析时先展开再取值。该目录页只有 5 列（院系所/专业/研究方向/学习方式/考试科目），不含「拟招生人数」，故 admission_scale 另取官方《2026年硕士研究生招生专业目录（含拟招生人数）》附件 neu_2026_scale.pdf（见 admission_scale_source_year）；duration_years / tuition 取官方 2027 年学制汇总表与学费标准明细表（见各自 *_source_year）；re_exam_* 取官方《2026年硕士研究生招生考试复试参考信息》（见 re_exam_source_year）。",
+    "sources": {
+      "admission_scale": {
+        "data_year": 2026,
+        "page_url": "https://yz.neu.edu.cn/2025/1009/c5933a293424/page.htm",
+        "attachment_download": "https://yz.neu.edu.cn/_upload/article/files/70/ba/c702279f4bdabfe25fca5b1e6e11/106a5be3-929b-4d8c-81b3-4debc9b8cae2.pdf"
+      },
+      "duration_years": {
+        "data_year": 2027,
+        "page_url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "attachment_download": "https://yz.neu.edu.cn/_upload/article/files/7c/2a/7e2da1164b4b91f7358d35de7ef0/fbd72bb5-da62-41ab-935c-65bf68fb6a91.pdf"
+      },
+      "tuition": {
+        "data_year": 2027,
+        "page_url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "attachment_download": "https://yz.neu.edu.cn/_upload/article/files/7c/2a/7e2da1164b4b91f7358d35de7ef0/ad11c8dc-9d3a-4bd9-a9ee-06834729942c.pdf"
+      },
+      "re_exam": {
+        "data_year": 2026,
+        "page_url": "https://yz.neu.edu.cn/2025/1018/c5933a293857/page.htm",
+        "attachment_download": null
+      }
+    },
+    "programs": [
+      {
+        "program_code": "130100",
+        "program_name": "艺术学",
+        "admission_scale": 11,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 5,
+        "degree_type": "全日制学术学位",
+        "study_mode": "全日制",
+        "duration_years": 2,
+        "duration_years_source_year": 2027,
+        "tuition": "8000元/年.生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①101思想政治理论",
+          "②201英语（一）",
+          "③633艺术学基本理论",
+          "④864美学史与艺术史论"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01艺术理论",
+          "02艺术遗产",
+          "03艺术跨学科研究"
+        ],
+        "notes": null
+      },
+      {
+        "program_code": "135200",
+        "program_name": "音乐",
+        "admission_scale": 9,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 4,
+        "degree_type": "全日制专业学位",
+        "study_mode": "全日制",
+        "duration_years": 3,
+        "duration_years_source_year": 2027,
+        "tuition": "18000元/年.生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①101思想政治理论",
+          "②204英语（二）",
+          "③630和声与作品分析",
+          "④862中、西音乐史"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01声乐演唱（美声、民声）",
+          "02键盘器乐演奏（钢琴）",
+          "03音乐教育"
+        ],
+        "notes": null
+      },
+      {
+        "program_code": "135700",
+        "program_name": "设计",
+        "admission_scale": 21,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 12,
+        "degree_type": "全日制专业学位",
+        "study_mode": "全日制",
+        "duration_years": 3,
+        "duration_years_source_year": 2027,
+        "tuition": "15000元/年.生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①101思想政治理论",
+          "②204英语（二）",
+          "③629艺术设计概论",
+          "④863艺术设计史"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01环境设计",
+          "02视觉传达与媒体设计",
+          "03手工艺与非物质文化遗产"
+        ],
+        "notes": null
+      },
+      {
+        "program_code": "140300",
+        "program_name": "设计学",
+        "admission_scale": 15,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 7,
+        "degree_type": "全日制学术学位",
+        "study_mode": "全日制",
+        "duration_years": 2,
+        "duration_years_source_year": 2027,
+        "tuition": "8000元/年.生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①101思想政治理论",
+          "②201英语（一）",
+          "③629艺术设计概论",
+          "④863艺术设计史"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01环境设计",
+          "02视觉传达与媒体设计",
+          "03手工艺与非物质文化遗产"
+        ],
+        "notes": null
+      }
+    ],
+    "tuition_rows_2027": [
+      [
+        "012",
+        "艺术学院",
+        "130100",
+        "艺术学",
+        "全日制",
+        "8000元/年.生"
+      ],
+      [
+        "012",
+        "艺术学院",
+        "135200",
+        "音乐",
+        "全日制",
+        "18000元/年.生"
+      ],
+      [
+        "012",
+        "艺术学院",
+        "135700",
+        "设计",
+        "全日制",
+        "15000元/年.生"
+      ],
+      [
+        "012",
+        "艺术学院",
+        "140300",
+        "设计学",
+        "全日制",
+        "8000元/年.生"
+      ]
+    ],
+    "duration_rows_2027": [
+      [
+        "012",
+        "艺术学院",
+        "130100",
+        "艺术学",
+        "全日制",
+        "2"
+      ],
+      [
+        "012",
+        "艺术学院",
+        "135200",
+        "音乐",
+        "全日制",
+        "3"
+      ],
+      [
+        "012",
+        "艺术学院",
+        "135700",
+        "设计",
+        "全日制",
+        "3"
+      ],
+      [
+        "012",
+        "艺术学院",
+        "140300",
+        "设计学",
+        "全日制",
+        "2"
+      ]
+    ]
+  }
+}

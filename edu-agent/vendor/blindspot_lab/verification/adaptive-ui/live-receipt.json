@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "runtime_mode": "live",
+  "model": "DeepSeek-V4.1-Flash",
+  "scope": "browser_start_and_one_real_submission_only",
+  "not_whole_site": true,
+  "errors": []
+}

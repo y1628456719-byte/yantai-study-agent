@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="light">
+<title>砚台 · 让每一步学习，都有回响</title>
+<link rel="icon" href="/assets/yanyan.png"><link rel="preload" as="image" href="/assets/scholar-ink-landscape-v1.png">
+<link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/platform.css"><link rel="stylesheet" href="/enhancements.css"><link rel="stylesheet" href="/demo.css"><link rel="stylesheet" href="/journey.css"><link rel="stylesheet" href="/workspace.css">
+</head>
+<body data-page="welcome">
+<a class="skip-link" href="#pages">跳到主要内容</a>
+<div class="ink-background" aria-hidden="true"></div>
+<header class="demo-header">
+  <a class="brand brand-yanyan" href="#prepare" aria-label="砚台首页">
+    <img class="brand-logo" src="/assets/yanyan.png" alt="小妍妍 · 砚台伴学徽标" width="52" height="52">
+    <span>砚台<small>让学习，步步有据</small></span>
+  </a>
+  <nav id="platform-nav" aria-label="主要导航"><button type="button" class="pnav-btn" data-page="prepare" aria-controls="page-prepare" aria-current="page">准备</button><button type="button" class="pnav-btn" data-page="lab" aria-controls="page-lab">盲点实验室</button><button type="button" class="pnav-btn" data-page="plan" aria-controls="page-plan">学习安排</button></nav>
+  <div class="header-end"><div id="yt-agent-island"></div><button type="button" id="reset-demo" class="btn reset-btn" disabled>恢复默认</button></div>
+</header>
+<div class="gnotice" id="gnotice"><div data-platform="notice"></div><p id="reset-status" role="status" aria-live="polite" hidden></p></div>
+<div class="workspace">
+  <aside class="workspace-rail" aria-label="备考工具">
+    <p class="rail-kicker">我的书桌</p>
+    <p id="workspace-target" class="rail-target">正在读取备考档案…</p>
+    <nav id="workspace-nav" aria-label="档案与参考">
+      <button type="button" data-page="prepare" aria-controls="page-prepare"><span>今日准备</span><small>说说眼下的卡点</small></button>
+      <button type="button" data-page="profile" aria-controls="page-profile"><span>档案设置</span><small>院校、分数与学习时间</small></button>
+      <button type="button" data-page="reference" aria-controls="page-reference"><span>备考参考</span><small>院校比较、资料与问答</small></button>
+    </nav>
+    <p class="rail-footnote">从一个目标出发，<br>让每次反馈都有去处。</p>
+  </aside>
+<div class="pages" id="pages">
+  <section class="page page-welcome" id="page-welcome" aria-labelledby="welcome-title">
+    <header class="page-head"><p class="eyebrow">先了解你，再一起选方向</p><h1 class="page-title" id="welcome-title">从你的备考情况开始。</h1><p class="page-sub">说说报考方向、目标分数与学习时间，我们再从已接入的三所院校中，帮你比较适合的选择。</p></header>
+    <section class="block welcome-card" aria-label="首次备考信息"><div data-platform="welcome"></div></section>
+    <div id="welcome-school-slot" hidden><div class="welcome-recommendation-head"><p>根据你的情况，先看看这些选择。确认目标后，再开始学习。</p><button type="button" class="text-link" id="edit-first-profile">修改备考信息</button></div></div>
+  </section>
+  <section class="page page-prepare" id="page-prepare" aria-label="准备">
+    <header class="page-head journey-hero">
+      <p class="eyebrow">一方书桌，一条自己的路</p>
+      <h1 class="page-title">从眼下的卡点，开始下一步。</h1>
+      <p class="page-sub">说说你的目标，或最近哪类题容易犹豫。先练一轮，再决定下一步怎么学。</p>
+    </header>
+    <section class="journey-desk" id="journey-prepare-root" aria-labelledby="journey-input-label"></section>
+  </section>
+  <section class="page page-lab" id="page-lab" aria-label="盲点实验室">
+    <header class="page-head lab-heading"><div><p class="eyebrow">看见盲点，才能走得更远</p><h1 class="page-title">盲点实验室</h1><p class="page-sub">先用三题找卡点，再结合已有记录与反馈，安排下一步练习。</p></div><span class="lesson-label">本次练习 · 充分与必要条件</span></header>
+    <main class="shell" id="shell">
+      <section class="col col-lab" id="lab" aria-label="学习练习"><div class="sheet"><div class="sheet-topline"><span>一题一悟</span><span data-mount="budget"></span></div><div data-mount="starter"></div><div data-mount="question"></div><div data-mount="actions"></div><div data-mount="feedback"></div><div data-mount="explain"></div><div data-mount="summary"></div></div><details class="context-details"><summary>我的目标与参考资料</summary><div data-mount="goal"></div><div data-mount="material"></div></details></section>
+      <aside class="col col-plan" id="annotation" aria-label="学习进程与依据"><div id="journey-lab-sidebar" class="journey-sidebar-flow"></div><div id="yt-lab-sidebar-island"></div><details class="drawer drawer-time"><summary>调整可用时间</summary><div data-mount="time"></div></details><details class="drawer"><summary>本次练习安排</summary><div data-mount="plan"></div></details></aside>
+    </main>
+  </section>
+  <section class="page page-plan" id="page-plan" aria-label="学习安排">
+    <header class="page-head"><p class="eyebrow">把每一次反馈，变成下一步</p><h1 class="page-title">按自己的节奏，往前走。</h1><p class="page-sub">练习记录、真实作答证据与今日时间预算，共同决定下一步安排。</p></header>
+    <section id="journey-plan-root" class="journey-plan-section" aria-label="基于诊断证据的今日安排"></section>
+    <details class="block block-gplan" id="legacy-gplan-wrap"><summary id="t-gplan">院校与长线参考安排<span>综合档案视图</span></summary><div class="mount" data-platform="global-plan"></div></details>
+    <details class="block block-timeline"><summary id="t-tl">走过的决定<span>目标与时间的调整记录</span></summary><div class="mount" data-platform="timeline"></div></details>
+  </section>
+  <section class="page page-profile" id="page-profile" aria-labelledby="t-profile" hidden>
+    <header class="page-head"><p class="eyebrow">目标可以调整，记录会接着走</p><h1 class="page-title" id="t-profile">我的备考档案</h1><p class="page-sub">修改目标和时间后，下一步安排会随之更新。</p></header>
+    <section class="block"><div data-platform="target-settings"></div><div class="mount" data-platform="profile"></div></section>
+    <div class="progress-note" data-platform="summary" role="status" aria-live="polite"></div>
+  </section>
+  <section class="page page-reference" id="page-reference" aria-labelledby="reference-title" hidden>
+    <header class="page-head"><p class="eyebrow">把选择放在有据可查的地方</p><h1 class="page-title" id="reference-title">备考参考</h1><p class="page-sub">需要时再看学校、整理资料，或聊聊备考中的问题。</p></header>
+    <div id="reference-school-slot"><section class="block block-rec" id="school-recommendations"><h2 class="block-title" id="t-rec">看看适合的学校</h2><p class="block-hint">目前覆盖三所院校；条件比较不等于录取概率。每项信息都可查看出处。</p><div class="mount" data-platform="recommendations"></div></section></div>
+    <details class="block block-materials"><summary id="t-mat">我的资料<span>收存备考笔记与文字</span></summary><p class="block-hint">这里收存文字；当前练习围绕随包逻辑材料展开。</p><div class="mount" data-platform="materials"></div></details>
+    <details class="block block-agent"><summary id="t-agent">和备考助手聊聊<span>补充问答与深入交流</span></summary><p class="block-hint">选学校、排计划，或者重新想想今天怎么学。</p><div class="mount" data-platform="agent" role="log" aria-live="polite" aria-label="与助手的对话"></div><div id="yt-agent-task-island"></div></details>
+  </section>
+</div>
+</div>
+<footer class="footer"><span>砚台</span><p>让每一次作答，都成为下一次学习的起点。</p></footer>
+<script type="module" src="/app.js"></script><script type="module" src="/platform.js"></script><script type="module" src="/enhancements.js"></script><script type="module" src="/journey.js"></script>
+</body>
+</html>

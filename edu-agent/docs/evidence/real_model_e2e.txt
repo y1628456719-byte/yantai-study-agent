@@ -1,0 +1,25 @@
+model_key_configured=True base_url=https://aiping.cn/api/v1 model=DeepSeek-V4.1-Flash mock=False
+POST /sessions -> 200 sid=s_a1870c7a78ae
+POST /recommendations -> 200
+model_used=True generated_by=model model_error=None
+understood_as=2027 年信息与通信工程，目标分 330，偏好地域长春、哈尔滨、沈阳，每日 90 分钟；按“复试线 − 目标分 330”分档。
+  - 东北大学 tier=保 fit_reasons=7 risks=0 unknowns=4
+  - 吉林大学 tier=保 fit_reasons=9 risks=0 unknowns=4
+  - 哈尔滨工程大学 tier=None fit_reasons=4 risks=1 unknowns=5
+excluded=[]
+tier_rule=规则：复试线 − 目标分 330（差值 >10 为冲，10~−10 为稳，<−10 为保）
+dimension_hits=10 dimension_missing=23
+PUT /target -> 200 selected=neu
+lab/start(material_id=null) -> 200 question=self_ANALOG_CIRCUIT
+lab/answer -> 200 stage=diagnosis next_action=answer
+POST /recommendations(2nd) -> 200
+ability_flags=[]
+dimension_hits=10 dimension_missing=23
+POST /plan/revise -> 200 generated_by=model model_error=None
+  [砍掉] 初试科目：英语（一） —— 英语（一）weight=2，低于数学和841的weight=3；在90→45分钟预算且两门高权重科目已占40分钟后，本次执行期优先保初试主线，故砍掉这10分钟。
+  [砍掉] 初试科目：思想政治理论 —— 思想政治理论weight=1，且当前诊断未触发政治薄弱点；45分钟预算被weight=3的数学、841占去40分钟后，只能把政治这10分钟让给正在诊断和待验证的薄弱科目。
+  [砍掉] 错题回看 —— 错题回看weight=1，当前模拟电子技术诊断仍停在回答ac_qpoint_1、尚未形成可按概念混淆/计算失误/审题偏差归类的错题集；在90→45分钟下，这10分钟优先级低于weight=3的初试科目，因此砍掉。
+  [保留] 初试科目：数学（一） —— 数学（一）是目标院校初试科目（MATH1），weight=3；每日分钟从90压到45后，先保留其20分钟给最高权重的数学，避免在预算减半时削弱初试主线。
+  [保留] 初试科目：通信专业基础（841） —— 通信专业基础（841）同为weight=3初试科目，且当前诊断主题ANALOG_CIRCUIT自评仅2/5、正在回答ac_qpoint_1，属于待验证薄弱点；45分钟里保留20分钟用于该科目。
+  [计划] 初试科目：数学（一） 20min —— 这是目标院校的初试科目（标准科目：MATH1）
+  [计划] 初试科目：通信专业基础（841） 20min —— 这是目标院校的初试科目（标准科目：COMM_BASIC_841）

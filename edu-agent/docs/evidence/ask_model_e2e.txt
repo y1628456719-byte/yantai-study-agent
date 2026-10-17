@@ -1,0 +1,23 @@
+== 空档案（档案 {}）
+   phase            : P0 信息缺失期（inferred）
+   must_ask_about   : exam_year_known
+   模型追问         : 你准备考哪一届研究生？
+   规则原话         : 你打算参加哪一年的考研？
+   来源             : model
+
+== 只给年份（档案 {"exam_year": 2027}）
+   phase            : P1 方向探索期（inferred）
+   must_ask_about   : has_direction
+   模型追问         : 想考哪个专业方向？没想好也可以聊。
+   规则原话         : 有没有想考的专业方向？（不确定也可以说，我们一起看）
+   来源             : model
+
+== 给了年份与方向、没有候选校（档案 {"exam_year": 2027, "major": "信息与通信工程"}）
+   phase            : P2 目标筛选期（inferred）
+   must_ask_about   : has_candidate_schools
+   模型追问         : 目前有比较想去的学校吗？
+   规则原话         : 有没有已经看中的学校？
+   来源             : model
+
+== 判定 ==
+OK：三种档案状态的追问都由模型生成，且规则原话保留在 rule_next_question

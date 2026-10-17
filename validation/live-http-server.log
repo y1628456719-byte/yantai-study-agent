@@ -1,0 +1,16 @@
+http://127.0.0.1:8831/  mode=live; SQLite local session storage
+INFO:     Started server process [51912]
+INFO:     Waiting for application startup.
+2026-10-17 13:29:21,757 INFO edu_agent 启动完成：院校数据 ['heu', 'jlu', 'neu']；LAB_ADAPTER=blindspot；MOCK_LLM=False；模型密钥=已配置
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8831 (Press CTRL+C to quit)
+INFO:     127.0.0.1:13644 - "GET /api/state HTTP/1.1" 200 OK
+2026-10-17 13:29:56,341 INFO edu_agent.model_calls MODEL_CALL {"component": "blindspot", "model_requested": "DeepSeek-V4.1-Flash", "requested_reasoning_effort": "max", "status": "ok", "duration_seconds": 24.937}
+2026-10-17 13:30:11,163 INFO edu_agent.model_calls MODEL_CALL {"component": "blindspot", "model_requested": "DeepSeek-V4.1-Flash", "requested_reasoning_effort": "max", "status": "ok", "duration_seconds": 14.813}
+INFO:     127.0.0.1:13645 - "POST /api/action HTTP/1.1" 200 OK
+INFO:     127.0.0.1:5615 - "POST /api/action HTTP/1.1" 200 OK
+INFO:     127.0.0.1:5616 - "GET /api/state HTTP/1.1" 200 OK
+2026-10-17 13:30:26,153 INFO edu_agent.model_calls MODEL_CALL {"component": "blindspot", "model_requested": "DeepSeek-V4.1-Flash", "requested_reasoning_effort": "max", "status": "ok", "duration_seconds": 14.922}
+INFO:     127.0.0.1:5617 - "POST /api/action HTTP/1.1" 200 OK
+INFO:     127.0.0.1:11582 - "POST /api/action HTTP/1.1" 200 OK
+INFO:     127.0.0.1:11583 - "GET /api/state HTTP/1.1" 200 OK

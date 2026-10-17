@@ -1,0 +1,21 @@
+passed 7/10  schools=['heu', 'jlu', 'neu']
+PASS 14.1 创建会话后可以恢复
+     POST /sessions → s_0b22be462a46；GET /sessions/s_0b22be462a46 回读 profile.major=信息与通信工程，revision=2
+PASS 14.2 确认学校后不会丢失
+     PUT /target → neu；后续新增资料 + 实验室操作后仍为 neu，decisions 1 条
+PASS 14.3 资料录入成功且持久化
+     material_id=m_caf8accf7543，character_count=264，库里同值=264，会话快照可见=True，preview 200 字
+PASS 14.4 实验室状态可连续推进
+     stage 轨迹 diagnosis→verification→diagnosis；learning_state.ability_profile=[{'topic': 'ANALOG_CIRCUIT', 'status': 'weak', 'evidence_count': 1, 'basis': 'measured'}]；lab_state.is_demo=True
+PASS 14.5 修改时间后保留学习记录
+     120→30 分钟；院校=neu；资料数 2→2；learning_state 未变；changes 说明 7 条（其中 dropped 5 条）
+FAIL 14.6 模型连接失败时返回可理解的错误
+     HTTP 200 code=None retryable=None message=''
+PASS 14.7 N29 未提供年级/阶段时能推断 phase 并提问（不报错、不默认大三）
+     phase=P1（方向探索期）confidence=inferred；next_question='有没有想考的专业方向？（不确定也可以说，我们一起看）'；missing_critical=['has_direction', 'has_candidate_schools']
+FAIL 14.8 N34 material_id=null 时能走通无资料诊断路径
+     stage=diagnosis；question_id=self_MATH_CALC；证据 0 条且全部 kind=answer（自评/小测路径，未引用资料）
+PASS 14.9 N31 ability_flags 能与院校 exam_subjects 正确匹配
+     ability_flags=[('ANALOG_CIRCUIT', 'weak', 1, 'measured')]；与考试科目交集=[]；affected_schools=[['jlu']]
+FAIL 14.10 N32 dimension_hits/dimension_missing 如实反映本次推荐依据
+     hits 7 项 / missing 26 项 / 合计 33；hits 前 8 项=['exam_subjects', 'accepts_cross_major', 'equivalent_requirement', 'duration_years', 'city', 'ability_match', 'preference_match']；missing 前 5 项=['score_line_total', 'score_line_single', 'line_vs_national', 'admission_ratio', 'admitted_min_score']；hits 全部出现在 metrics 中=False

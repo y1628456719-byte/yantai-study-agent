@@ -1,0 +1,71 @@
+{
+  "bank_version": "logic-demo.v1",
+  "provenance": "团队开发用自编演示样本，不是官方真题；仅支持本份材料。",
+  "topic": "充分条件与必要条件的方向判断",
+  "material": {
+    "material_id": "demo_logic_v1",
+    "title": "条件方向判断（自编演示材料）",
+    "text": "若P成立就能推出Q成立，记作P→Q。P是Q的充分条件，Q是P的必要条件。\n仅有P→Q，不能反过来推出Q→P；Q成立而P不成立，与P→Q并不矛盾。\n“参加科研营必须先完成安全培训”表示：参加科研营→完成安全培训。已完成安全培训，并不能保证能参加科研营。\n审题时先圈出“必须”“只有”“就”等连接词，再分别标出条件与结论，最后检查推理方向。",
+    "source_url": null,
+    "is_demo": true
+  },
+  "quotes": [
+    "若P成立就能推出Q成立，记作P→Q。P是Q的充分条件，Q是P的必要条件。",
+    "仅有P→Q，不能反过来推出Q→P；Q成立而P不成立，与P→Q并不矛盾。",
+    "审题时先圈出“必须”“只有”“就”等连接词，再分别标出条件与结论，最后检查推理方向。"
+  ],
+  "questions": [
+    {
+      "question_id": "q_initial_01", "role": "initial",
+      "stem": "参加科研营必须先完成安全培训。小林已经完成安全培训。仅据这些信息，可以必然得出什么？",
+      "options": [
+        {"id": "A", "text": "小林一定能参加科研营"},
+        {"id": "B", "text": "还不能确定小林是否能参加科研营"},
+        {"id": "C", "text": "小林一定不能参加科研营"},
+        {"id": "D", "text": "暂时不会判断"}
+      ],
+      "correct_option_id": "B",
+      "rationale": "参加科研营→完成培训；不能由完成培训倒推一定参加科研营。",
+      "error_tags": {"A": "reversal", "C": "other", "D": "abstain"}
+    },
+    {
+      "question_id": "q_distinguish_01", "role": "distinguish",
+      "stem": "去掉故事表述：P是Q的充分条件。哪一项准确表达这句话的方向？",
+      "options": [
+        {"id": "A", "text": "P成立能推出Q成立，即P→Q"},
+        {"id": "B", "text": "Q成立能推出P成立，即Q→P"},
+        {"id": "C", "text": "P与Q必定不能同时成立"},
+        {"id": "D", "text": "暂时不能确定方向"}
+      ],
+      "correct_option_id": "A",
+      "rationale": "用直接概念辨认降低阅读负荷，与首题的情境推断形成区分；答对不能单独证明粗心。",
+      "error_tags": {"B": "reversal", "C": "other", "D": "abstain"}
+    },
+    {
+      "question_id": "q_verify_direction_01", "role": "verification",
+      "stem": "已知：服务器报警→值班员收到通知。现在值班员收到了通知，能否据此断定服务器报警？",
+      "options": [
+        {"id": "A", "text": "能，收到通知就是服务器报警"},
+        {"id": "B", "text": "不能，通知还可能有其他原因"},
+        {"id": "C", "text": "能断定服务器没有报警"},
+        {"id": "D", "text": "暂时不会判断"}
+      ],
+      "correct_option_id": "B",
+      "rationale": "报警足以触发通知；收到通知不是报警的充分证据。",
+      "error_tags": {"A": "reversal", "C": "other", "D": "abstain"}
+    },
+    {
+      "question_id": "q_verify_reading_01", "role": "verification",
+      "stem": "只有持有预约码，才能进入展厅。小周持有预约码。仅据这句话能否断定小周能进入展厅？",
+      "options": [
+        {"id": "A", "text": "能，预约码保证进入"},
+        {"id": "B", "text": "不能，预约码只是进入的必要条件"},
+        {"id": "C", "text": "能断定小周不能进入"},
+        {"id": "D", "text": "暂时不会判断"}
+      ],
+      "correct_option_id": "B",
+      "rationale": "进入→持有码；不能反向推断。此题检验从简短概念回到连接词表述的迁移。",
+      "error_tags": {"A": "reversal", "C": "other", "D": "abstain"}
+    }
+  ]
+}

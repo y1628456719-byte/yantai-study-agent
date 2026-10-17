@@ -1,0 +1,3440 @@
+{
+  "school_id": "heu",
+  "school_name": "哈尔滨工程大学",
+  "applicable_year": 2027,
+  "college_code": "008",
+  "college_name": "008 信息与通信工程学院/集成电路学院",
+  "metric_years": {
+    "exam_subjects": 2027,
+    "admission_scale": 2027,
+    "duration_years": 2027,
+    "tuition": 2027,
+    "score_line_total": 2025,
+    "re_exam_ratio": 2025,
+    "re_exam_subjects": 2025,
+    "score_weight": 2025
+  },
+  "source": {
+    "title": "哈尔滨工程大学2027年硕士招生专业目录",
+    "page_url": "https://yzb.hrbeu.edu.cn/2026/0929/c3279a352656/page.htm",
+    "attachment_url": "https://yzb.hrbeu.edu.cn/_upload/article/files/55/1a/06c933ef4ac9b8aa1372c53501a5/a26798bf-5848-4aae-a3e4-8804c8a8b2b1.pdf",
+    "pdf_pages": 32,
+    "source_level": "official",
+    "fetched_at": "2026-10-16T21:38:54+08:00",
+    "site_render": "服务端渲染 HTML + 博达 CMS 附件 PDF（无需 JS）"
+  },
+  "extracted": {
+    "college_pages": [
+      16,
+      17
+    ],
+    "college_note": "081000 信息与通信工程在哈工程由两个学院分别招生：008 信息与通信工程学院/集成电路学院（初试④815 电路、信号与系统）与 005 水声工程学院（初试④810 信号与系统），两处招生人数必须分开看。本文件 college_code/college_name 指向 008，005 的专业全部放在 other_colleges。专业目录 PDF 为 6 列合并单元格表格，本文件由文本碎片的 (x, y) 坐标重建列后取值，不依赖平铺文本的行序。",
+    "college_total_note": {
+      "recommend": 153,
+      "exam": 178,
+      "part_time": 2,
+      "raw": "预计接收推免生153人；预计招收全日制统考178人（根据国家下达实际计划和推免生接收情况动态调整），非全日制2人"
+    },
+    "college_total_note_raw": "预计接收推免生153人；预计招收全日制统考178人（根据国家下达实际计划和推免生接收情况动态调整），非全日制2人",
+    "duration_note": {
+      "duration_years": 3.0,
+      "raw": "学制一般为 3 年"
+    },
+    "tuition_table": {
+      "学术学位硕士": "0.8万元/生·年",
+      "专业学位硕士[全日制MBA除外]": "0.9万元/生·年",
+      "各工程类专业学位（电子信息、机械、能源动力、土木水利、材料与化工）、社会工作、法律（法学）、单独考试各专业": "1.6万元/生·年"
+    },
+    "tuition_table_raw_rows": {
+      "学术学位硕士": [
+        "全日制",
+        "学术学位硕士",
+        "—",
+        "0.8万元/生·年",
+        "按学制收取"
+      ],
+      "专业学位硕士[全日制MBA除外]": [
+        "专业学位硕士[全日制MBA除外]",
+        "—",
+        "0.9万元/生·年",
+        "",
+        ""
+      ],
+      "各工程类专业学位（电子信息、机械、能源动力、土木水利、材料与化工）、社会工作、法律（法学）、单独考试各专业": [
+        "各工程类专业学位（电子信息、机械、能源动力、土木水利、材料与化工）、社会工作、法律（法学）、单独考试各专业",
+        "—",
+        "1.6万元/生·年",
+        "按学制收取",
+        ""
+      ]
+    },
+    "programs": [
+      {
+        "program_code": "0804J7",
+        "program_name": "集成电路与智能传感",
+        "degree_type": "全日制学术学位",
+        "admission_scale": {
+          "recommend": 14,
+          "exam": 5,
+          "part_time": 0,
+          "admission_scale": 19,
+          "sum_formula": "推免+统考",
+          "raw": "14+5/0"
+        },
+        "base_plan_label": "基础计划（不区分研究方向）",
+        "study_mode": "全日制",
+        "duration_years": 3.0,
+        "tuition": "0.8万元/生·年",
+        "exam_subjects": [
+          "101思想政治理论",
+          "201英语（一）、202俄语、203日语(选一)",
+          "301数学（一）",
+          "815电路、信号与系统"
+        ],
+        "exam_subject_codes": {
+          "1": "101",
+          "2": "201",
+          "3": "301",
+          "4": "815"
+        },
+        "re_exam_subjects": "集成电路设计与通信原理",
+        "additional_exam_subjects": [
+          "1.微机原理与接口技术",
+          "2.数字信号处理"
+        ],
+        "directions_note": null,
+        "other_plans": [
+          {
+            "label": "青岛创新发展基地专项（不区分研究方向）",
+            "study_mode": "全日制",
+            "plan": {
+              "recommend": 5,
+              "exam": 3,
+              "part_time": 0,
+              "admission_scale": 8,
+              "raw": "5+3/0"
+            },
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）",
+              "301数学（一）",
+              "815电路、信号与系统"
+            ]
+          }
+        ]
+      },
+      {
+        "program_code": "080900",
+        "program_name": "电子科学与技术",
+        "degree_type": "全日制学术学位",
+        "admission_scale": {
+          "recommend": 7,
+          "exam": 5,
+          "part_time": 0,
+          "admission_scale": 12,
+          "sum_formula": "推免+统考",
+          "raw": "7+5/0"
+        },
+        "base_plan_label": "基础计划（研究方向见备注）",
+        "study_mode": "全日制",
+        "duration_years": 3.0,
+        "tuition": "0.8万元/生·年",
+        "exam_subjects": [
+          "101思想政治理论",
+          "201英语（一）、202俄语、203日语(选一)",
+          "301数学（一）",
+          "815电路、信号与系统"
+        ],
+        "exam_subject_codes": {
+          "1": "101",
+          "2": "201",
+          "3": "301",
+          "4": "815"
+        },
+        "re_exam_subjects": "数字电子技术与通信原理",
+        "additional_exam_subjects": [
+          "微机原理与接口技术",
+          "数字信号处理"
+        ],
+        "directions_note": "含以下方向：电磁兼容与天线理论、光电信号信息处理、器件及系统",
+        "other_plans": [],
+        "score_line_total": 272,
+        "score_line_total_source": {
+          "applicable_year": 2025,
+          "score_requirement": "满足国家线且总分不低于272分",
+          "page_url": "https://icec.hrbeu.edu.cn/2025/0325/c4658a335838/page.htm",
+          "published": "2025-03-25",
+          "fetched_at": "2026-10-16T21:34:23+08:00",
+          "note": "学院复试工作办法原文的复试分数要求；不是全校统一分数线。"
+        },
+        "re_exam_ratio": null,
+        "retest_plan": {
+          "plan": 8,
+          "retest_count": 3,
+          "study_mode": "全日制",
+          "applicable_year": 2025
+        },
+        "score_weight": "总成绩=(初试总成绩÷5)×50%+(复试总成绩÷3.5)×50%"
+      },
+      {
+        "program_code": "081000",
+        "program_name": "信息与通信工程",
+        "degree_type": "全日制学术学位",
+        "admission_scale": {
+          "recommend": 59,
+          "exam": 31,
+          "part_time": 0,
+          "admission_scale": 90,
+          "sum_formula": "推免+统考",
+          "raw": "59+31/0"
+        },
+        "base_plan_label": "基础计划（研究方向见备注）",
+        "study_mode": "全日制",
+        "duration_years": 3.0,
+        "tuition": "0.8万元/生·年",
+        "exam_subjects": [
+          "101思想政治理论",
+          "201英语（一）、202俄语、203日语(选一)",
+          "301数学（一）",
+          "815电路、信号与系统"
+        ],
+        "exam_subject_codes": {
+          "1": "101",
+          "2": "201",
+          "3": "301",
+          "4": "815"
+        },
+        "re_exam_subjects": "数字电子技术与通信原理",
+        "additional_exam_subjects": [
+          "微机原理与接口技术",
+          "数字信号处理"
+        ],
+        "directions_note": "含以下方向：智能信息与图像处理技术、通信与通信对抗技术、雷达对抗技术",
+        "other_plans": [
+          {
+            "label": "青岛创新发展基地专项（不区分研究方向）",
+            "study_mode": "全日制",
+            "plan": {
+              "recommend": 5,
+              "exam": 1,
+              "part_time": 0,
+              "admission_scale": 6,
+              "raw": "5+1/0"
+            },
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）",
+              "301数学（一）",
+              "815电路、信号与系统"
+            ]
+          }
+        ],
+        "score_line_total": 280,
+        "score_line_total_source": {
+          "applicable_year": 2025,
+          "score_requirement": "满足国家线且总分不低于280分",
+          "page_url": "https://icec.hrbeu.edu.cn/2025/0325/c4658a335838/page.htm",
+          "published": "2025-03-25",
+          "fetched_at": "2026-10-16T21:34:23+08:00",
+          "note": "学院复试工作办法原文的复试分数要求；不是全校统一分数线。"
+        },
+        "re_exam_ratio": "140%",
+        "retest_plan": {
+          "plan": 37,
+          "retest_count": 52,
+          "study_mode": "全日制",
+          "applicable_year": 2025
+        },
+        "score_weight": "总成绩=(初试总成绩÷5)×50%+(复试总成绩÷3.5)×50%"
+      },
+      {
+        "program_code": "085400",
+        "program_name": "电子信息",
+        "degree_type": "全日制专业学位",
+        "admission_scale": {
+          "recommend": 40,
+          "exam": 97,
+          "part_time": 0,
+          "admission_scale": 137,
+          "sum_formula": "推免+统考",
+          "raw": "40+97/0"
+        },
+        "base_plan_label": "基础计划（研究方向见备注）",
+        "study_mode": "全日制",
+        "duration_years": 3.0,
+        "tuition": "1.6万元/生·年",
+        "exam_subjects": [
+          "101思想政治理论",
+          "201英语（一）、202俄语、203日语(选一)",
+          "301数学（一）",
+          "815电路、信号与系统"
+        ],
+        "exam_subject_codes": {
+          "1": "101",
+          "2": "201",
+          "3": "301",
+          "4": "815"
+        },
+        "re_exam_subjects": "数字电子技术与通信原理",
+        "additional_exam_subjects": [
+          "微机原理与接口技术",
+          "数字信号处理"
+        ],
+        "directions_note": "含以下方向：信息感知与处理、信息传输与对抗",
+        "other_plans": [
+          {
+            "label": "青岛创新发展基地专项（不区分研究方向）",
+            "study_mode": "全日制",
+            "plan": {
+              "recommend": 4,
+              "exam": 3,
+              "part_time": 0,
+              "admission_scale": 7,
+              "raw": "4+3/0"
+            },
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）",
+              "301数学（一）",
+              "815电路、信号与系统"
+            ]
+          },
+          {
+            "label": "龙江工程师学院专项 （先进智能感知专班）（不区分研究方向）",
+            "study_mode": "全日制",
+            "plan": {
+              "recommend": 12,
+              "exam": 28,
+              "part_time": 0,
+              "admission_scale": 40,
+              "raw": "12+28/0"
+            },
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）、202俄语、203日语(选一)",
+              "301数学（一）",
+              "815电路、信号与系统"
+            ]
+          },
+          {
+            "label": "长三角研究院（南通）专项（不区分研究方向）",
+            "study_mode": "全日制",
+            "plan": {
+              "recommend": 0,
+              "exam": 4,
+              "part_time": 0,
+              "admission_scale": 4,
+              "raw": "0+4/0"
+            },
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）、202俄语、203日语(选一)",
+              "301数学（一）",
+              "815电路、信号与系统"
+            ]
+          },
+          {
+            "label": "集成电路专项（不区分研究方向）",
+            "study_mode": "全日制",
+            "plan": {
+              "recommend": 7,
+              "exam": 1,
+              "part_time": 0,
+              "admission_scale": 8,
+              "raw": "7+1/0"
+            },
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）、202俄语、203日语(选一)",
+              "301数学（一）",
+              "815电路、信号与系统"
+            ]
+          },
+          {
+            "label": "基础计划（不区分研究方向）",
+            "study_mode": "非全日制",
+            "plan": {
+              "recommend": 0,
+              "exam": 0,
+              "part_time": 2,
+              "admission_scale": 0,
+              "raw": "0+0/2"
+            },
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）、202俄语、203日语(选一)",
+              "301数学（一）",
+              "815电路、信号与系统"
+            ]
+          }
+        ],
+        "score_line_total": null,
+        "score_line_total_source": {
+          "applicable_year": 2025,
+          "score_requirement": "满足国家线",
+          "page_url": "https://icec.hrbeu.edu.cn/2025/0325/c4658a335838/page.htm",
+          "published": "2025-03-25",
+          "fetched_at": "2026-10-16T21:34:23+08:00",
+          "note": "学院复试工作办法原文的复试分数要求；不是全校统一分数线。"
+        },
+        "score_line_total_note": "原文只写「满足国家线」，未给出具体总分要求，因此 score_line_total 保持 null，不把国家线数值填进来。",
+        "re_exam_ratio": "118%",
+        "retest_plan": {
+          "plan": 166,
+          "retest_count": 196,
+          "study_mode": "全日制",
+          "applicable_year": 2025
+        },
+        "score_weight": "总成绩=(初试总成绩÷5)×50%+(复试总成绩÷3.5)×50%"
+      }
+    ],
+    "other_colleges": [
+      {
+        "college_code": "005",
+        "college_name": "005 水声工程学院",
+        "college_pages": [
+          9,
+          10,
+          11
+        ],
+        "college_total_note": {
+          "recommend": 204,
+          "exam": 126,
+          "part_time": 4,
+          "raw": "预计接收推免生204人；预计招收全日制统考126人（根据国家下达实际计划和推免生接收情况动态调整），非全日制4人"
+        },
+        "college_total_note_raw": "预计接收推免生204人；预计招收全日制统考126人（根据国家下达实际计划和推免生接收情况动态调整），非全日制4人",
+        "programs": [
+          {
+            "program_code": "070206",
+            "program_name": "声学",
+            "degree_type": "全日制学术学位",
+            "admission_scale": {
+              "recommend": 7,
+              "exam": 4,
+              "part_time": 0,
+              "admission_scale": 11,
+              "sum_formula": "推免+统考",
+              "raw": "7+4/0"
+            },
+            "base_plan_label": "基础计划（研究方向见备注）",
+            "study_mode": "全日制",
+            "duration_years": 3.0,
+            "tuition": "0.8万元/生·年",
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）、202俄语、203日语(选一)",
+              "610高等数学",
+              "809振动与声基础"
+            ],
+            "exam_subject_codes": {
+              "1": "101",
+              "2": "201",
+              "3": "610",
+              "4": "809"
+            },
+            "re_exam_subjects": "数学物理方法，普通物理。选一，不能与初试科目相同。",
+            "additional_exam_subjects": [
+              "信号与系统，数字信号处理"
+            ],
+            "directions_note": "声学",
+            "other_plans": []
+          },
+          {
+            "program_code": "070700",
+            "program_name": "海洋科学",
+            "degree_type": "全日制学术学位",
+            "admission_scale": {
+              "recommend": 6,
+              "exam": 1,
+              "part_time": 0,
+              "admission_scale": 7,
+              "sum_formula": "推免+统考",
+              "raw": "6+1/0"
+            },
+            "base_plan_label": "青岛创新发展基地专项（研究方向见备注）",
+            "study_mode": "全日制",
+            "duration_years": 3.0,
+            "tuition": "0.8万元/生·年",
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）",
+              "610高等数学",
+              "831海洋科学导论"
+            ],
+            "exam_subject_codes": {
+              "1": "101",
+              "2": "201",
+              "3": "610",
+              "4": "831"
+            },
+            "re_exam_subjects": "物理海洋学，水声学原理，选一，不能与初试科目相同。",
+            "additional_exam_subjects": [
+              "海洋学基础，普通物理"
+            ],
+            "directions_note": "含以下方向：声学海洋学、海洋动力学、海底探测技术、海洋空间信息技术",
+            "other_plans": []
+          },
+          {
+            "program_code": "081000",
+            "program_name": "信息与通信工程",
+            "degree_type": "全日制学术学位",
+            "admission_scale": {
+              "recommend": 12,
+              "exam": 7,
+              "part_time": 0,
+              "admission_scale": 19,
+              "sum_formula": "推免+统考",
+              "raw": "12+7/0"
+            },
+            "base_plan_label": "基础计划（研究方向见备注）",
+            "study_mode": "全日制",
+            "duration_years": 3.0,
+            "tuition": "0.8万元/生·年",
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）、202俄语、203日语(选一)",
+              "301数学（一）",
+              "810信号与系统"
+            ],
+            "exam_subject_codes": {
+              "1": "101",
+              "2": "201",
+              "3": "301",
+              "4": "810"
+            },
+            "re_exam_subjects": "模拟电子技术，数字电子技术，数字信号处理。选一，不能与初试科目相同。",
+            "additional_exam_subjects": [
+              "振动与声基础，普通物理"
+            ],
+            "directions_note": "含以下方向：水下目标探测与识别技术、水下通信与网络技术、水下定位与导航技术。",
+            "other_plans": [
+              {
+                "label": "青岛创新发展基地专项（研究方向见备注）",
+                "study_mode": "全日制",
+                "plan": {
+                  "recommend": 22,
+                  "exam": 8,
+                  "part_time": 0,
+                  "admission_scale": 30,
+                  "raw": "22+8/0"
+                },
+                "exam_subjects": [
+                  "101思想政治理论",
+                  "201英语（一）",
+                  "301数学（一）",
+                  "810信号与系统"
+                ]
+              },
+              {
+                "label": "海南（三亚）专项（研究方向见备注）",
+                "study_mode": "全日制",
+                "plan": {
+                  "recommend": 4,
+                  "exam": 2,
+                  "part_time": 0,
+                  "admission_scale": 6,
+                  "raw": "4+2/0"
+                },
+                "exam_subjects": [
+                  "101思想政治理论",
+                  "201英语（一）",
+                  "301数学（一）",
+                  "810信号与系统"
+                ]
+              }
+            ]
+          },
+          {
+            "program_code": "082403",
+            "program_name": "水声工程",
+            "degree_type": "全日制学术学位",
+            "admission_scale": {
+              "recommend": 49,
+              "exam": 26,
+              "part_time": 0,
+              "admission_scale": 75,
+              "sum_formula": "推免+统考",
+              "raw": "49+26/0"
+            },
+            "base_plan_label": "基础计划（研究方向见备注）",
+            "study_mode": "全日制",
+            "duration_years": 3.0,
+            "tuition": "0.8万元/生·年",
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）、202俄语、203日语(选一)",
+              "301数学（一）",
+              "809振动与声基础"
+            ],
+            "exam_subject_codes": {
+              "1": "101",
+              "2": "201",
+              "3": "301",
+              "4": "809"
+            },
+            "re_exam_subjects": "模拟电子技术，信号与系统，数学物理方法。选一，不能与初试科目相同。",
+            "additional_exam_subjects": [
+              "数字信号处理，数字电子技术"
+            ],
+            "directions_note": "含以下方向：海洋声场分析与模拟仿真技术、水下目标声学特性分析与水声对抗技术、水下声系统与水声电子技术、水声信号处理与水声通信技术。",
+            "other_plans": [
+              {
+                "label": "海南（三亚）专项（研究方向见备注）",
+                "study_mode": "全日制",
+                "plan": {
+                  "recommend": 6,
+                  "exam": 8,
+                  "part_time": 0,
+                  "admission_scale": 14,
+                  "raw": "6+8/0"
+                },
+                "exam_subjects": [
+                  "101思想政治理论",
+                  "201英语（一）",
+                  "301数学（一）",
+                  "809振动与声基础"
+                ]
+              }
+            ]
+          },
+          {
+            "program_code": "0824J1",
+            "program_name": "海洋信息科学与工程",
+            "degree_type": "全日制学术学位",
+            "admission_scale": {
+              "recommend": 6,
+              "exam": 4,
+              "part_time": 0,
+              "admission_scale": 10,
+              "sum_formula": "推免+统考",
+              "raw": "6+4/0"
+            },
+            "base_plan_label": "基础计划（研究方向见备注）",
+            "study_mode": "全日制",
+            "duration_years": 3.0,
+            "tuition": "0.8万元/生·年",
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）、202俄语、203日语(选一)",
+              "301数学（一）",
+              "810信号与系统"
+            ],
+            "exam_subject_codes": {
+              "1": "101",
+              "2": "201",
+              "3": "301",
+              "4": "810"
+            },
+            "re_exam_subjects": "模拟电子技术，数字电子技术，数学物理方法。选一，不能与初试科目相同。",
+            "additional_exam_subjects": [
+              "数字信号处理，普通物理"
+            ],
+            "directions_note": "含以下方向：海洋信息物理、海洋传感器与计量技术、海洋信息传输与安全技术、海洋信息处理技术与系统。",
+            "other_plans": [
+              {
+                "label": "青岛创新发展基地专项（研究方向见备注）",
+                "study_mode": "全日制",
+                "plan": {
+                  "recommend": 6,
+                  "exam": 1,
+                  "part_time": 0,
+                  "admission_scale": 7,
+                  "raw": "6+1/0"
+                },
+                "exam_subjects": [
+                  "101思想政治理论",
+                  "201英语（一）",
+                  "301数学（一）",
+                  "810信号与系统"
+                ]
+              }
+            ]
+          },
+          {
+            "program_code": "085400",
+            "program_name": "电子信息",
+            "degree_type": "全日制专业学位",
+            "admission_scale": {
+              "recommend": 36,
+              "exam": 17,
+              "part_time": 0,
+              "admission_scale": 53,
+              "sum_formula": "推免+统考",
+              "raw": "36+17/0"
+            },
+            "base_plan_label": "基础计划（研究方向见备注）",
+            "study_mode": "全日制",
+            "duration_years": 3.0,
+            "tuition": "1.6万元/生·年",
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）、202俄语、203日语(选一)",
+              "301数学（一）",
+              "810信号与系统"
+            ],
+            "exam_subject_codes": {
+              "1": "101",
+              "2": "201",
+              "3": "301",
+              "4": "810"
+            },
+            "re_exam_subjects": "数字电子技术，模拟电子技术，数字信号处理。选一，不能与初试科目相同。",
+            "additional_exam_subjects": [
+              "普通物理，振动与声基础"
+            ],
+            "directions_note": "含以下方向：声纳系统与设计、水声信号处理与应用。",
+            "other_plans": [
+              {
+                "label": "青岛创新发展基地专项（研究方向见备注）",
+                "study_mode": "全日制",
+                "plan": {
+                  "recommend": 20,
+                  "exam": 11,
+                  "part_time": 0,
+                  "admission_scale": 31,
+                  "raw": "20+11/0"
+                },
+                "exam_subjects": [
+                  "101思想政治理论",
+                  "201英语（一）",
+                  "301数学（一）",
+                  "810信号与系统"
+                ]
+              },
+              {
+                "label": "海南（三亚）专项（研究方向见备注）",
+                "study_mode": "全日制",
+                "plan": {
+                  "recommend": 8,
+                  "exam": 3,
+                  "part_time": 0,
+                  "admission_scale": 11,
+                  "raw": "8+3/0"
+                },
+                "exam_subjects": [
+                  "101思想政治理论",
+                  "201英语（一）",
+                  "301数学（一）",
+                  "810信号与系统"
+                ]
+              },
+              {
+                "label": "龙江工程师学院专项 （水下信息战略急需领域专班）（不区分研究方向）",
+                "study_mode": "全日制",
+                "plan": {
+                  "recommend": 9,
+                  "exam": 21,
+                  "part_time": 0,
+                  "admission_scale": 30,
+                  "raw": "9+21/0"
+                },
+                "exam_subjects": [
+                  "101思想政治理论",
+                  "201英语（一）、202俄语、203日语(选一)",
+                  "301数学（一）",
+                  "810信号与系统"
+                ]
+              },
+              {
+                "label": "基础计划（不区分研究方向）",
+                "study_mode": "非全日制",
+                "plan": {
+                  "recommend": 0,
+                  "exam": 0,
+                  "part_time": 2,
+                  "admission_scale": 0,
+                  "raw": "0+0/2"
+                },
+                "exam_subjects": [
+                  "101思想政治理论",
+                  "201英语（一）、202俄语、203日语(选一)",
+                  "301数学（一）",
+                  "810信号与系统"
+                ]
+              }
+            ]
+          },
+          {
+            "program_code": "085500",
+            "program_name": "机械",
+            "degree_type": "全日制专业学位",
+            "admission_scale": {
+              "recommend": 4,
+              "exam": 8,
+              "part_time": 0,
+              "admission_scale": 12,
+              "sum_formula": "推免+统考",
+              "raw": "4+8/0"
+            },
+            "base_plan_label": "基础计划（研究方向见备注）",
+            "study_mode": "全日制",
+            "duration_years": 3.0,
+            "tuition": "1.6万元/生·年",
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）、202俄语、203日语(选一)",
+              "301数学（一）",
+              "809振动与声基础"
+            ],
+            "exam_subject_codes": {
+              "1": "101",
+              "2": "201",
+              "3": "301",
+              "4": "809"
+            },
+            "re_exam_subjects": "模拟电子技术，信号与系统，数学物理方法。选一，不能与初试科目相同。",
+            "additional_exam_subjects": [
+              "数字信号处理，数字电子技术"
+            ],
+            "directions_note": "含以下方向：水下声学技术与装备",
+            "other_plans": [
+              {
+                "label": "基础计划（研究方向见备注）",
+                "study_mode": "非全日制",
+                "plan": {
+                  "recommend": 0,
+                  "exam": 0,
+                  "part_time": 2,
+                  "admission_scale": 0,
+                  "raw": "0+0/2"
+                },
+                "exam_subjects": [
+                  "101思想政治理论",
+                  "201英语（一）、202俄语、203日语(选一)",
+                  "301数学（一）",
+                  "809振动与声基础"
+                ]
+              }
+            ]
+          },
+          {
+            "program_code": "140200",
+            "program_name": "国家安全学",
+            "degree_type": "全日制学术学位",
+            "admission_scale": {
+              "recommend": 3,
+              "exam": 2,
+              "part_time": 0,
+              "admission_scale": 5,
+              "sum_formula": "推免+统考",
+              "raw": "3+2/0"
+            },
+            "base_plan_label": "国家安全战略",
+            "study_mode": "全日制",
+            "duration_years": 3.0,
+            "tuition": "0.8万元/生·年",
+            "exam_subjects": [
+              "101思想政治理论",
+              "201英语（一）、202俄语、203日语(选一)",
+              "303数学（三）",
+              "832国家安全学基础"
+            ],
+            "exam_subject_codes": {
+              "1": "101",
+              "2": "201",
+              "3": "303",
+              "4": "832"
+            },
+            "re_exam_subjects": "管理学、公共政策学、国家安全战略。选一，不能与初试科目相同。",
+            "additional_exam_subjects": [
+              "公共管理学、战略管理"
+            ],
+            "directions_note": null,
+            "other_plans": [
+              {
+                "label": "国家安全治理",
+                "study_mode": "全日制",
+                "plan": {
+                  "recommend": 3,
+                  "exam": 2,
+                  "part_time": 0,
+                  "admission_scale": 5,
+                  "raw": "3+2/0"
+                },
+                "exam_subjects": [
+                  "101思想政治理论",
+                  "201英语（一）、202俄语、203日语(选一)",
+                  "614法学综合",
+                  "832国家安全学基础"
+                ]
+              },
+              {
+                "label": "国家安全技术",
+                "study_mode": "全日制",
+                "plan": {
+                  "recommend": 3,
+                  "exam": 1,
+                  "part_time": 0,
+                  "admission_scale": 4,
+                  "raw": "3+1/0"
+                },
+                "exam_subjects": [
+                  "101思想政治理论",
+                  "201英语（一）、202俄语、203日语(选一)",
+                  "302数学（二）",
+                  "832国家安全学基础"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "reference_books": {
+      "by_exam_code": {},
+      "titles": [],
+      "count": 0,
+      "note": "哈工程只公布初试科目考试大纲（考试内容范围说明），不列参考书"
+    },
+    "exam_syllabus": {
+      "page_url": "https://icec.hrbeu.edu.cn/2026/1008/c4658a352763/page.htm",
+      "pdf_url": "https://icec.hrbeu.edu.cn/_upload/article/files/d4/5f/8e7c8a9545ec90c0aef1a53de2cf/70a6dd55-4dbb-4562-b3a1-196bf8b51b08.pdf",
+      "subject_name": "电路、信号与系统（815）"
+    },
+    "retest_list_2026": {
+      "applicable_year": 2026,
+      "source": {
+        "title": "附件4 信息与通信工程学院2026年硕士研究生复试名单（第一志愿报考我院）",
+        "page_url": "https://icec.hrbeu.edu.cn/2026/0323/c4658a346971/page.htm",
+        "attachment_url": "https://icec.hrbeu.edu.cn/_upload/article/files/9d/72/3195bd884d0ebcfe6966d8d5237b/27dc757d-441b-43fd-a13b-49f28beec97c.pdf",
+        "pdf_pages": 13,
+        "source_level": "official"
+      },
+      "by_major": {
+        "信息与通信工程": {
+          "count": 30,
+          "min_total": 266,
+          "max_total": 397,
+          "min_5_totals": [
+            266,
+            266,
+            288,
+            296,
+            306
+          ],
+          "min_single": {
+            "zz": 59,
+            "wy": 35,
+            "math": 71,
+            "major_course": 60
+          },
+          "note": "进入复试名单者的初试总分统计（第一志愿），不是学校公布的复试分数线；也不能当作录取最低分。"
+        },
+        "电子信息": {
+          "count": 225,
+          "min_total": 264,
+          "max_total": 408,
+          "min_5_totals": [
+            264,
+            266,
+            266,
+            266,
+            267
+          ],
+          "min_single": {
+            "zz": 47,
+            "wy": 35,
+            "math": 54,
+            "major_course": 54
+          },
+          "note": "进入复试名单者的初试总分统计（第一志愿），不是学校公布的复试分数线；也不能当作录取最低分。"
+        },
+        "电子科学与技术": {
+          "count": 8,
+          "min_total": 279,
+          "max_total": 417,
+          "min_5_totals": [
+            279,
+            284,
+            292,
+            297,
+            322
+          ],
+          "min_single": {
+            "zz": 63,
+            "wy": 52,
+            "math": 55,
+            "major_course": 72
+          },
+          "note": "进入复试名单者的初试总分统计（第一志愿），不是学校公布的复试分数线；也不能当作录取最低分。"
+        }
+      }
+    },
+    "retest_line": {
+      "applicable_year": 2025,
+      "source": {
+        "title": "哈尔滨工程大学信息与通信工程学院2025年硕士研究生复试工作办法 2025-03-25",
+        "page_url": "https://icec.hrbeu.edu.cn/2025/0325/c4658a335838/page.htm",
+        "published": "2025-03-25",
+        "fetched_at": "2026-10-16T21:34:23+08:00",
+        "source_level": "official"
+      },
+      "by_major": {
+        "080900": [
+          {
+            "program_name": "电子科学与技术",
+            "study_mode": "全日制",
+            "score_requirement": "满足国家线且总分不低于272分",
+            "score_line_total": 272,
+            "plan": 8,
+            "retest_count": 3,
+            "retest_ratio": null,
+            "note": "需调剂"
+          }
+        ],
+        "081000": [
+          {
+            "program_name": "信息与通信工程",
+            "study_mode": "全日制",
+            "score_requirement": "满足国家线且总分不低于280分",
+            "score_line_total": 280,
+            "plan": 37,
+            "retest_count": 52,
+            "retest_ratio": "140%",
+            "note": ""
+          }
+        ],
+        "085400": [
+          {
+            "program_name": "电子信息",
+            "study_mode": "全日制",
+            "score_requirement": "满足国家线",
+            "score_line_total": null,
+            "plan": 166,
+            "retest_count": 196,
+            "retest_ratio": "118%",
+            "note": ""
+          },
+          {
+            "program_name": "电子信息",
+            "study_mode": "非全日制",
+            "score_requirement": "满足国家线",
+            "score_line_total": null,
+            "plan": 5,
+            "retest_count": 0,
+            "retest_ratio": null,
+            "note": "需调剂"
+          }
+        ]
+      },
+      "re_exam_subjects": "数字电子技术与通信原理",
+      "additional_exam_subjects": [
+        "微机原理与接口技术",
+        "数字信号处理"
+      ],
+      "score_formula": "总成绩=(初试总成绩÷5)×50%+(复试总成绩÷3.5)×50%",
+      "raw_table": [
+        [
+          "专业代码",
+          "专业名称",
+          "学习形式",
+          "分数要求",
+          "招生计划（不含单考）",
+          "复试人数",
+          "差额比例/需调剂"
+        ],
+        [
+          "080900",
+          "电子科学与技术",
+          "全日制",
+          "满足国家线且总分不低于272分",
+          "8",
+          "3",
+          "需调剂"
+        ],
+        [
+          "081000",
+          "信息与通信工程",
+          "全日制",
+          "满足国家线且总分不低于280分",
+          "37",
+          "52",
+          "140%"
+        ],
+        [
+          "085400",
+          "电子信息",
+          "全日制",
+          "满足国家线",
+          "166",
+          "196",
+          "118%"
+        ],
+        [
+          "085400",
+          "电子信息",
+          "非全日制",
+          "满足国家线",
+          "5",
+          "0",
+          "需调剂"
+        ]
+      ]
+    },
+    "history": [
+      {
+        "applicable_year": 2027,
+        "source": {
+          "title": "哈尔滨工程大学2027年硕士招生专业目录",
+          "page_url": "https://yzb.hrbeu.edu.cn/2026/0929/c3279a352656/page.htm",
+          "attachment_url": "https://yzb.hrbeu.edu.cn/_upload/article/files/55/1a/06c933ef4ac9b8aa1372c53501a5/a26798bf-5848-4aae-a3e4-8804c8a8b2b1.pdf",
+          "pdf_pages": 32,
+          "source_level": "official"
+        },
+        "colleges": [
+          {
+            "college_code": "005",
+            "college_name": "005 水声工程学院",
+            "pages": [
+              9,
+              10,
+              11
+            ],
+            "college_total_note_raw": "预计接收推免生204人；预计招收全日制统考126人（根据国家下达实际计划和推免生接收情况动态调整），非全日制4人",
+            "college_total_note": {
+              "recommend": 204,
+              "exam": 126,
+              "part_time": 4,
+              "raw": "预计接收推免生204人；预计招收全日制统考126人（根据国家下达实际计划和推免生接收情况动态调整），非全日制4人"
+            },
+            "programs": [
+              {
+                "program_code": "070206",
+                "program_name": "声学",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 7,
+                      "exam": 4,
+                      "part_time": 0,
+                      "raw": "7+4/0"
+                    },
+                    "label": "基础计划（研究方向见备注）",
+                    "re_exam_subjects": "数学物理方法，普通物理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "信号与系统，数字信号处理"
+                    ],
+                    "directions_note": "声学",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "610",
+                        "text": "610高等数学"
+                      },
+                      {
+                        "no": 4,
+                        "code": "809",
+                        "text": "809振动与声基础"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "070700",
+                "program_name": "海洋科学",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 6,
+                      "exam": 1,
+                      "part_time": 0,
+                      "raw": "6+1/0"
+                    },
+                    "label": "青岛创新发展基地专项（研究方向见备注）",
+                    "re_exam_subjects": "物理海洋学，水声学原理，选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "海洋学基础，普通物理"
+                    ],
+                    "directions_note": "含以下方向：声学海洋学、海洋动力学、海底探测技术、海洋空间信息技术",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "610",
+                        "text": "610高等数学"
+                      },
+                      {
+                        "no": 4,
+                        "code": "831",
+                        "text": "831海洋科学导论"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "081000",
+                "program_name": "信息与通信工程",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 12,
+                      "exam": 7,
+                      "part_time": 0,
+                      "raw": "12+7/0"
+                    },
+                    "label": "基础计划（研究方向见备注）",
+                    "re_exam_subjects": "模拟电子技术，数字电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "振动与声基础，普通物理"
+                    ],
+                    "directions_note": "含以下方向：水下目标探测与识别技术、水下通信与网络技术、水下定位与导航技术。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 22,
+                      "exam": 8,
+                      "part_time": 0,
+                      "raw": "22+8/0"
+                    },
+                    "label": "青岛创新发展基地专项（研究方向见备注）",
+                    "re_exam_subjects": "模拟电子技术，数字电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "振动与声基础，普通物理"
+                    ],
+                    "directions_note": "含以下方向：水下目标探测与识别技术、水下通信与网络技术、水下定位与导航技术。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "03",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 4,
+                      "exam": 2,
+                      "part_time": 0,
+                      "raw": "4+2/0"
+                    },
+                    "label": "海南（三亚）专项（研究方向见备注）",
+                    "re_exam_subjects": "模拟电子技术，数字电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "振动与声基础，普通物理"
+                    ],
+                    "directions_note": "含以下方向：水下目标探测与识别技术、水下通信与网络技术、水下定位与导航技术。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "082403",
+                "program_name": "水声工程",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 49,
+                      "exam": 26,
+                      "part_time": 0,
+                      "raw": "49+26/0"
+                    },
+                    "label": "基础计划（研究方向见备注）",
+                    "re_exam_subjects": "模拟电子技术，信号与系统，数学物理方法。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "数字信号处理，数字电子技术"
+                    ],
+                    "directions_note": "含以下方向：海洋声场分析与模拟仿真技术、水下目标声学特性分析与水声对抗技术、水下声系统与水声电子技术、水声信号处理与水声通信技术。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "809",
+                        "text": "809振动与声基础"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 6,
+                      "exam": 8,
+                      "part_time": 0,
+                      "raw": "6+8/0"
+                    },
+                    "label": "海南（三亚）专项（研究方向见备注）",
+                    "re_exam_subjects": "模拟电子技术，信号与系统，数学物理方法。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "数字信号处理，数字电子技术"
+                    ],
+                    "directions_note": "含以下方向：海洋声场分析与模拟仿真技术、水下目标声学特性分析与水声对抗技术、水下声系统与水声电子技术、水声信号处理与水声通信技术。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "809",
+                        "text": "809振动与声基础"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "0824J1",
+                "program_name": "海洋信息科学与工程",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 6,
+                      "exam": 4,
+                      "part_time": 0,
+                      "raw": "6+4/0"
+                    },
+                    "label": "基础计划（研究方向见备注）",
+                    "re_exam_subjects": "模拟电子技术，数字电子技术，数学物理方法。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "数字信号处理，普通物理"
+                    ],
+                    "directions_note": "含以下方向：海洋信息物理、海洋传感器与计量技术、海洋信息传输与安全技术、海洋信息处理技术与系统。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 6,
+                      "exam": 1,
+                      "part_time": 0,
+                      "raw": "6+1/0"
+                    },
+                    "label": "青岛创新发展基地专项（研究方向见备注）",
+                    "re_exam_subjects": "模拟电子技术，数字电子技术，数学物理方法。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "数字信号处理，普通物理"
+                    ],
+                    "directions_note": "含以下方向：海洋信息物理、海洋传感器与计量技术、海洋信息传输与安全技术、海洋信息处理技术与系统。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "085400",
+                "program_name": "电子信息",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 36,
+                      "exam": 17,
+                      "part_time": 0,
+                      "raw": "36+17/0"
+                    },
+                    "label": "基础计划（研究方向见备注）",
+                    "re_exam_subjects": "数字电子技术，模拟电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "普通物理，振动与声基础"
+                    ],
+                    "directions_note": "含以下方向：声纳系统与设计、水声信号处理与应用。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 20,
+                      "exam": 11,
+                      "part_time": 0,
+                      "raw": "20+11/0"
+                    },
+                    "label": "青岛创新发展基地专项（研究方向见备注）",
+                    "re_exam_subjects": "数字电子技术，模拟电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "普通物理，振动与声基础"
+                    ],
+                    "directions_note": "含以下方向：声纳系统与设计、水声信号处理与应用。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "03",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 8,
+                      "exam": 3,
+                      "part_time": 0,
+                      "raw": "8+3/0"
+                    },
+                    "label": "海南（三亚）专项（研究方向见备注）",
+                    "re_exam_subjects": "数字电子技术，模拟电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "普通物理，振动与声基础"
+                    ],
+                    "directions_note": "含以下方向：声纳系统与设计、水声信号处理与应用。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "04",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 9,
+                      "exam": 21,
+                      "part_time": 0,
+                      "raw": "9+21/0"
+                    },
+                    "label": "龙江工程师学院专项 （水下信息战略急需领域专班）（不区分研究方向）",
+                    "re_exam_subjects": "数字电子技术，模拟电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "普通物理，振动与声基础"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "F1",
+                    "study_mode": "非全日制",
+                    "_num": {
+                      "recommend": 0,
+                      "exam": 0,
+                      "part_time": 2,
+                      "raw": "0+0/2"
+                    },
+                    "label": "基础计划（不区分研究方向）",
+                    "re_exam_subjects": "数字电子技术，模拟电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "普通物理，振动与声基础"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "085500",
+                "program_name": "机械",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 4,
+                      "exam": 8,
+                      "part_time": 0,
+                      "raw": "4+8/0"
+                    },
+                    "label": "基础计划（研究方向见备注）",
+                    "re_exam_subjects": "模拟电子技术，信号与系统，数学物理方法。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "数字信号处理，数字电子技术"
+                    ],
+                    "directions_note": "含以下方向：水下声学技术与装备",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "809",
+                        "text": "809振动与声基础"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "F1",
+                    "study_mode": "非全日制",
+                    "_num": {
+                      "recommend": 0,
+                      "exam": 0,
+                      "part_time": 2,
+                      "raw": "0+0/2"
+                    },
+                    "label": "基础计划（研究方向见备注）",
+                    "re_exam_subjects": "模拟电子技术，信号与系统，数学物理方法。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "数字信号处理，数字电子技术"
+                    ],
+                    "directions_note": "含以下方向：水下声学技术与装备",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "809",
+                        "text": "809振动与声基础"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "140200",
+                "program_name": "国家安全学",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 3,
+                      "exam": 2,
+                      "part_time": 0,
+                      "raw": "3+2/0"
+                    },
+                    "label": "国家安全战略",
+                    "re_exam_subjects": "管理学、公共政策学、国家安全战略。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "公共管理学、战略管理"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "303",
+                        "text": "303数学（三）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "832",
+                        "text": "832国家安全学基础"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 3,
+                      "exam": 2,
+                      "part_time": 0,
+                      "raw": "3+2/0"
+                    },
+                    "label": "国家安全治理",
+                    "re_exam_subjects": "国家安全法、国际法综合。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "民事诉讼法、公司法"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "614",
+                        "text": "614法学综合"
+                      },
+                      {
+                        "no": 4,
+                        "code": "832",
+                        "text": "832国家安全学基础"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "03",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 3,
+                      "exam": 1,
+                      "part_time": 0,
+                      "raw": "3+1/0"
+                    },
+                    "label": "国家安全技术",
+                    "re_exam_subjects": "数据安全、网络安全。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "普通物理、信号与系统"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "302",
+                        "text": "302数学（二）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "832",
+                        "text": "832国家安全学基础"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "college_code": "008",
+            "college_name": "008 信息与通信工程学院/集成电路学院",
+            "pages": [
+              16,
+              17
+            ],
+            "college_total_note_raw": "预计接收推免生153人；预计招收全日制统考178人（根据国家下达实际计划和推免生接收情况动态调整），非全日制2人",
+            "college_total_note": {
+              "recommend": 153,
+              "exam": 178,
+              "part_time": 2,
+              "raw": "预计接收推免生153人；预计招收全日制统考178人（根据国家下达实际计划和推免生接收情况动态调整），非全日制2人"
+            },
+            "programs": [
+              {
+                "program_code": "0804J7",
+                "program_name": "集成电路与智能传感",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 14,
+                      "exam": 5,
+                      "part_time": 0,
+                      "raw": "14+5/0"
+                    },
+                    "label": "基础计划（不区分研究方向）",
+                    "re_exam_subjects": "集成电路设计与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 5,
+                      "exam": 3,
+                      "part_time": 0,
+                      "raw": "5+3/0"
+                    },
+                    "label": "青岛创新发展基地专项（不区分研究方向）",
+                    "re_exam_subjects": "集成电路设计与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "080900",
+                "program_name": "电子科学与技术",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 7,
+                      "exam": 5,
+                      "part_time": 0,
+                      "raw": "7+5/0"
+                    },
+                    "label": "基础计划（研究方向见备注）",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": "含以下方向：电磁兼容与天线理论、光电信号信息处理、器件及系统",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "081000",
+                "program_name": "信息与通信工程",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 59,
+                      "exam": 31,
+                      "part_time": 0,
+                      "raw": "59+31/0"
+                    },
+                    "label": "基础计划（研究方向见备注）",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": "含以下方向：智能信息与图像处理技术、通信与通信对抗技术、雷达对抗技术",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 5,
+                      "exam": 1,
+                      "part_time": 0,
+                      "raw": "5+1/0"
+                    },
+                    "label": "青岛创新发展基地专项（不区分研究方向）",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "085400",
+                "program_name": "电子信息",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 40,
+                      "exam": 97,
+                      "part_time": 0,
+                      "raw": "40+97/0"
+                    },
+                    "label": "基础计划（研究方向见备注）",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": "含以下方向：信息感知与处理、信息传输与对抗",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 4,
+                      "exam": 3,
+                      "part_time": 0,
+                      "raw": "4+3/0"
+                    },
+                    "label": "青岛创新发展基地专项（不区分研究方向）",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "03",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 12,
+                      "exam": 28,
+                      "part_time": 0,
+                      "raw": "12+28/0"
+                    },
+                    "label": "龙江工程师学院专项 （先进智能感知专班）（不区分研究方向）",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "04",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 0,
+                      "exam": 4,
+                      "part_time": 0,
+                      "raw": "0+4/0"
+                    },
+                    "label": "长三角研究院（南通）专项（不区分研究方向）",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "05",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 7,
+                      "exam": 1,
+                      "part_time": 0,
+                      "raw": "7+1/0"
+                    },
+                    "label": "集成电路专项（不区分研究方向）",
+                    "re_exam_subjects": "集成电路设计与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "F1",
+                    "study_mode": "非全日制",
+                    "_num": {
+                      "recommend": 0,
+                      "exam": 0,
+                      "part_time": 2,
+                      "raw": "0+0/2"
+                    },
+                    "label": "基础计划（不区分研究方向）",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "applicable_year": 2026,
+        "source": {
+          "title": "哈尔滨工程大学2026年硕士招生专业目录",
+          "page_url": "https://yzb.hrbeu.edu.cn/2025/0930/c3279a341475/page.htm",
+          "attachment_url": "https://yzb.hrbeu.edu.cn/_upload/article/files/10/bd/21df1e9146c4ac4bb3c628fef3f5/0bb6ceec-9265-4271-ace8-aa952af9e392.pdf",
+          "pdf_pages": 27,
+          "source_level": "official"
+        },
+        "colleges": [
+          {
+            "college_code": "005",
+            "college_name": "005 水声工程学院",
+            "pages": [
+              8,
+              9,
+              10,
+              11
+            ],
+            "college_total_note_raw": "预计接收推免生149人；预计招收全日制统考149人（根据国家下达实际计划和推免生接收情况动态调整），非全日制2人",
+            "college_total_note": {
+              "recommend": 149,
+              "exam": 149,
+              "part_time": 2,
+              "raw": "预计接收推免生149人；预计招收全日制统考149人（根据国家下达实际计划和推免生接收情况动态调整），非全日制2人"
+            },
+            "programs": [
+              {
+                "program_code": "070700",
+                "program_name": "海洋科学",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 8,
+                      "exam": 1,
+                      "part_time": 0,
+                      "raw": "8+1/0"
+                    },
+                    "label": "青岛创新发展基地专项（研究方向详见备注）",
+                    "re_exam_subjects": "物理海洋学，水声学原理，选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "海洋学基础，普通物理"
+                    ],
+                    "directions_note": "青岛创新发展基地专项中含以下方向：声学海洋学、海洋动力学、海底探测技术、海洋空间信息技术",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "610",
+                        "text": "610高等数学"
+                      },
+                      {
+                        "no": 4,
+                        "code": "831",
+                        "text": "831海洋科学导论"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "070206",
+                "program_name": "声学",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 5,
+                      "exam": 6,
+                      "part_time": 0,
+                      "raw": "5+6/0"
+                    },
+                    "label": "基础计划（研究方向详见备注）",
+                    "re_exam_subjects": "数学物理方法，普通物理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "信号与系统，数字信号处理"
+                    ],
+                    "directions_note": "基础计划中含以下方向：声学",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "610",
+                        "text": "610高等数学"
+                      },
+                      {
+                        "no": 4,
+                        "code": "809",
+                        "text": "809振动与声基础"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "081000",
+                "program_name": "信息与通信工程",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 12,
+                      "exam": 6,
+                      "part_time": 0,
+                      "raw": "12+6/0"
+                    },
+                    "label": "基础计划（研究方向详见备注）",
+                    "re_exam_subjects": "模拟电子技术，数字电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "振动与声基础，普通物理"
+                    ],
+                    "directions_note": "基础计划中含以下方向：水下目标探测与识别技术、水下通信与网络技术、水下定位与导航技术。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 21,
+                      "exam": 15,
+                      "part_time": 0,
+                      "raw": "21+15/0"
+                    },
+                    "label": "青岛创新发展基地专项（研究方向详见备注）",
+                    "re_exam_subjects": "模拟电子技术，数字电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "振动与声基础，普通物理"
+                    ],
+                    "directions_note": "青岛创新发展基地专项中含以下方向：水下目标探测与识别技术、水下通信与网络技术、水下定位与导航技术。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "03",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 2,
+                      "exam": 1,
+                      "part_time": 0,
+                      "raw": "2+1/0"
+                    },
+                    "label": "海南（三亚）专项（研究方向详见备注）",
+                    "re_exam_subjects": "模拟电子技术，数字电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "振动与声基础，普通物理"
+                    ],
+                    "directions_note": "海南专项中含以下方向：水下目标探测与识别技术、水下通信与网络技术、水下定位与导航技术。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "082403",
+                "program_name": "水声工程",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 42,
+                      "exam": 21,
+                      "part_time": 0,
+                      "raw": "42+21/0"
+                    },
+                    "label": "基础计划（研究方向详见备注）",
+                    "re_exam_subjects": "模拟电子技术，信号与系统，数学物理方法。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "数字信号处理，数字电子技术"
+                    ],
+                    "directions_note": "基础计划中含以下方向：海洋声场分析与模拟仿真技术、水下目标声学特性分析与水声对抗技术、水下声系统与水声电子技术、水声信号处理与水声通信技术。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "809",
+                        "text": "809振动与声基础"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 5,
+                      "exam": 4,
+                      "part_time": 0,
+                      "raw": "5+4/0"
+                    },
+                    "label": "海南（三亚）专项（研究方向详见备注）",
+                    "re_exam_subjects": "模拟电子技术，信号与系统，数学物理方法。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "数字信号处理，数字电子技术"
+                    ],
+                    "directions_note": "海南专项中含以下方向：海洋声场分析与模拟仿真技术、水下目标声学特性分析与水声对抗技术、水下声系统与水声电子技术、水声信号处理与水声通信技术。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "809",
+                        "text": "809振动与声基础"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "0824J1",
+                "program_name": "海洋信息科学与工程",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 5,
+                      "exam": 4,
+                      "part_time": 0,
+                      "raw": "5+4/0"
+                    },
+                    "label": "基础计划（研究方向详见备注）",
+                    "re_exam_subjects": "模拟电子技术，数字电子技术，数学物理方法。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "数字信号处理，普通物理"
+                    ],
+                    "directions_note": "基础计划中含以下方向：海洋信息物理、海洋传感器与计量技术、海洋信息传输与安全技术、海洋信息处理技术与系统。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 5,
+                      "exam": 4,
+                      "part_time": 0,
+                      "raw": "5+4/0"
+                    },
+                    "label": "青岛创新发展基地专项（研究方向详见备注）",
+                    "re_exam_subjects": "模拟电子技术，数字电子技术，数学物理方法。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "数字信号处理，普通物理"
+                    ],
+                    "directions_note": "青岛创新发展基地专项中含以下方向：海洋信息物理、海洋传感器与计量技术、海洋信息传输与安全技术、海洋信息处理技术与系统。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "085400",
+                "program_name": "电子信息",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 23,
+                      "exam": 30,
+                      "part_time": 0,
+                      "raw": "23+30/0"
+                    },
+                    "label": "基础计划（研究方向详见备注）",
+                    "re_exam_subjects": "数字电子技术，模拟电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "普通物理，振动与声基础"
+                    ],
+                    "directions_note": "基础计划中含以下方向：声纳系统与设计、水声信号处理与应用。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 10,
+                      "exam": 21,
+                      "part_time": 0,
+                      "raw": "10+21/0"
+                    },
+                    "label": "青岛创新发展基地专项（研究方向详见备注）",
+                    "re_exam_subjects": "数字电子技术，模拟电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "普通物理，振动与声基础"
+                    ],
+                    "directions_note": "青岛创新发展基地专项中含以下方向：声纳系统与设计、水声信号处理与应用。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "03",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 5,
+                      "exam": 13,
+                      "part_time": 0,
+                      "raw": "5+13/0"
+                    },
+                    "label": "海南（三亚）专项（研究方向详见备注）",
+                    "re_exam_subjects": "数字电子技术，模拟电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "普通物理，振动与声基础"
+                    ],
+                    "directions_note": "海南专项中含以下方向：声纳系统与设计、水声信号处理与应用。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "01",
+                    "study_mode": "非全日制",
+                    "_num": {
+                      "recommend": 0,
+                      "exam": 0,
+                      "part_time": 1,
+                      "raw": "0+0/1"
+                    },
+                    "label": "基础计划（研究方向详见备注）",
+                    "re_exam_subjects": "数字电子技术，模拟电子技术，数字信号处理。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "普通物理，振动与声基础"
+                    ],
+                    "directions_note": "基础计划中含以下方向：声纳系统与设计、水声信号处理与应用。",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "810",
+                        "text": "810信号与系统"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "085500",
+                "program_name": "机械",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 6,
+                      "exam": 8,
+                      "part_time": 0,
+                      "raw": "6+8/0"
+                    },
+                    "label": "基础计划（研究方向详见备注）",
+                    "re_exam_subjects": "模拟电子技术，信号与系统，数学物理方法。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "数字信号处理，数字电子技术"
+                    ],
+                    "directions_note": "水下声学技术与装备",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "809",
+                        "text": "809振动与声基础"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "01",
+                    "study_mode": "非全日制",
+                    "_num": {
+                      "recommend": 0,
+                      "exam": 0,
+                      "part_time": 1,
+                      "raw": "0+0/1"
+                    },
+                    "label": "基础计划（研究方向详见备注）",
+                    "re_exam_subjects": "模拟电子技术，信号与系统，数学物理方法。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "数字信号处理，数字电子技术"
+                    ],
+                    "directions_note": "水下声学技术与装备",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "809",
+                        "text": "809振动与声基础"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "140200",
+                "program_name": "国家安全学",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 0,
+                      "exam": 5,
+                      "part_time": 0,
+                      "raw": "0+5/0"
+                    },
+                    "label": "国家安全战略",
+                    "re_exam_subjects": "管理学、公共政策学、国家安全战略。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "公共管理学、战略管理"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "303",
+                        "text": "303数学（三）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "832",
+                        "text": "832国家安全学基础"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 0,
+                      "exam": 5,
+                      "part_time": 0,
+                      "raw": "0+5/0"
+                    },
+                    "label": "国家安全治理",
+                    "re_exam_subjects": "国家安全法、国际法综合。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "民事诉讼法、公司法"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "614",
+                        "text": "614法学综合"
+                      },
+                      {
+                        "no": 4,
+                        "code": "832",
+                        "text": "832国家安全学基础"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "03",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 0,
+                      "exam": 5,
+                      "part_time": 0,
+                      "raw": "0+5/0"
+                    },
+                    "label": "国家安全技术",
+                    "re_exam_subjects": "数据安全、网络安全。选一，不能与初试科目相同。",
+                    "additional_exam_subjects": [
+                      "普通物理、信号与系统"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "302",
+                        "text": "302数学（二）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "832",
+                        "text": "832国家安全学基础"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "college_code": "008",
+            "college_name": "008 信息与通信工程学院",
+            "pages": [
+              13,
+              14
+            ],
+            "college_total_note_raw": "预计接收推免生121人；预计招收全日制统考175人（根据国家下达实际计划和推免生接收情况动态调整），非全日制2人",
+            "college_total_note": {
+              "recommend": 121,
+              "exam": 175,
+              "part_time": 2,
+              "raw": "预计接收推免生121人；预计招收全日制统考175人（根据国家下达实际计划和推免生接收情况动态调整），非全日制2人"
+            },
+            "programs": [
+              {
+                "program_code": "080900",
+                "program_name": "电子科学与技术",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 7,
+                      "exam": 8,
+                      "part_time": 0,
+                      "raw": "7+8/0"
+                    },
+                    "label": "基础计划（研究方向详见备注）",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": "基础计划含以下方向：电磁兼容与天线理论、光电信号信息处理、器件及系统",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "081000",
+                "program_name": "信息与通信工程",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 57,
+                      "exam": 38,
+                      "part_time": 0,
+                      "raw": "57+38/0"
+                    },
+                    "label": "基础计划（研究方向详见备注）",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": "基础计划含以下方向：智能信息与图像处理技术、通信与通信对抗技术、雷达对抗技术",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 4,
+                      "exam": 3,
+                      "part_time": 0,
+                      "raw": "4+3/0"
+                    },
+                    "label": "青岛创新发展基地专项",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": "不区分方向",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "program_code": "085400",
+                "program_name": "电子信息",
+                "directions": [
+                  {
+                    "direction_code": "01",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 51,
+                      "exam": 82,
+                      "part_time": 0,
+                      "raw": "51+82/0"
+                    },
+                    "label": "基础计划（研究方向详见备注）",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": "基础计划含以下方向：信息感知与处理、信息传输与对抗",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "02",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 2,
+                      "exam": 4,
+                      "part_time": 0,
+                      "raw": "2+4/0"
+                    },
+                    "label": "青岛创新发展基地专项",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": "不区分方向",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "03",
+                    "study_mode": "全日制",
+                    "_num": {
+                      "recommend": 0,
+                      "exam": 40,
+                      "part_time": 0,
+                      "raw": "0+40/0"
+                    },
+                    "label": "龙江工程师学院专项（先进智能感知）",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": null,
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  },
+                  {
+                    "direction_code": "01",
+                    "study_mode": "非全日制",
+                    "_num": {
+                      "recommend": 0,
+                      "exam": 0,
+                      "part_time": 2,
+                      "raw": "0+0/2"
+                    },
+                    "label": "基础计划（研究方向详见备注）",
+                    "re_exam_subjects": "数字电子技术与通信原理",
+                    "additional_exam_subjects": [
+                      "1.微机原理与接口技术",
+                      "2.数字信号处理"
+                    ],
+                    "directions_note": "基础计划含以下方向：信息感知与处理、信息传输与对抗",
+                    "exam_subjects": [
+                      {
+                        "no": 1,
+                        "code": "101",
+                        "text": "101思想政治理论"
+                      },
+                      {
+                        "no": 2,
+                        "code": "201",
+                        "text": "201英语（一）、202俄语、203日语(选一)"
+                      },
+                      {
+                        "no": 3,
+                        "code": "301",
+                        "text": "301数学（一）"
+                      },
+                      {
+                        "no": 4,
+                        "code": "815",
+                        "text": "815电路、信号与系统"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "missing_fields": [
+    "score_line_single",
+    "line_vs_national",
+    "admission_ratio",
+    "admitted_min_score",
+    "recommend_ratio",
+    "reference_books_count",
+    "discipline_rating",
+    "has_phd",
+    "accepts_cross_major",
+    "policy_change_flag"
+  ],
+  "unknowns": [
+    "复试分数线 score_line_total/score_line_single：哈工程研招网不公布普通计划的专业复试线，全站栏目扫描只找到「退役大学生士兵计划」专项分数线。本文件的 score_line_total 取自学院（008 信通学院）自己发布的《复试工作办法》正文表格里的「分数要求」列（081000：满足国家线且总分不低于 280 分），source 已逐条给出 page_url / published / fetched_at；单科线（score_line_single）与「与国家线之差」原文未给，保持 null。2026 年普通计划复试名单 PDF（见 data/schools/heu.json 的 attachments）可反推进入复试者的最低初试总分，但那是「进入复试者最低分」而不是官方分数线，且不等同于录取最低分，故不写进 score_line_*，只放在 retest_list_2026。",
+    "2025 及更早年份的专业目录页面已被统一身份认证（CAS）拦截（跳转 https://cas.hrbeu.edu.cn/cas/login?...），无法抓取，所以 history 只覆盖 2026 / 2027 两个年度，不构成「近三年」。",
+    "参考书目 reference_books_count：哈工程公布的是「初试科目考试大纲」（考试内容范围说明，见 https://icec.hrbeu.edu.cn/2026/1008/c4658a352763/page.htm 的 PDF https://icec.hrbeu.edu.cn/_upload/article/files/d4/5f/8e7c8a9545ec90c0aef1a53de2cf/70a6dd55-4dbb-4562-b3a1-196bf8b51b08.pdf），只写考试范围不列参考书，故 reference_books 为空。",
+    "085402 通信工程：哈工程按 085400 电子信息大类招生，专业目录中不存在 085402 这个专业代码，本文件以 085400 电子信息作为最接近方向，program_code 保留 085400 原值未改动。",
+    "学费表（简章 §九）在 HTML 里是合并单元格，extract_tables 拍平后「学习形式」列会错位；本文件按「行内出现电子信息等工程类专业学位 = 1.6 万元/生·年」这一更具体的规则取值，并把原始行随 raw_row 一起保留以便复核。",
+    "学院级总数与各专业人数不自洽：008 学院 2027 学院级注为「推免 153 人 / 统考 178 人」，而该学院各专业（081000 59+31、085400 基础 40+97 加各专项、0804J7 14+5、080900 7+5）逐项求和与学院级数字不相等（学院级含其他专业），不能互相校验，本文件两者分别保留、不做换算。"
+  ],
+  "generated_at": "2026-10-16T21:38:54+08:00"
+}

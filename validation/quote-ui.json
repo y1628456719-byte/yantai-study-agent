@@ -1,0 +1,10 @@
+{
+  "mode": "mock",
+  "actual_backend_projection": true,
+  "latest_rule_quote_visible": true,
+  "exact_title_visible": true,
+  "topic_label_visible": true,
+  "pending_verification_not_marked_done": true,
+  "previous_grade_and_summary_not_shown_as_current_result": true,
+  "errors": []
+}

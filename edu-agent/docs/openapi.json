@@ -1,0 +1,1520 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "考研择校决策 Agent",
+    "description": "莱森地平线 LAISEN HORIZON · 赛道 03 Agent 驱动的真实场景应用（教育学习辅助）",
+    "version": "1.1.0"
+  },
+  "paths": {
+    "/api/health": {
+      "get": {
+        "summary": "Health",
+        "description": "运维用健康检查（不在 12 端点契约内，但便于现场排障）。",
+        "operationId": "health_api_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/version": {
+      "get": {
+        "summary": "Version",
+        "operationId": "version_api_version_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/agent": {
+      "post": {
+        "tags": [
+          "agent"
+        ],
+        "summary": "Agent Turn",
+        "description": "跑一轮 Agent：它可能会连续调用多个工具，最后给一句话回复。",
+        "operationId": "agent_turn_api_v1_agent_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AgentIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions": {
+      "post": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "Create Session",
+        "description": "§7.1 创建会话。",
+        "operationId": "create_session_api_v1_sessions_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SessionCreateIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}": {
+      "get": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "Get Session",
+        "description": "§7.3 读取会话快照。",
+        "operationId": "get_session_api_v1_sessions__session_id__get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/profile": {
+      "patch": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "Patch Profile",
+        "description": "§7.2 部分更新档案（N1/N29/N30）。",
+        "operationId": "patch_profile_api_v1_sessions__session_id__profile_patch",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfilePatchIn"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/target": {
+      "put": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "Set Target",
+        "description": "§7.5 确认目标院校（N9 备注 / N28 决策记录）。",
+        "operationId": "set_target_api_v1_sessions__session_id__target_put",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TargetIn"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/shortlist": {
+      "put": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "Set Shortlist",
+        "description": "N10 备选清单：允许用户\"先缩小到 2 所\"。",
+        "operationId": "set_shortlist_api_v1_sessions__session_id__shortlist_put",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShortlistIn"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/recommendations": {
+      "post": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "Recommendations",
+        "description": "§7.4 生成院校推荐（N2/N4/N5/N6/N7/N8/N27/N32）。\n\n**可重复调用且幂等**（SPEC §4.2.5 闭环顺序）：同一 `revision` 下结果一致；\n若会话里已有 `learning_state.ability_profile`，返回的 `ability_flags` 会体现\"风险上调\"。",
+        "operationId": "recommendations_api_v1_sessions__session_id__recommendations_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/materials": {
+      "get": {
+        "tags": [
+          "materials"
+        ],
+        "summary": "List Materials",
+        "description": "列出资料（前端刷新用；删除后列表立即反映）。",
+        "operationId": "list_materials_api_v1_sessions__session_id__materials_get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "materials"
+        ],
+        "summary": "Add Material",
+        "description": "§7.6 录入学习资料（N11 分段+locator、N12 可选 school_id/subject、N13 preview）。",
+        "operationId": "add_material_api_v1_sessions__session_id__materials_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MaterialIn"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/materials/{material_id}": {
+      "delete": {
+        "tags": [
+          "materials"
+        ],
+        "summary": "Delete Material",
+        "description": "§7.7 删除资料（N35）：已被诊断引用则软删除；**幂等**。\n\n重复删除（含硬删除后行已消失）一律返回 `ok: true`，避免演示时反复点删除报错。",
+        "operationId": "delete_material_api_v1_sessions__session_id__materials__material_id__delete",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          },
+          {
+            "name": "material_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Material Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/lab/start": {
+      "post": {
+        "tags": [
+          "lab"
+        ],
+        "summary": "Lab Start",
+        "description": "§7.8 启动盲点实验；`material_id: null` 走 N34 无资料诊断路径。",
+        "operationId": "lab_start_api_v1_sessions__session_id__lab_start_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LabStartIn"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/lab/answer": {
+      "post": {
+        "tags": [
+          "lab"
+        ],
+        "summary": "Lab Answer",
+        "description": "§7.9 提交作答，推进盲点实验（N14~N20 由 adapter 实现）。",
+        "operationId": "lab_answer_api_v1_sessions__session_id__lab_answer_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LabAnswerIn"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/lab/action": {
+      "post": {
+        "tags": [
+          "lab"
+        ],
+        "summary": "Lab Action",
+        "description": "体验队友实验室 lab.v2 的额外动作（additive：feedback / time / continue / stop / submit）。\n\n- `submit` 与 `POST /lab/answer` 等价，这里允许前端走统一入口；\n- 其余动作只有支持自适应升级的 adapter 才能处理，否则如实报错。",
+        "operationId": "lab_action_api_v1_sessions__session_id__lab_action_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LabActionIn"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/plan/revise": {
+      "post": {
+        "tags": [
+          "plan"
+        ],
+        "summary": "Revise Plan",
+        "description": "§7.10 修改每日学习时间并重排计划。",
+        "operationId": "revise_plan_api_v1_sessions__session_id__plan_revise_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlanReviseIn"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/meta/sources": {
+      "get": {
+        "tags": [
+          "meta"
+        ],
+        "summary": "Meta Sources",
+        "description": "N24：数据来源总览（crawl_time / coverage / total_records / levels）。",
+        "operationId": "meta_sources_api_v1_meta_sources_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/meta/subjects": {
+      "get": {
+        "tags": [
+          "meta"
+        ],
+        "summary": "Meta Subjects",
+        "description": "N31：标准科目表（创新点 1 的公共词典）。",
+        "operationId": "meta_subjects_api_v1_meta_subjects_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "Index",
+        "operationId": "index__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AgentHistoryItem": {
+        "properties": {
+          "role": {
+            "type": "string",
+            "title": "Role",
+            "default": "user"
+          },
+          "content": {
+            "type": "string",
+            "title": "Content",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "title": "AgentHistoryItem",
+        "description": "Agent 入口的历史对话（前端把最近几轮带上，便于\"再答一次\"不丢上下文）。"
+      },
+      "AgentIn": {
+        "properties": {
+          "message": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Message"
+          },
+          "session_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Session Id"
+          },
+          "history": {
+            "items": {
+              "$ref": "#/components/schemas/AgentHistoryItem"
+            },
+            "type": "array",
+            "title": "History"
+          }
+        },
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "title": "AgentIn",
+        "description": "P0-1：Agent 入口（**additive**，SPEC 的 12 个端点一个都没动）。\n\n用户只给一句话；Agent 自己决定：建档 / 追问 / 推荐 / 开小测 / 改计划。"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "LabActionIn": {
+        "properties": {
+          "action": {
+            "type": "string",
+            "title": "Action"
+          },
+          "question_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Question Id"
+          },
+          "answer": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Answer"
+          },
+          "feedback": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Feedback"
+          },
+          "minutes": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 1440.0,
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Minutes"
+          }
+        },
+        "type": "object",
+        "required": [
+          "action"
+        ],
+        "title": "LabActionIn",
+        "description": "队友实验室 lab.v2 的额外动作透传（additive，SPEC 只要求 start/answer）。"
+      },
+      "LabAnswerIn": {
+        "properties": {
+          "question_id": {
+            "type": "string",
+            "title": "Question Id"
+          },
+          "answer": {
+            "type": "string",
+            "title": "Answer"
+          }
+        },
+        "type": "object",
+        "required": [
+          "question_id",
+          "answer"
+        ],
+        "title": "LabAnswerIn"
+      },
+      "LabStartIn": {
+        "properties": {
+          "material_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Material Id"
+          },
+          "topic": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Topic"
+          },
+          "mode": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mode"
+          }
+        },
+        "type": "object",
+        "title": "LabStartIn"
+      },
+      "MaterialIn": {
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Title"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Text"
+          },
+          "source_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Url"
+          },
+          "is_demo": {
+            "type": "boolean",
+            "title": "Is Demo",
+            "default": false
+          },
+          "school_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "School Id"
+          },
+          "subject": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Subject"
+          }
+        },
+        "type": "object",
+        "required": [
+          "title",
+          "text"
+        ],
+        "title": "MaterialIn"
+      },
+      "PlanReviseIn": {
+        "properties": {
+          "daily_minutes": {
+            "type": "integer",
+            "maximum": 1440.0,
+            "minimum": 1.0,
+            "title": "Daily Minutes"
+          }
+        },
+        "type": "object",
+        "required": [
+          "daily_minutes"
+        ],
+        "title": "PlanReviseIn"
+      },
+      "ProfileIn": {
+        "properties": {
+          "exam_year": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Exam Year"
+          },
+          "major": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Major"
+          },
+          "background": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Background"
+          },
+          "preferred_regions": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Preferred Regions"
+          },
+          "daily_minutes": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 1440.0,
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Daily Minutes"
+          },
+          "preferences": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Preferences"
+          },
+          "undergrad_school": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Undergrad School"
+          },
+          "undergrad_tier": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Undergrad Tier"
+          },
+          "gpa_band": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gpa Band"
+          },
+          "english_level": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "English Level"
+          },
+          "target_score": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 500.0,
+                "minimum": 100.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Target Score"
+          },
+          "study_status": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Study Status"
+          },
+          "phase": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Phase"
+          },
+          "phase_confidence": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Phase Confidence"
+          },
+          "known_facts": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Known Facts"
+          },
+          "is_cross_major": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Is Cross Major"
+          },
+          "undergrad_major": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Undergrad Major"
+          },
+          "target_major": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Target Major"
+          }
+        },
+        "type": "object",
+        "title": "ProfileIn",
+        "description": "用户档案。N1 结构化字段与 N29 阶段字段**并存**（非破坏性）。"
+      },
+      "ProfilePatchIn": {
+        "properties": {
+          "exam_year": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Exam Year"
+          },
+          "major": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Major"
+          },
+          "background": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Background"
+          },
+          "preferred_regions": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Preferred Regions"
+          },
+          "daily_minutes": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 1440.0,
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Daily Minutes"
+          },
+          "preferences": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Preferences"
+          },
+          "undergrad_school": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Undergrad School"
+          },
+          "undergrad_tier": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Undergrad Tier"
+          },
+          "gpa_band": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gpa Band"
+          },
+          "english_level": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "English Level"
+          },
+          "target_score": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 500.0,
+                "minimum": 100.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Target Score"
+          },
+          "study_status": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Study Status"
+          },
+          "phase": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Phase"
+          },
+          "is_cross_major": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Is Cross Major"
+          },
+          "undergrad_major": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Undergrad Major"
+          },
+          "target_major": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Target Major"
+          },
+          "known_facts": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Known Facts"
+          }
+        },
+        "type": "object",
+        "title": "ProfilePatchIn",
+        "description": "部分更新：只传要改的字段。"
+      },
+      "SessionCreateIn": {
+        "properties": {
+          "profile": {
+            "$ref": "#/components/schemas/ProfileIn"
+          }
+        },
+        "type": "object",
+        "title": "SessionCreateIn"
+      },
+      "ShortlistIn": {
+        "properties": {
+          "school_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "School Ids"
+          }
+        },
+        "type": "object",
+        "required": [
+          "school_ids"
+        ],
+        "title": "ShortlistIn",
+        "description": "N10：备选清单（先缩小到 2 所）。"
+      },
+      "TargetIn": {
+        "properties": {
+          "school_id": {
+            "type": "string",
+            "title": "School Id"
+          },
+          "user_note": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "User Note"
+          }
+        },
+        "type": "object",
+        "required": [
+          "school_id"
+        ],
+        "title": "TargetIn"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

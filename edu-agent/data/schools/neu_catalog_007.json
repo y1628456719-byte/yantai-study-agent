@@ -1,0 +1,484 @@
+{
+  "school_id": "neu",
+  "school_name": "东北大学",
+  "applicable_year": 2027,
+  "college_code": "007",
+  "college_name": "007 工商管理学院",
+  "source": {
+    "title": "东北大学2027年硕士研究生招生专业目录",
+    "page_url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/page.htm",
+    "source_level": "official",
+    "site_render": "server-side HTML（静态，无需 JS）",
+    "fetched_at": "2026-10-16T21:38:41+08:00"
+  },
+  "extracted": {
+    "college_pages": [],
+    "college_note": "本文件由 scripts/_neu_parse_catalog.py 从官方专业目录页面内联 HTML 表格解析；「院系所」「专业」「考试科目」列在原文用 rowspan 纵向合并，解析时先展开再取值。该目录页只有 5 列（院系所/专业/研究方向/学习方式/考试科目），不含「拟招生人数」，故 admission_scale 另取官方《2026年硕士研究生招生专业目录（含拟招生人数）》附件 neu_2026_scale.pdf（见 admission_scale_source_year）；duration_years / tuition 取官方 2027 年学制汇总表与学费标准明细表（见各自 *_source_year）；re_exam_* 取官方《2026年硕士研究生招生考试复试参考信息》（见 re_exam_source_year）。",
+    "sources": {
+      "admission_scale": {
+        "data_year": 2026,
+        "page_url": "https://yz.neu.edu.cn/2025/1009/c5933a293424/page.htm",
+        "attachment_download": "https://yz.neu.edu.cn/_upload/article/files/70/ba/c702279f4bdabfe25fca5b1e6e11/106a5be3-929b-4d8c-81b3-4debc9b8cae2.pdf"
+      },
+      "duration_years": {
+        "data_year": 2027,
+        "page_url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "attachment_download": "https://yz.neu.edu.cn/_upload/article/files/7c/2a/7e2da1164b4b91f7358d35de7ef0/fbd72bb5-da62-41ab-935c-65bf68fb6a91.pdf"
+      },
+      "tuition": {
+        "data_year": 2027,
+        "page_url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "attachment_download": "https://yz.neu.edu.cn/_upload/article/files/7c/2a/7e2da1164b4b91f7358d35de7ef0/ad11c8dc-9d3a-4bd9-a9ee-06834729942c.pdf"
+      },
+      "re_exam": {
+        "data_year": 2026,
+        "page_url": "https://yz.neu.edu.cn/2025/1018/c5933a293857/page.htm",
+        "attachment_download": null
+      }
+    },
+    "programs": [
+      {
+        "program_code": "020200",
+        "program_name": "应用经济学",
+        "admission_scale": 50,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 20,
+        "degree_type": "全日制学术学位",
+        "study_mode": "全日制",
+        "duration_years": 2,
+        "duration_years_source_year": 2027,
+        "tuition": "8000元/年.生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①101思想政治理论",
+          "②201英语（一）",
+          "③303数学（三）",
+          "④851微观经济学"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01金融风险管理",
+          "02数智战略与产业高质量发展",
+          "03数字贸易与大国经贸关系",
+          "04数字资源环境经济与区域经济可持续发展",
+          "05【秦皇岛】应用经济学"
+        ],
+        "notes": null
+      },
+      {
+        "program_code": "025400",
+        "program_name": "国际商务",
+        "admission_scale": 12,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 2,
+        "degree_type": "全日制学术学位",
+        "study_mode": "全日制",
+        "duration_years": 2,
+        "duration_years_source_year": 2027,
+        "tuition": "8000元/年.生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①101思想政治理论",
+          "②204英语（二）",
+          "③396经济类综合能力",
+          "④434国际商务专业基础"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01跨国企业管理",
+          "02国际产业竞争与创新战略",
+          "03跨境电商与数字贸易"
+        ],
+        "notes": null
+      },
+      {
+        "program_code": "120100",
+        "program_name": "管理科学与工程",
+        "admission_scale": 34,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 16,
+        "degree_type": "全日制学术学位",
+        "study_mode": "全日制",
+        "duration_years": 2,
+        "duration_years_source_year": 2027,
+        "tuition": "8000元/年.生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①101思想政治理论",
+          "②201英语（一）",
+          "③303数学（三）",
+          "④852运筹学"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01管理决策与优化",
+          "02智能制造与服务运营管理",
+          "03数智运营与可持续供应链管理",
+          "04人因工程与质量管理",
+          "05【秦皇岛】管理科学与工程"
+        ],
+        "notes": null
+      },
+      {
+        "program_code": "120200",
+        "program_name": "工商管理学",
+        "admission_scale": 52,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 26,
+        "degree_type": "全日制学术学位",
+        "study_mode": "全日制",
+        "duration_years": 2,
+        "duration_years_source_year": 2027,
+        "tuition": "8000元/年.生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①101思想政治理论",
+          "②201英语（一）",
+          "③303数学（三）",
+          "④853管理学"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01数智管理与战略创新",
+          "02组织行为与人力资源管理",
+          "03会计信息与财务决策",
+          "04数智营销与服务创新",
+          "05【秦皇岛】工商管理学"
+        ],
+        "notes": null
+      },
+      {
+        "program_code": "125100",
+        "program_name": "工商管理",
+        "admission_scale": 290,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 0,
+        "degree_type": "全日制专业学位",
+        "study_mode": "非全日制",
+        "duration_years": 2.5,
+        "duration_years_source_year": 2027,
+        "tuition": "120000元/生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①199管理类综合能力",
+          "②204英语（二）",
+          "③-无",
+          "④--无"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01组织与人力资源管理",
+          "02战略管理与公司治理",
+          "03财务金融与会计管理",
+          "04营销与服务管理",
+          "05生产运营与物流管理",
+          "06技术创新与创业管理",
+          "07企业经济分析与项目管理",
+          "08智能制造与数字化管理"
+        ],
+        "notes": null
+      },
+      {
+        "program_code": "125300",
+        "program_name": "会计",
+        "admission_scale": 29,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 14,
+        "degree_type": "全日制专业学位",
+        "study_mode": "全日制",
+        "duration_years": 2,
+        "duration_years_source_year": 2027,
+        "tuition": "8000元/年.生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①199管理类综合能力",
+          "②204英语（二）",
+          "③-无",
+          "④--无"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01企业会计、政府会计与非营利组织会计",
+          "02公司理财与资本市场",
+          "03成本与管理会计",
+          "04内部控制与审计",
+          "05企业税收与税务筹划"
+        ],
+        "notes": null
+      },
+      {
+        "program_code": "125601",
+        "program_name": "工程管理",
+        "admission_scale": 65,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 0,
+        "degree_type": "全日制专业学位",
+        "study_mode": "非全日制",
+        "duration_years": 2.5,
+        "duration_years_source_year": 2027,
+        "tuition": "90000元/生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①199管理类综合能力",
+          "②204英语（二）",
+          "③-无",
+          "④--无"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01工程项目管理",
+          "02工业工程管理",
+          "03物流工程管理",
+          "04服务与信息管理"
+        ],
+        "notes": null
+      },
+      {
+        "program_code": "125603",
+        "program_name": "工业工程与管理",
+        "admission_scale": 27,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 11,
+        "degree_type": "全日制专业学位",
+        "study_mode": "全日制",
+        "duration_years": 2,
+        "duration_years_source_year": 2027,
+        "tuition": "8000元/年.生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①199管理类综合能力",
+          "②204英语（二）",
+          "③-无",
+          "④--无"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01生产或服务系统设计与质量管理",
+          "02人因工程与用户体验",
+          "03物流与供应链管理",
+          "04【秦皇岛】工业工程与管理"
+        ],
+        "notes": null
+      },
+      {
+        "program_code": "125604",
+        "program_name": "物流工程与管理",
+        "admission_scale": 27,
+        "admission_scale_basis": "merged_cell",
+        "admission_scale_source_year": 2026,
+        "recommended_quota": 14,
+        "degree_type": "全日制专业学位",
+        "study_mode": "全日制",
+        "duration_years": 2,
+        "duration_years_source_year": 2027,
+        "tuition": "8000元/年.生",
+        "tuition_source_year": 2027,
+        "exam_subjects": [
+          "①199管理类综合能力",
+          "②204英语（二）",
+          "③-无",
+          "④--无"
+        ],
+        "re_exam_subjects": null,
+        "re_exam_reference_books": [],
+        "re_exam_equal_ability": null,
+        "re_exam_ratio": null,
+        "re_exam_source_year": null,
+        "directions": [
+          "01物流与供应链系统设计与优化",
+          "02智慧物流与供应链创新",
+          "03企业物流与物流服务运作"
+        ],
+        "notes": null
+      }
+    ],
+    "tuition_rows_2027": [
+      [
+        "007",
+        "工商管理学院",
+        "020200",
+        "应用经济学",
+        "全日制",
+        "8000元/年.生"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "025400",
+        "国际商务",
+        "全日制",
+        "8000元/年.生"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "120100",
+        "管理科学与工程",
+        "全日制",
+        "8000元/年.生"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "120200",
+        "工商管理学",
+        "全日制",
+        "8000元/年.生"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "125100",
+        "工商管理",
+        "非全日制",
+        "120000元/生"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "125300",
+        "会计",
+        "全日制",
+        "8000元/年.生"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "125601",
+        "工程管理",
+        "非全日制",
+        "90000元/生"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "125603",
+        "工业工程与管理",
+        "全日制",
+        "8000元/年.生"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "125604",
+        "物流工程与管理",
+        "全日制",
+        "8000元/年.生"
+      ]
+    ],
+    "duration_rows_2027": [
+      [
+        "007",
+        "工商管理学院",
+        "020200",
+        "应用经济学",
+        "全日制",
+        "2"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "025400",
+        "国际商务",
+        "全日制",
+        "2"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "120100",
+        "管理科学与工程",
+        "全日制",
+        "2"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "120200",
+        "工商管理学",
+        "全日制",
+        "2"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "125100",
+        "工商管理",
+        "非全日制",
+        "2.5"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "125300",
+        "会计",
+        "全日制",
+        "2"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "125601",
+        "工程管理",
+        "非全日制",
+        "2.5"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "125603",
+        "工业工程与管理",
+        "全日制",
+        "2"
+      ],
+      [
+        "007",
+        "工商管理学院",
+        "125604",
+        "物流工程与管理",
+        "全日制",
+        "2"
+      ]
+    ]
+  }
+}

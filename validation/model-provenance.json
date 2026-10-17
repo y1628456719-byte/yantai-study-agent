@@ -1,0 +1,45 @@
+[
+  {
+    "provider": "Google Antigravity",
+    "model": "Gemini4 Argon High",
+    "status": "SUCCESS",
+    "mode": "code-only plan, no tools, empty sandbox",
+    "conversation_id": "1cb3f07e-d3b9-42a8-9fa8-22e142271411",
+    "usage_tokens": {
+      "input": 21461,
+      "output": 5484,
+      "total": 26945
+    },
+    "disposition": "Returned a nonempty validation-module plan. Its proposed English catalog citation was rejected; no generated citation or code was accepted as a source."
+  },
+  {
+    "provider": "AI Ping",
+    "model": "DeepSeek-V4.1-Flash",
+    "status": "SUCCESS",
+    "request_id": "2df4659a-52e9-4132-b79d-c416c8ca98ba",
+    "reasoning_effort_requested": "max",
+    "duration_seconds": 1.844,
+    "usage_tokens": {
+      "prompt": 335,
+      "completion": 224,
+      "total": 559
+    },
+    "safe_output_summary": {
+      "atoms": [
+        "P",
+        "Q",
+        "R"
+      ],
+      "premises": [
+        "P->Q",
+        "Q->R"
+      ],
+      "options": [
+        "P->R",
+        "R->P",
+        "Q->P",
+        "not R"
+      ]
+    }
+  }
+]

@@ -1,0 +1,6 @@
+INDEPENDENT_REVIEW_RUNTIME sandbox=read-only approval=never project_instructions=disabled user_config=ignored model=gpt-6.1-sol
+PASS
+
+两项修复均有源码和边界记录支持：1 分钟预算只安排首题；当前有效反馈进入总结引用，新验证后旧猜测保留在历史中，判分不变。所供材料中未发现实质缺陷。
+
+本结论限于内联证据；未独立复跑所报告的 60 项测试、浏览器或真实 API 验证，也不代表整站集成或学生学习效果已获验证。

@@ -1,0 +1,24 @@
+{
+  "version": "logic-extensions.v1",
+  "provenance": "开发阶段编写并逐句核对的自编规则卡，不是官方资料或真题。",
+  "material": {
+    "material_id": "demo_logic_extensions_v1",
+    "title": "逻辑扩展规则卡（自编演示材料）",
+    "text": "逆否等价：若P→Q，则¬Q→¬P与P→Q在经典命题逻辑中等价。\n条件链：若P→Q且Q→R，则P→R；不能因此反向推出R→P。\n合取P∧Q表示P与Q都成立；析取P∨Q表示至少一个成立。",
+    "is_demo": true
+  },
+  "topics": {
+    "contrapositive": {
+      "source_id": "logic_extension_contrapositive",
+      "quote": "逆否等价：若P→Q，则¬Q→¬P与P→Q在经典命题逻辑中等价。"
+    },
+    "chain": {
+      "source_id": "logic_extension_chain",
+      "quote": "条件链：若P→Q且Q→R，则P→R；不能因此反向推出R→P。"
+    },
+    "and_or": {
+      "source_id": "logic_extension_and_or",
+      "quote": "合取P∧Q表示P与Q都成立；析取P∨Q表示至少一个成立。"
+    }
+  }
+}

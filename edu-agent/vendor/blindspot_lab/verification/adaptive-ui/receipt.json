@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "browser": "Installed Edge / Playwright",
+  "fallback": "Browser plugin not available",
+  "viewports": [
+    "1365x1000",
+    "390x844"
+  ],
+  "checks": [
+    "failure -> feedback -> budget pause/resume -> fresh question -> reload -> correct -> guessed -> third-round limit -> stop",
+    "mobile answer + no horizontal overflow",
+    "no page or console errors on normal routes",
+    "initial loading locks start",
+    "response lost after commit -> reload -> same request ID retry -> no duplicate feedback",
+    "server-restart empty-state response injection clears old forms and offers start"
+  ],
+  "errors": []
+}

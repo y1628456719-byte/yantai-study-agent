@@ -1,0 +1,46 @@
+.workspace{display:grid;grid-template-columns:188px minmax(0,1fr);gap:28px;max-width:1392px;margin:0 auto;padding:0 32px;align-items:start}
+.workspace .pages{display:block;min-width:0}
+.workspace .page{width:100%;max-width:none;margin:0;padding:0 0 36px}
+body[data-page="welcome"] #page-welcome,body[data-page="profile"] #page-profile,body[data-page="reference"] #page-reference{display:block}
+.workspace-rail{position:sticky;top:28px;margin-top:42px;padding:21px 14px;background:rgba(255,253,248,.86);border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow);backdrop-filter:blur(12px)}
+.rail-kicker{font:600 16px/1.5 var(--serif);margin:0 10px 8px;letter-spacing:.08em}
+.rail-target{font-size:11px;color:var(--azur);margin:0 10px 20px;line-height:1.8;overflow-wrap:anywhere}
+#workspace-nav{display:grid;gap:8px}
+#workspace-nav button{display:grid;gap:4px;width:100%;min-height:62px;text-align:left;background:transparent;border:1px solid transparent;border-radius:11px;color:var(--tx-soft);padding:10px;font:500 13px/1.5 var(--sans);cursor:pointer;transition:background .18s,border-color .18s,box-shadow .18s,transform .18s}
+#workspace-nav button small{font-size:10px;color:var(--wash);font-weight:400}
+#workspace-nav button:hover,#workspace-nav button:focus-visible{background:rgba(43,104,109,.045);border-color:rgba(43,104,109,.24);box-shadow:0 0 0 3px rgba(43,104,109,.035)}
+#workspace-nav button[aria-current="page"]{background:rgba(43,104,109,.08);border-color:rgba(43,104,109,.22);color:var(--azur)}
+#workspace-nav button:active{transform:scale(.98)}
+.rail-footnote{font-size:10px;line-height:1.9;color:var(--wash);border-top:1px solid var(--line);padding:16px 10px 0;margin:22px 0 0}
+.welcome-card{max-width:760px;padding:30px}
+.setup-form{display:grid;grid-template-columns:1fr 1fr;gap:14px 22px}
+.setup-form .field{margin:0;min-width:0}
+.setup-form .field:first-child{grid-column:1/-1}
+.setup-form .field:nth-child(5){grid-column:1/-1}
+.setup-form input,.setup-form select{width:100%;min-height:46px;font-size:14px}
+.setup-form .setup-note,.setup-form .portal-error{grid-column:1/-1;margin:0}
+.setup-form .btn{grid-column:1/-1;justify-self:start;margin-top:10px}
+.target-settings{display:flex;align-items:end;gap:14px;flex-wrap:wrap;padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid var(--line)}
+.target-settings .field{flex:1;min-width:180px;margin:0}
+.target-settings .btn{min-height:43px}
+.target-settings .portal-error{flex-basis:100%;margin:0}
+.journey-sidebar-flow>.journey-return-btn{margin-top:12px;display:block}
+.workspace .journey-desk{margin-bottom:0}
+.workspace .lab-heading{gap:14px}
+.workspace .lesson-label{flex-shrink:0}
+.workspace .q-stem{font-size:clamp(20px,1.8vw,27px)}
+.workspace .sheet{padding:25px 28px 30px}
+.workspace .shell{grid-template-columns:minmax(0,1.65fr) minmax(250px,1fr);gap:22px}
+.workspace .opt{min-width:0}
+.workspace .opt-text{overflow-wrap:anywhere}
+.welcome-recommendation-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 18px;font-size:14px;color:var(--tx-soft)}
+.welcome-recommendation-head p{margin:0}.welcome-recommendation-head button{flex-shrink:0}
+#welcome-school-slot .portal-result{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+#welcome-school-slot .portal-result>.card{margin:0;min-width:0}
+#welcome-school-slot .portal-result>section.card:only-of-type{grid-column:1/-1}
+#welcome-school-slot .portal-result>details,#welcome-school-slot .portal-result>.portal-empty{grid-column:1/-1}
+#workspace-nav button:disabled,#platform-nav button:disabled{opacity:.48;cursor:default}
+@media(max-width:960px){#welcome-school-slot .portal-result{grid-template-columns:minmax(0,1fr)}.welcome-recommendation-head{align-items:flex-start;flex-direction:column;gap:8px}}
+@media(max-width:1180px){.workspace{grid-template-columns:168px minmax(0,1fr);padding:0 25px;gap:22px}.workspace .shell{grid-template-columns:minmax(0,1fr)}.workspace .col-plan{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}.workspace .drawer{grid-column:1/-1}.workspace .col-plan .paper-card{margin:0}.workspace .lab-heading{display:block}.workspace .lesson-label{display:block;margin:10px 0 0}.workspace .journey-demo-box{align-items:flex-start}}
+@media(max-width:760px){.workspace{display:block;padding:0 19px}.workspace-rail{position:static;margin:16px 0 0;padding:8px;border-radius:13px}.rail-kicker,.rail-target,.rail-footnote{display:none}#workspace-nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}#workspace-nav button{min-height:43px;text-align:center;padding:9px 3px;font-size:12px}#workspace-nav button small{display:none}.workspace .page{padding:0 0 24px}.workspace .col-plan{display:block}.workspace .col-plan .paper-card{margin-bottom:16px}.workspace .sheet{padding:20px}.welcome-card{padding:21px}.setup-form{gap:14px}.setup-form .field{grid-column:1/-1}.setup-form .btn{width:100%;justify-self:stretch;letter-spacing:.02em}.workspace .q-stem{font-size:20px}.target-settings{display:block}.target-settings .btn{margin-top:12px}.workspace .lesson-label{font-size:11px}}
+@media(prefers-reduced-motion:reduce){#workspace-nav button{transition:none}#workspace-nav button:active{transform:none}}

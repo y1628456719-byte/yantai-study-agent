@@ -1,0 +1,48 @@
+Agent 决策层 · 真实模型端到端自检
+base_url=https://aiping.cn/api/v1 model=DeepSeek-V4.1-Flash mock=False max_steps=8
+
+--- 第 1 轮 ---
+用户：我是通信工程大三，想考长春或哈尔滨的学校，但数学一直没底
+模型推理：还没有会话，先建档案：把用户明确的通信工程本科、意向长春/哈尔滨、大三在校状态写进去，数学没底留到下一步用小测处理。
+  [工具] create_session :: 已建会话 s_a621321a8bf9，阶段 P2（目标筛选期），revision=2，缺：exam_year_known、has_candidate_schools
+  [ask] - :: 
+         （决策理由：用户明确说数学没底，这是最该用实测证据覆盖的风险点，先启动一轮无资料的数学自测，拿到能力画像再推荐院校。）
+Agent 回复：数学没底这事不能靠感觉猜——我先给你开一轮数学盲点自测（不需要任何资料，按你的真实判断作答）。题目出来后请直接回选项 A/B/C/D，答完我就能看出你数学的真实风险等级，再结合长春、哈尔滨的通信院校给你分档推荐。
+本轮工具链：['create_session'] steps=1 terminated=reply model_used=True generated_by=model is_demo=False
+
+--- 第 2 轮 ---
+用户：那就先测一下我数学到底什么水平
+模型推理：用户主动要测数学水平，档案里 0 份资料，应按无资料模式启动自测诊断。
+  [工具] lab_start :: 已开始诊断：stage=diagnosis，题目 self_MATH_CALC（5 个选项），无资料基线（自评/实测）
+  [ask] - :: 
+         （决策理由：诊断题已经生成（self_MATH_CALC，无资料自评基线），下一步必须由用户作答才能产生实测证据，所以先追问答案而不是急着推荐。）
+Agent 回复：数学自评诊断已经开始，题目已生成（5 个选项）。请把你选的选项字母（如 A / B / C / D）发给我，我替你提交作答。
+本轮工具链：['lab_start'] steps=1 terminated=reply model_used=True generated_by=model is_demo=False
+
+--- 第 3 轮 ---
+用户：B
+模型推理：用户回复了选项 B，但当前状态里没有给出待作答题目 id，先读一次会话把 question_id 取回来，再提交答案，避免用错题目 id。
+  [工具] get_session :: 阶段 P2（目标筛选期）；档案：? 年 / 通信工程 / 地域 长春、哈尔滨；资料 0 份；已选院校 未选
+  [工具] lab_answer :: 已批改：stage=diagnosis，next_action=answer，假设 高等数学掌握情况=tentative；证据 1 条
+         （决策理由：用户回「B」是在回答待作答的数学自测题（self_MATH_CALC），先把答案提交进诊断，拿到作答证据后再谈择校。）
+  [ask] - :: 
+         （决策理由：用户刚提交了第一题的答案，实验室还在诊断中且下一题（mc_lim_1）待作答，需要请用户继续作答以积累能力画像证据。）
+Agent 回复：收到，这道题已经记入你的能力画像了。实验室里还有下一道题（关于极限部分），你把答案选项（A/B/C/D）直接发给我就行，我帮你提交。
+本轮工具链：['get_session', 'lab_answer'] steps=2 terminated=reply model_used=True generated_by=model is_demo=False
+
+--- 第 4 轮 ---
+用户：每天只能学一个小时，帮我安排一下
+模型推理：用户明确给出每天只能学 1 小时，属于新的每日时间约束，先按 60 分钟重排学习计划，择校所需的考研年份稍后再问。
+  [工具] revise_plan :: 还没有确认目标院校，请先在推荐结果里选定一所学校。
+  [工具] update_profile :: 档案已更新，阶段 P2（目标筛选期），revision=6，仍缺：exam_year_known、has_candidate_schools
+         （决策理由：用户刚给出每天只能学 1 小时，这是档案里的关键字段，先写进档案；revise_plan 因未定院校走不通，本轮不重试。）
+  [ask] - :: 
+         （决策理由：用户要把每天 1 小时的安排落地，但 revise_plan 需要先有目标院校，而档案里最关键的缺失项是考研年份——先补齐它才能给出可选的候选院校。）
+Agent 回复：先补一个关键信息：你参加的是哪一届考研（比如 2027 考研）？有了年份，我才能按长春/哈尔滨给出候选院校的冲稳保分档；你从中选定一所后，我再把每天 1 小时的学习时间表排出来。
+本轮工具链：['update_profile'] steps=1 terminated=reply model_used=True generated_by=model is_demo=False
+（可接受的工具报错：['revise_plan'] —— 模型已据此改口/换路）
+
+四轮累计工具链：['create_session', 'lab_start', 'get_session', 'lab_answer', 'update_profile']
+最终会话：phase=P2 revision=6 materials=0 selected=None
+
+结论：全部通过（Agent 自主建档/推进，轨迹可审计，无静默降级）

@@ -1,0 +1,330 @@
+{
+  "school_id": "heu",
+  "school_name": "哈尔滨工程大学",
+  "applicable_year": 2027,
+  "college_code": "004",
+  "college_name": "004 智能科学与工程学院",
+  "source": {
+    "title": "哈尔滨工程大学2027年硕士招生专业目录",
+    "page_url": "https://yzb.hrbeu.edu.cn/2026/0929/c3279a352656/page.htm",
+    "attachment_download": "https://yzb.hrbeu.edu.cn/_upload/article/files/55/1a/06c933ef4ac9b8aa1372c53501a5/a26798bf-5848-4aae-a3e4-8804c8a8b2b1.pdf",
+    "attachment_path": "data/raw/_probe/pdf/heu_2027_catalog.pdf",
+    "attachment_note": "官方附件直链以 .pdf 结尾（非博达 download.jsp 形式）；本地存档件与官方页附件为同一文件（256955 B）",
+    "pdf_pages": 32,
+    "source_level": "official",
+    "fetched_at": "2026-10-16T21:22:07+08:00"
+  },
+  "extracted": {
+    "college_pages": [
+      7,
+      8
+    ],
+    "college_total_2027": 564,
+    "college_total_raw": "预计接收推免生384人；预计招收全日制统考180人（根据国家下达实际计划和推免生接收情况动态调整），非全日制2人。",
+    "college_total_note": {
+      "recommend": 384,
+      "exam": 180,
+      "part_time": 2,
+      "raw": "预计接收推免生384人；预计招收全日制统考180人（根据国家下达实际计划和推免生接收情况动态调整），非全日制2人"
+    },
+    "college_total_check": {
+      "sum_of_all_program_base_plans": 565,
+      "equals_college_total": false,
+      "note": "对学院全部专业（不只是目标专业）的基础计划求和，与学院公布总数比对；不一致时说明目录中存在非全日制/专项未列入的行"
+    },
+    "contact": null,
+    "policy_notes": [],
+    "degree_blocks": [
+      {
+        "degree_type": "全日制学术学位",
+        "duration_years": 3,
+        "declared_scale": 122,
+        "note": "本清单仅含目标专业（081000、081100、085402、085406、085400）的基础计划；学院全口径计划见 college_total_2027"
+      },
+      {
+        "degree_type": "全日制专业学位",
+        "duration_years": 3,
+        "declared_scale": 146,
+        "note": "本清单仅含目标专业（081000、081100、085402、085406、085400）的基础计划；学院全口径计划见 college_total_2027"
+      }
+    ],
+    "programs": [
+      {
+        "program_code": "081100",
+        "program_name": "控制科学与工程",
+        "admission_scale": 122,
+        "degree_type": "全日制学术学位",
+        "duration_years": 3,
+        "exam_subjects": [
+          "①101思想政治理论",
+          "②201英语（一）、202俄语、203日语(选一)",
+          "③301数学（一）",
+          "④808自动控制原理"
+        ],
+        "re_exam_subjects": "微型计算机原理与接口技术",
+        "notes": "线性控制、无人航行器自主控制、先进导航与精密定位、现代船舶控制工程、智能系统与信息感知测量、人工智能理论及应用",
+        "admission_scale_raw": "110+12/0",
+        "admission_scale_basis": "官方目录『预计招生人数(推免+统考/非全日制)』列的基础计划一行；admission_scale = 推免 + 统考，即基础计划方向合计人数",
+        "admission_scale_parts": {
+          "recommend": 110,
+          "exam": 12,
+          "part_time": 0
+        },
+        "direction_label": "基础计划（研究方向见备注）",
+        "study_mode": "全日制",
+        "additional_exam_subjects": [
+          "1.工程数学",
+          "2.电路基础 含以下方向：复杂系统理论与非"
+        ],
+        "directions_count": 5,
+        "other_directions": [
+          {
+            "direction_code": "02",
+            "label": "青岛创新发展基地专项（研究方",
+            "study_mode": "全日制",
+            "plan_raw": "37+19/0",
+            "recommend": 37,
+            "exam": 19,
+            "part_time": 0,
+            "exam_subjects": [
+              "①101思想政治理论",
+              "②201英语（一）",
+              "③301数学（一）",
+              "④808自动控制原理"
+            ],
+            "re_exam_subjects": "微型计算机原理与接口技术",
+            "page": 7
+          },
+          {
+            "direction_code": "03",
+            "label": "海南（三亚）专项（研究方向见",
+            "study_mode": "全日制",
+            "plan_raw": "6+3/0",
+            "recommend": 6,
+            "exam": 3,
+            "part_time": 0,
+            "exam_subjects": [
+              "①101思想政治理论",
+              "②201英语（一）",
+              "③301数学（一）",
+              "④808自动控制原理"
+            ],
+            "re_exam_subjects": "微型计算机原理与接口技术",
+            "page": 7
+          },
+          {
+            "direction_code": "01",
+            "label": "基础计划（研究方向见备注）",
+            "study_mode": "全日制",
+            "plan_raw": "3+1/0",
+            "recommend": 3,
+            "exam": 1,
+            "part_time": 0,
+            "exam_subjects": [
+              "①101思想政治理论",
+              "②201英语（一）、202俄语、203日语(选一)",
+              "③301数学（一）",
+              "④808自动控制原理"
+            ],
+            "re_exam_subjects": "微型计算机原理与接口技术",
+            "page": 7
+          },
+          {
+            "direction_code": "02",
+            "label": "青岛创新发展基地专项（研究方",
+            "study_mode": "全日制",
+            "plan_raw": "19+9/0",
+            "recommend": 19,
+            "exam": 9,
+            "part_time": 0,
+            "exam_subjects": [
+              "①101思想政治理论",
+              "②201英语（一）",
+              "③301数学（一）",
+              "④808自动控制原理"
+            ],
+            "re_exam_subjects": "微型计算机原理与接口技术",
+            "page": 8
+          }
+        ],
+        "source_page": 7,
+        "tuition": {
+          "label": "学术学位硕士",
+          "per_year_wan": 0.8,
+          "raw": "学术学位硕士0.8万元/生·年",
+          "unit": "万元/生·年",
+          "year": 2027
+        },
+        "catalog_code_note": "目录按六位代码公布；085402 通信工程 / 085406 控制工程 在哈工程 2027 目录中不单独出现，其方向文字见 notes 与 other_directions"
+      },
+      {
+        "program_code": "085400",
+        "program_name": "电子信息",
+        "admission_scale": 146,
+        "degree_type": "全日制专业学位",
+        "duration_years": 3,
+        "exam_subjects": [
+          "①101思想政治理论",
+          "②201英语（一）、202俄语、203日语(选一)",
+          "③301数学（一）",
+          "④808自动控制原理"
+        ],
+        "re_exam_subjects": "微型计算机原理与接口技术",
+        "notes": "含以下方向：控制工程、机器感知与人工智能",
+        "admission_scale_raw": "86+60/0",
+        "admission_scale_basis": "官方目录『预计招生人数(推免+统考/非全日制)』列的基础计划一行；admission_scale = 推免 + 统考，即基础计划方向合计人数",
+        "admission_scale_parts": {
+          "recommend": 86,
+          "exam": 60,
+          "part_time": 0
+        },
+        "direction_label": "基础计划（研究方向见备注）",
+        "study_mode": "全日制",
+        "additional_exam_subjects": [
+          "1.工程数学",
+          "2.电路基础"
+        ],
+        "directions_count": 6,
+        "other_directions": [
+          {
+            "direction_code": "02",
+            "label": "青岛创新发展基地专项（研究方",
+            "study_mode": "全日制",
+            "plan_raw": "30+20/0",
+            "recommend": 30,
+            "exam": 20,
+            "part_time": 0,
+            "exam_subjects": [
+              "①101思想政治理论",
+              "②201英语（一）",
+              "③301数学（一）",
+              "④808自动控制原理"
+            ],
+            "re_exam_subjects": "微型计算机原理与接口技术",
+            "page": 8
+          },
+          {
+            "direction_code": "03",
+            "label": "海南（三亚）专项（研究方向见",
+            "study_mode": "全日制",
+            "plan_raw": "4+3/0",
+            "recommend": 4,
+            "exam": 3,
+            "part_time": 0,
+            "exam_subjects": [
+              "①101思想政治理论",
+              "②201英语（一）",
+              "③301数学（一）",
+              "④808自动控制原理"
+            ],
+            "re_exam_subjects": "微型计算机原理与接口技术",
+            "page": 8
+          },
+          {
+            "direction_code": "04",
+            "label": "长三角研究院（南通）专项（研",
+            "study_mode": "全日制",
+            "plan_raw": "7+4/0",
+            "recommend": 7,
+            "exam": 4,
+            "part_time": 0,
+            "exam_subjects": [
+              "①101思想政治理论",
+              "②201英语（一）、202俄语、203日语(选一)",
+              "③301数学（一）",
+              "④808自动控制原理"
+            ],
+            "re_exam_subjects": "微型计算机原理与接口技术",
+            "page": 8
+          },
+          {
+            "direction_code": "05",
+            "label": "龙江工程师学院专项（智能制",
+            "study_mode": "全日制",
+            "plan_raw": "11+27/0",
+            "recommend": 11,
+            "exam": 27,
+            "part_time": 0,
+            "exam_subjects": [
+              "①101思想政治理论",
+              "②201英语（一）、202俄语、203日语(选一)",
+              "③301数学（一）",
+              "④808自动控制原理"
+            ],
+            "re_exam_subjects": "微型计算机原理与接口技术",
+            "page": 8
+          },
+          {
+            "direction_code": "F1",
+            "label": "基础计划（不区分研究方向）",
+            "study_mode": "非全日制",
+            "plan_raw": "0+0/2",
+            "recommend": 0,
+            "exam": 0,
+            "part_time": 2,
+            "exam_subjects": [
+              "①101思想政治理论",
+              "②201英语（一）、202俄语、203日语(选一)",
+              "③301数学（一）",
+              "④808自动控制原理"
+            ],
+            "re_exam_subjects": "微型计算机原理与接口技术",
+            "page": 8
+          }
+        ],
+        "source_page": 8,
+        "tuition": {
+          "label": "专业学位硕士[全日制MBA除外]",
+          "per_year_wan": 0.9,
+          "raw": "专业学位硕士[全日制MBA除外]0.9万元/生·年",
+          "unit": "万元/生·年",
+          "year": 2027
+        },
+        "catalog_code_note": "目录按六位代码公布；085402 通信工程 / 085406 控制工程 在哈工程 2027 目录中不单独出现，其方向文字见 notes 与 other_directions"
+      }
+    ],
+    "reference_books": {
+      "by_exam_code": {},
+      "titles": [],
+      "count": 0,
+      "note": "哈工程公布的是《硕士研究生招生考试考试大纲（初试科目）》（考试范围说明），不列参考书目，故参考书数量为 0"
+    },
+    "duration_source": {
+      "title": "哈尔滨工程大学2027年硕士研究生招生简章",
+      "page_url": "https://yzb.hrbeu.edu.cn/2026/0929/c3279a352656/page.htm",
+      "attachment_path": "data/raw/heu/3f4fb6b050c6.html",
+      "raw": "我校硕士研究生学制一般为3年"
+    },
+    "tuition_rows_2027": [
+      {
+        "label": "学术学位硕士",
+        "per_year_wan": 0.8,
+        "raw": "学术学位硕士0.8万元/生·年",
+        "unit": "万元/生·年",
+        "year": 2027
+      },
+      {
+        "label": "专业学位硕士[全日制MBA除外]",
+        "per_year_wan": 0.9,
+        "raw": "专业学位硕士[全日制MBA除外]0.9万元/生·年",
+        "unit": "万元/生·年",
+        "year": 2027
+      }
+    ],
+    "enrollment_scale_2027": {
+      "full_time": 4265,
+      "part_time": 544,
+      "raw": "全日制硕士研究生 4265 人，非全日制硕士研究生 544 名",
+      "data_year": 2027,
+      "source_title": "哈尔滨工程大学2027年硕士研究生招生简章",
+      "source_url": "https://yzb.hrbeu.edu.cn/2026/0929/c3279a352656/page.htm",
+      "scope_note": "全校口径，非本学院口径；本学院口径见 college_total_2027"
+    },
+    "code_policy_2027": {
+      "catalog_uses_six_digit_codes": true,
+      "085402_085406_separate": false,
+      "note": "哈工程 2027 目录按 2018 版目录的代码公布，通信工程/控制工程作为 085400 电子信息下的方向写在备注中；因此只落 085400，不臆造 085402/085406"
+    },
+    "parse_method": "按 PDF 文字坐标 (x, y) 重建表格：左栏(学院/专业/方向) / 预计招生人数+初试科目 / 复试笔试科目 / 同等学力加试科目 / 备注。列边界实测 x=16.1 / 179.5 / 226.7 / 377.9 / 440.9 / 484.1；同一列内相邻片段 y 间距 ≤ 18 视为同单元格折行。原 PDF 用 ①②③④ 或 (1)(2)(3)(4) 标注初试科目序号，落库统一为 ①②③④。"
+  }
+}
