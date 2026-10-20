@@ -972,8 +972,8 @@
     },
     {
       "path": "edu-agent/README.md",
-      "bytes": 270,
-      "sha256": "d5e96a911e7c8a0d899eca499fc5f7bc0ab4aac4c3b0174bc51eac5302320563"
+      "bytes": 4881,
+      "sha256": "0f037f700c2bb37e56ef56594209c0cb749d9b420ee3b28f2185f401dabcb772"
     },
     {
       "path": "edu-agent/requirements-lock.txt",
@@ -1417,8 +1417,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 719,
-      "sha256": "4c19922a6ff47a15ae3c00a514e5389124926e78887099929e8d3c444d02620d"
+      "bytes": 6622,
+      "sha256": "0ece30302130eec8c47b6944bbf845d069fd0e6353555c195902b5ac80d5b968"
     },
     {
       "path": "validation/backend-tests.log",
@@ -1499,6 +1499,36 @@
       "path": "validation/ui-smoke.json",
       "bytes": 2202,
       "sha256": "7d0f33f292042c70113d20ca3e787714d80a38634fd112b7ba024d2c4636cbe7"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 67,
+      "sha256": "c54b039212661d451450ac8d9b41f63cb1604c716bda8d6f2b5eeb192efc45cf"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 234,
+      "sha256": "8a58d94903335c5f8d1cb83fa5af0a3f8fdd78d282652da96b06367a0105ac53"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1872,
+      "sha256": "92c6b1b89dcbd7661d23d472ddbe4bbb6e0dc36a6807ba6ac2d7a00e19af2bff"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1668,
+      "sha256": "3b0e4cd2ffc557cdcde84411f4a68bdeafb674331aff07fc92337c071c593a5c"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 4046,
+      "sha256": "7eaf8cad04e83b34816879eb99e9301c165dadd96ed31feb1baf5ce8f5c7f43a"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 3416,
+      "sha256": "0ce2670257bea37ad48e410762073a6584613aa1149b970a1f7be81274b5ada4"
     }
   ],
   "excludes": [
@@ -1534,5 +1564,9 @@
     "vendor/blindspot_lab/lab/content.py": "748ab01e3328f5cd80a47914f10637b9207ee73b1bb767e54f61f6d873070557",
     "vendor/blindspot_lab/lab/dynamic_questions.py": "b0e8047695a15fa45a89dadcf6ad65b98cc784bd0c276d32bff8368005f1b5d3",
     "vendor/blindspot_lab/lab/models.py": "44bb14886b73f7ec5a4677b674303c7c5fef96184994db1f5b09f04a0fcbb788"
-  }
+  },
+  "inventory_kind": "repository-files-excluding-this-manifest",
+  "inventory_date": "2026-10-20",
+  "original_delivery_commit": "2b9d44fcc03a68a1a217acd190b47a0cf6420064",
+  "reviewed_files_scope": "Original 2026-10-17 candidate code; not a new review of the documentation."
 }
